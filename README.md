@@ -26,7 +26,7 @@ Whether you're building end-to-end AI applications or exploring deployment strat
 - Hosted via GitHub Pages
 - Automated using GitHub Actions
 
-**Live Site** [AI/ML Companion Site](https://mcklay.github.io/MLops-Project-Handbook/)_
+**Live Site** [AI/ML Companion Site](https://mcklay.github.io/MLops-Project-Handbook/)
 
 ---
 
