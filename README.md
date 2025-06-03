@@ -5,13 +5,21 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=McKlay.MLops-Project-Handbook)
 
-# AI/ML Companion Site
+# AI/ML Companion Site 📘
 
-This repository contains two structured, book-style documentation projects combined into a single MkDocs-powered website. It is part of my personal AI/MLOps learning journey and job search portfolio.
+This repository hosts two structured, book-style documentation projects combined into a single, modular MkDocs-powered site. It serves as a comprehensive resource for developers, engineers, and researchers working at the intersection of AI, ML, and MLOps.
 
-**Books Included:**
-- `📘 Mastering AI/ML Projects on a Budget` – Practical guides on building and deploying ML projects using free-tier services and APIs.
-- `📘 AI/ML Project Toolkit` – Tool-by-tool breakdown of CI/CD, Docker, Gradio, FastAPI, and more.
+Whether you're building end-to-end AI applications or exploring deployment strategies, this companion site provides practical guidance and tooling insights grounded in real-world project experience.
+
+---
+
+## 📚 Included Books
+
+- `📘 Mastering AI/ML Projects on a Budget`  
+  A hands-on guide to designing and deploying AI/ML applications using cost-effective workflows, open-source tools, and free-tier infrastructure such as Hugging Face Spaces, Railway, and Vercel.
+
+- `📘 AI/ML Project Toolkit`  
+  A technical handbook detailing key development tools and deployment patterns, including CI/CD, Docker, FastAPI, Gradio, secret management, cloud hosting options, and production-readiness strategies.
 
 **Built With:**
 - MkDocs + Material Theme
