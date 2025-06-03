@@ -4,7 +4,6 @@
 ![MIT License](https://img.shields.io/github/license/McKlay/MLops-Project-Handbook)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=McKlay.MLops-Project-Handbook)
-![Deploy to GitHub Pages](https://github.com/McKlay/MLops-Project-Handbook/actions/workflows/deploy.yml/badge.svg)
 
 # AI/ML Companion Site
 
@@ -28,6 +27,9 @@ This repository contains two structured, book-style documentation projects combi
 ```bash
 # Install dependencies
 pip install -r requirements.txt
+```
+
+---
 
 # Preview the site locally
 mkdocs serve
