@@ -1,0 +1,93 @@
+site_name: AI/ML Companion Site
+site_url: https://yourdomainhere.com
+site_author: Clay Mark Sarte
+site_description: Two-book documentation site combining project-based and tooling-based AI/ML guides.
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: green
+    accent: deep orange
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+
+  - "📘 Mastering AI/ML Projects":
+      - "📂 Part I: FOUNDATIONS": book_project_budget/Book1_PartI_overview.md
+      - "Chapter 1: Understanding the Landscape of AI/ML Projects": book_project_budget/Book1_chapter1.md
+      - "Chapter 2:  Essential Tools & Technologies": book_project_budget/Book1_chapter2.md
+
+      - "📂 Part II: STEP-BY-STEP AI/ML PROJECT DEVELOPMENT": book_project_budget/Book1_PartII_overview.md
+      - "Chapter 3: Setting Up Your Project Repository": book_project_budget/Book1_chapter3.md
+      - "Chapter 4: Building the ML Logic": book_project_budget/Book1_chapter4.md
+      - "Chapter 5: Building the Frontend UI": book_project_budget/Book1_chapter5.md
+      - "Chapter 6: Integrating with Paid APIs": book_project_budget/Book1_chapter6.md
+
+      - "📂 Part III: DEPLOYMENT ON FREE-TIER SERVICES": book_project_budget/Book1_PartIII_overview.md
+      - "Chapter 7: Backend Deployment Options": book_project_budget/Book1_chapter7.md
+      - "Chapter 8: Frontend Deployment Options": book_project_budget/Book1_chapter8.md
+      - "Chapter 9: Fullstack Integration Walkthrough": book_project_budget/Book1_chapter9.md
+
+      - "📂 Part IV: COST-OPTIMIZED STRATEGIES": book_project_budget/Book1_PartIV_overview.md
+      - "Chapter 10: How to Stay Within Free Tiers": book_project_budget/Book1_chapter10.md
+      - "Chapter 11: Investing Smartly in Paid APIs": book_project_budget/Book1_chapter11.md
+      - "Chapter 12: Scaling Beyond Free Tiers": book_project_budget/Book1_chapter12.md
+
+      - "📂 Part V: RECOMMENDATIONS & ROADMAP": book_project_budget/Book1_PartV_overview.md
+      - "Chapter 13: Choosing the Right Path Forward": book_project_budget/Book1_chapter13.md
+      - "Chapter 14: Case Studies & Templates": book_project_budget/Book1_chapter14.md
+
+  - "📘 AI/ML Project Toolkit":
+      - 📜 Preface: book_toolkit/Book2_Preface.md
+
+      - "📂 Part I: Development & Deployment Essentials": book_toolkit/Book2_PartI_overview.md
+      - "Chapter 1: CI/CD: Continuous Integration & Deployment": book_toolkit/Book2_chapter1_CI_CD.md
+      - "Chapter 2: FastAPI Explained": book_toolkit/Book2_chapter2_FastAPI.md
+      - "Chapter 3: Gradio vs. React": book_toolkit/Book2_chapter3_GradioReact.md
+      - "Chapter 4: Docker for AI Apps": book_toolkit/Book2_chapter4_Docker.md
+      - "Chapter 5: .env Files & Secret Management": book_toolkit/Book2_chapter5_ENV_Files.md
+      - "Chapter 6: Railway, Hugging Face, and Render Compared": book_toolkit/Book2_chapter6_Railway_HF_Render.md
+
+      - "📂 Part II: AI/ML-Specific Tooling": book_toolkit/Book2_PartII_overview.md
+      - "Chapter 7: What Is a GPU Runtime?": book_toolkit/Book2_chapter7_GPU_Runtime.md
+      - "Chapter 8: Transformers, Tokenizers & Hugging Face Ecosystem": book_toolkit/Book2_chapter8_Transformers.md
+      - "Chapter 9: Inference vs Training: Know the Difference": book_toolkit/Book2_chapter9_Inference_vs_Training.md
+      - "Chapter 10: Understanding Replicate & Stability API": book_toolkit/Book2_chapter10_Replicate_Stability_API.md
+      - "Chapter 11: Prompt Engineering Basics": book_toolkit/Book2_chapter11_Prompt_Engineering.md
+
+      - "📂 Part III: Scalability, Monitoring & Security": book_toolkit/Book2_PartIII_overview.md
+      - "Chapter 12: Rate Limits, Cooldowns, and Billing Safety": book_toolkit/Book2_chapter12_RateLimit_Cooldowns.md
+      - "Chapter 13: Logging, Monitoring & Debugging": book_toolkit/Book2_chapter13_Debugging.md
+      - "Chapter 14: Authentication, Databases & User Management": book_toolkit/Book2_chapter14_Authentication.md
+      - "Chapter 15: CI/CD for Teams & SaaS-Ready Projects": book_toolkit/Book2_chapter15_CI-CD_&_SaaS.md
+
+      - "📂 Part IV: Mindset & Philosophy": book_toolkit/Book2_PartIV_overview.md
+      - "Chapter 16: Why Tools Matter: Speed vs Reinvention": book_toolkit/Book2_chapter16_Why_Tools_Matter.md
+      - "Chapter 17: Shipping > Perfection: The Builder's Ethos": book_toolkit/Book2_chapter17_Shipping.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/McKlay
