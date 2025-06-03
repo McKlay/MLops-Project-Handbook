@@ -5,7 +5,7 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=McKlay.MLops-Project-Handbook)
 
-# AI/ML Companion Site 📘
+# AI/ML Companion Site
 
 This repository hosts two structured, book-style documentation projects combined into a single, modular MkDocs-powered site. It serves as a comprehensive resource for developers, engineers, and researchers working at the intersection of AI, ML, and MLOps.
 
