@@ -4,7 +4,7 @@
 ![MIT License](https://img.shields.io/github/license/McKlay/MLops-Project-Handbook)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=McKlay.MLops-Project-Handbook)
-![Deploy to GitHub Pages](https://mcklay.github.io/MLops-Project-Handbook/actions/workflows/deploy.yml/badge.svg)
+![Deploy to GitHub Pages](https://github.com/McKlay/MLops-Project-Handbook/actions/workflows/deploy.yml/badge.svg)
 
 # AI/ML Companion Site
 
@@ -31,6 +31,11 @@ pip install -r requirements.txt
 
 # Preview the site locally
 mkdocs serve
+
+---
+
+## Status
+The content of the site is still a work in progress.
 
 ---
 
