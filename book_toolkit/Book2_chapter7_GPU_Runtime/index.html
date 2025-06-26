@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-7-tensor-broadcasting" class="md-skip">
+        <a href="#chapter-7-what-is-a-gpu-runtime" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1120,54 +1122,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#71-what-is-broadcasting" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      7.1 What is Broadcasting?
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#72-broadcasting-in-action" class="md-nav__link">
+  <a href="#opening-reflection-the-engine-beneath-the-intellect" class="md-nav__link">
     <span class="md-ellipsis">
-      7.2 Broadcasting in Action
+      Opening Reflection: The Engine Beneath the Intellect
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#73-broadcasting-rules-the-intuition" class="md-nav__link">
+  <a href="#71-why-do-ai-models-love-gpus" class="md-nav__link">
     <span class="md-ellipsis">
-      7.3 Broadcasting Rules (The Intuition)
+      7.1 Why Do AI Models Love GPUs?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#74-common-broadcasting-use-cases" class="md-nav__link">
+  <a href="#72-what-is-a-runtime" class="md-nav__link">
     <span class="md-ellipsis">
-      7.4 Common Broadcasting Use Cases
+      7.2 What Is a Runtime?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#75-when-broadcasting-fails" class="md-nav__link">
+  <a href="#73-the-runtimes-you-should-know" class="md-nav__link">
     <span class="md-ellipsis">
-      7.5 When Broadcasting Fails
+      7.3 The Runtimes You Should Know
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 The Runtimes You Should Know">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-colab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Colab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runpodio" class="md-nav__link">
+    <span class="md-ellipsis">
+      RunPod.io
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hugging-face-spaces-pro-gpu-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hugging Face Spaces (PRO GPU Tier)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kaggle-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kaggle Notebooks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-when-should-you-upgrade-to-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 When Should You Upgrade to GPU?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#76-summary" class="md-nav__link">
+  <a href="#75-builders-perspective-renting-a-mind-not-just-a-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      7.6 Summary
+      7.5 Builder’s Perspective: Renting a Mind, Not Just a Machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Reflection
     </span>
   </a>
   
@@ -1473,7 +1544,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1492,54 +1565,123 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#71-what-is-broadcasting" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      7.1 What is Broadcasting?
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#72-broadcasting-in-action" class="md-nav__link">
+  <a href="#opening-reflection-the-engine-beneath-the-intellect" class="md-nav__link">
     <span class="md-ellipsis">
-      7.2 Broadcasting in Action
+      Opening Reflection: The Engine Beneath the Intellect
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#73-broadcasting-rules-the-intuition" class="md-nav__link">
+  <a href="#71-why-do-ai-models-love-gpus" class="md-nav__link">
     <span class="md-ellipsis">
-      7.3 Broadcasting Rules (The Intuition)
+      7.1 Why Do AI Models Love GPUs?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#74-common-broadcasting-use-cases" class="md-nav__link">
+  <a href="#72-what-is-a-runtime" class="md-nav__link">
     <span class="md-ellipsis">
-      7.4 Common Broadcasting Use Cases
+      7.2 What Is a Runtime?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#75-when-broadcasting-fails" class="md-nav__link">
+  <a href="#73-the-runtimes-you-should-know" class="md-nav__link">
     <span class="md-ellipsis">
-      7.5 When Broadcasting Fails
+      7.3 The Runtimes You Should Know
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 The Runtimes You Should Know">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-colab" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Colab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runpodio" class="md-nav__link">
+    <span class="md-ellipsis">
+      RunPod.io
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hugging-face-spaces-pro-gpu-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hugging Face Spaces (PRO GPU Tier)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kaggle-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kaggle Notebooks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-when-should-you-upgrade-to-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 When Should You Upgrade to GPU?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#76-summary" class="md-nav__link">
+  <a href="#75-builders-perspective-renting-a-mind-not-just-a-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      7.6 Summary
+      7.5 Builder’s Perspective: Renting a Mind, Not Just a Machine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Reflection
     </span>
   </a>
   
@@ -1558,100 +1700,297 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-7-tensor-broadcasting">Chapter 7: Tensor Broadcasting<a class="headerlink" href="#chapter-7-tensor-broadcasting" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>“Broadcasting is TensorFlow’s way of saying: ‘Relax, I’ve got this shape mismatch.’”</p>
-</blockquote>
+
+<h1 id="chapter-7-what-is-a-gpu-runtime">Chapter 7: What Is a GPU Runtime?<a class="headerlink" href="#chapter-7-what-is-a-gpu-runtime" title="Permanent link">&para;</a></h1>
+<p><em>“More power, less waiting.”</em></p>
+<p>This time, we’re strapping in for <strong>compute power</strong>. This chapter explores GPU runtimes—the fuel behind modern AI/ML magic. Whether you're fine-tuning a model or running style transfer in real-time, this is where your code meets hardware acceleration.</p>
 <hr />
-<h2 id="71-what-is-broadcasting">7.1 What is Broadcasting?<a class="headerlink" href="#71-what-is-broadcasting" title="Permanent link">&para;</a></h2>
-<p>Broadcasting allows tensors with different shapes to participate in operations as if they had the same shape.<br />
-It's like auto-expanding dimensions on the fly so that element-wise operations just work—without explicitly reshaping anything.<br />
-It’s a core part of NumPy, PyTorch, and yes—TensorFlow.</p>
-<hr />
-<h2 id="72-broadcasting-in-action">7.2 Broadcasting in Action<a class="headerlink" href="#72-broadcasting-in-action" title="Permanent link">&para;</a></h2>
-<p>Let’s take a practical example:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>       <span class="c1"># Shape: (2, 2)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>               <span class="c1"># Shape: (2,)</span>
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</code></pre></div>
-TensorFlow “broadcasts” b from shape (2,) → (2, 2) by duplicating it across rows:
-<div class="highlight"><pre><span></span><code><span class="s">[[1 + 10, 2 + 20],</span>
-<span class="s"> [3 + 10, 4 + 20]]</span>
-<span class="o">=</span><span class="w"> </span><span class="s">[[11, 22],</span>
-<span class="s">   [13, 24]]</span>
-</code></pre></div></p>
-<hr />
-<h2 id="73-broadcasting-rules-the-intuition">7.3 Broadcasting Rules (The Intuition)<a class="headerlink" href="#73-broadcasting-rules-the-intuition" title="Permanent link">&para;</a></h2>
-<p>TensorFlow compares dimensions from right to left:</p>
-<p>If same, they’re compatible.</p>
-<p>If one is 1, it’s stretched to match.</p>
-<p>If they don’t match and neither is 1, it’s an error.<br />
-<strong>Example:</strong>
-<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">:</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">b</span><span class="p">:</span> <span class="p">(</span>  <span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
-→ Resulting shape: <code>(4, 5, 3)</code>
-The middle <code>1</code> in <code>a</code> stretches to <code>5</code>
-The last <code>1</code> in <code>b</code> stretches to <code>3</code></p>
-<hr />
-<h2 id="74-common-broadcasting-use-cases">7.4 Common Broadcasting Use Cases<a class="headerlink" href="#74-common-broadcasting-use-cases" title="Permanent link">&para;</a></h2>
-<p>✅ Adding a bias vector to each row:
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
-<span class="n">bias</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">bias</span><span class="p">)</span>
-</code></pre></div>
-✅ Multiplying by a scalar:
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="mf">2.5</span><span class="p">)</span>
-</code></pre></div>
-✅ Normalizing each feature (column-wise):
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">]])</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Shape: (2,)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span>  <span class="c1"># Subtracts mean from each row</span>
-</code></pre></div></p>
-<hr />
-<h2 id="75-when-broadcasting-fails">7.5 When Broadcasting Fails<a class="headerlink" href="#75-when-broadcasting-fails" title="Permanent link">&para;</a></h2>
-<p>Some operations won’t broadcast if shapes are completely incompatible:
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>      <span class="c1"># Shape: (3,)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>  <span class="c1"># Shape: (2, 2)</span>
-
-<span class="c1"># tf.add(a, b) → ❌ Error: Shapes can&#39;t broadcast</span>
-</code></pre></div>
-Always check shape compatibility first:
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape A:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape B:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</code></pre></div>
-If needed, use:</p>
+<h2 id="this-chapter-covers">This Chapter Covers<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><code>tf.expand_dims()</code></p>
-</li>
-<li>
-<p><code>tf.reshape()</code></p>
-</li>
-<li>
-<p>or <code>tf.broadcast_to()</code> to explicitly adjust shapes</p>
-</li>
+<li>Why GPUs matter in machine learning</li>
+<li>The difference between CPU and GPU workloads</li>
+<li>Runtimes: Colab, RunPod, Hugging Face, Kaggle</li>
+<li>Beginner to pro: when to scale your compute</li>
+<li>Builder’s perspective: using power wisely</li>
 </ul>
 <hr />
-<h2 id="76-summary">7.6 Summary<a class="headerlink" href="#76-summary" title="Permanent link">&para;</a></h2>
+<h2 id="opening-reflection-the-engine-beneath-the-intellect">Opening Reflection: The Engine Beneath the Intellect<a class="headerlink" href="#opening-reflection-the-engine-beneath-the-intellect" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“Brains need bodies. Algorithms need hardware.”</p>
+</blockquote>
+<p>You’ve written the model.
+You’ve got the data.
+But something feels… slow:</p>
 <ul>
-<li>Broadcasting lets tensors with different shapes interact during operations.</li>
-<li>TensorFlow automatically stretches dimensions when one of them is 1.</li>
-<li>Most common use cases involve scalars, bias addition, and feature-wise normalization.</li>
-<li>Broadcasting removes boilerplate reshaping—just mind your axes.</li>
+<li>Your CNN takes 45 minutes to train a few epochs</li>
+<li>Your style transfer freezes the browser</li>
+<li>Your chatbot lags behind every keypress</li>
+</ul>
+<p>At that point, it’s not your code that’s holding you back — it’s your hardware.</p>
+<p>That’s where <strong>GPUs</strong> — Graphics Processing Units — change everything.
+Not because they’re faster at everything, but because they’re faster at the <strong>right</strong> things.</p>
+<hr />
+<h2 id="71-why-do-ai-models-love-gpus">7.1 Why Do AI Models Love GPUs?<a class="headerlink" href="#71-why-do-ai-models-love-gpus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>What It Involves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matrix multiplication</td>
+<td>Used in every layer of deep nets</td>
+</tr>
+<tr>
+<td>Tensor operations</td>
+<td>Batched math: dot products, conv2d</td>
+</tr>
+<tr>
+<td>Backpropagation</td>
+<td>Needs fast gradient computation</td>
+</tr>
+<tr>
+<td>Image generation</td>
+<td>Requires thousands of operations per second</td>
+</tr>
+</tbody>
+</table>
+<p>GPUs are built to handle:</p>
+<ul>
+<li>Thousands of <strong>parallel operations</strong></li>
+<li>On <strong>large chunks of data</strong></li>
+<li>At <strong>high throughput</strong></li>
+</ul>
+<blockquote>
+<p>Your CPU is a smart sprinter.
+Your GPU is a battalion of soldiers.</p>
+</blockquote>
+<hr />
+<h2 id="72-what-is-a-runtime">7.2 What Is a Runtime?<a class="headerlink" href="#72-what-is-a-runtime" title="Permanent link">&para;</a></h2>
+<p>A <strong>runtime</strong> is an environment that includes:</p>
+<ul>
+<li>OS (e.g., Ubuntu)</li>
+<li>Python environment</li>
+<li>Installed libraries (torch, transformers, etc.)</li>
+<li>GPU access (if enabled)</li>
+</ul>
+<p>You run your code <strong>inside the runtime</strong>, often through Jupyter Notebooks, Docker containers, or virtual machines.</p>
+<hr />
+<h2 id="73-the-runtimes-you-should-know">7.3 The Runtimes You Should Know<a class="headerlink" href="#73-the-runtimes-you-should-know" title="Permanent link">&para;</a></h2>
+<p>Let’s break down the most beginner-friendly to advanced options:</p>
+<h3 id="google-colab">Google Colab<a class="headerlink" href="#google-colab" title="Permanent link">&para;</a></h3>
+<p><strong>Best for:</strong> learning, prototyping, small dataset training
+<strong>GPU types:</strong> Tesla T4, P100, A100 (rare)</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free Tier</th>
+<th>Pro Tier (\$9.99–\$49.99)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU Access</td>
+<td>12 hrs/session (T4)</td>
+<td>Longer sessions, faster GPUs</td>
+</tr>
+<tr>
+<td>Timeout</td>
+<td>Disconnects after idle</td>
+<td>Persistent</td>
+</tr>
+<tr>
+<td>Use Cases</td>
+<td>BERT, CNNs, tutorials</td>
+<td>More advanced modeling</td>
+</tr>
+</tbody>
+</table>
+<p>Good for:</p>
+<ul>
+<li>BERT fine-tuning on small sets</li>
+<li>LSTM experiments</li>
+<li>Kaggle competitions</li>
 </ul>
 <hr />
+<h3 id="runpodio">RunPod.io<a class="headerlink" href="#runpodio" title="Permanent link">&para;</a></h3>
+<p><strong>Best for:</strong> pay-per-use compute with full control
+<strong>GPU types:</strong> A4000, A5000, A6000, RTX 3090, 4090, etc.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Value</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hourly Price</td>
+<td>\~\$0.20/hr (T4) to \$1.50/hr (4090)</td>
+<td>Pay by GPU type and storage</td>
+</tr>
+<tr>
+<td>Docker Support</td>
+<td>Yes</td>
+<td>Run your Docker images directly</td>
+</tr>
+<tr>
+<td>Use Cases</td>
+<td>Full pipelines, large-scale training</td>
+<td>High precision control</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p>“Broadcasting is TensorFlow’s way of saying: ‘Relax, I’ve got this shape mismatch.’”</p>
+<p>Feels like renting a dedicated GPU workstation.</p>
 </blockquote>
+<hr />
+<h3 id="hugging-face-spaces-pro-gpu-tier">Hugging Face Spaces (PRO GPU Tier)<a class="headerlink" href="#hugging-face-spaces-pro-gpu-tier" title="Permanent link">&para;</a></h3>
+<p><strong>Best for:</strong> showcasing GPU-powered inference demos
+<strong>GPU types:</strong> T4, A10G (depends on plan)</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Free Tier</th>
+<th>PRO Tier (\$9–\$29/mo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU Access</td>
+<td>CPU only</td>
+<td>Shared GPU (1–6 hrs/day)</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>Gradio/Streamlit</td>
+<td>Public hosting, not for training</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Best for real-time generation, not long training tasks.</p>
+</blockquote>
+<hr />
+<h3 id="kaggle-notebooks">Kaggle Notebooks<a class="headerlink" href="#kaggle-notebooks" title="Permanent link">&para;</a></h3>
+<p><strong>Best for:</strong> reproducible, GPU-based public experiments
+<strong>GPU types:</strong> Tesla P100</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Limitations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Runtime Limit</td>
+<td>\~30 hrs/week</td>
+<td>Resettable weekly</td>
+</tr>
+<tr>
+<td>Use Cases</td>
+<td>Competitions, prototyping</td>
+<td>More stable than Colab</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Ideal for reproducible research and notebooks.</p>
+</blockquote>
+<hr />
+<h2 id="74-when-should-you-upgrade-to-gpu">7.4 When Should You Upgrade to GPU?<a class="headerlink" href="#74-when-should-you-upgrade-to-gpu" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>If Your Model...</th>
+<th>Then Use GPU?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trains in &gt;1 hour on CPU</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Uses images or video input</td>
+<td>Definitely</td>
+</tr>
+<tr>
+<td>Needs real-time performance</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Is tiny (like regex or lookup rules)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Only does inference</td>
+<td>Maybe</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="75-builders-perspective-renting-a-mind-not-just-a-machine">7.5 Builder’s Perspective: Renting a Mind, Not Just a Machine<a class="headerlink" href="#75-builders-perspective-renting-a-mind-not-just-a-machine" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“When you rent GPU time, you’re not just buying speed —
+You’re buying focus, rhythm, and the feeling that you can build without limits.”</p>
+</blockquote>
+<p>There’s power in:</p>
+<ul>
+<li>Watching your model train live</li>
+<li>Trying larger architectures you previously couldn’t</li>
+<li>Feeling unblocked by your own hardware</li>
+</ul>
+<p>It’s not indulgence — it’s <strong>momentum</strong>.</p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Runtime</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Colab</td>
+<td>Prototyping, classroom, tutorials</td>
+</tr>
+<tr>
+<td>RunPod</td>
+<td>Full control, deep training</td>
+</tr>
+<tr>
+<td>Hugging Face</td>
+<td>Hosting GPU-powered demos</td>
+</tr>
+<tr>
+<td>Kaggle</td>
+<td>Free reproducible training</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>GPUs aren’t luxury anymore — they’re table stakes for deep learning.</p>
+</blockquote>
+<hr />
+<h2 id="closing-reflection">Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“A model is only as fast as the power behind it.
+And sometimes, the right runtime can unlock ideas you never thought were possible.”</p>
+</blockquote>
+<hr />
 
 
 
@@ -1659,8 +1998,13 @@ If needed, use:</p>
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

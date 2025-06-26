@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -627,7 +629,7 @@
         <li class="md-nav__item">
   <a href="#chapter-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Chapter Summary
+      Chapter Summary
     </span>
   </a>
   
@@ -1491,7 +1493,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1575,7 +1579,7 @@
         <li class="md-nav__item">
   <a href="#chapter-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Chapter Summary
+      Chapter Summary
     </span>
   </a>
   
@@ -1594,10 +1598,12 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-6-integrating-with-paid-apis">📘 Chapter 6: Integrating with Paid APIs<a class="headerlink" href="#chapter-6-integrating-with-paid-apis" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-6-integrating-with-paid-apis">Chapter 6: Integrating with Paid APIs<a class="headerlink" href="#chapter-6-integrating-with-paid-apis" title="Permanent link">&para;</a></h1>
 <h2 id="61-why-use-paid-apis">6.1 Why Use Paid APIs?<a class="headerlink" href="#61-why-use-paid-apis" title="Permanent link">&para;</a></h2>
 <p>While open-source models are powerful, paid APIs:</p>
 <ul>
@@ -1656,10 +1662,10 @@
 <p><strong>Installation</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>openai<span class="w"> </span>python-dotenv
 </code></pre></div>
-<strong>📂 .env (in backend/)</strong>
+<strong>.env (in backend/)</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>sk-xxxxxxxxxxxxxxxxxxxxx
 </code></pre></div>
-<strong>📄 backend/app/main.py</strong>
+<strong>backend/app/main.py</strong>
 <div class="highlight"><pre><span></span><code>    <span class="kn">import</span><span class="w"> </span><span class="nn">openai</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
     <span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
@@ -1684,10 +1690,10 @@
 <p><strong>installation</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>replicate
 </code></pre></div>
-<strong>📂 .env</strong>
+<strong>.env</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nv">REPLICATE_API_TOKEN</span><span class="o">=</span>r8_your_api_token_here
 </code></pre></div>
-<strong>📄 backend/app/cartoonize.py</strong>
+<strong>backend/app/cartoonize.py</strong>
 <div class="highlight"><pre><span></span><code>    <span class="kn">import</span><span class="w"> </span><span class="nn">replicate</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
     <span class="n">replicate</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">api_token</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;REPLICATE_API_TOKEN&quot;</span><span class="p">))</span>
@@ -1700,7 +1706,7 @@
 </code></pre></div></p>
 <hr />
 <h2 id="64-securing-api-keys-in-production">6.4 Securing API Keys in Production<a class="headerlink" href="#64-securing-api-keys-in-production" title="Permanent link">&para;</a></h2>
-<p>✅ Best Practices:</p>
+<p>Best Practices:</p>
 <ul>
 <li>
 <p>Use .env for local development.</p>
@@ -1752,7 +1758,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>✅ Hugging Face &amp; Railway let you inspect logs and rate-limit usage if needed.</p>
+<p>Hugging Face &amp; Railway let you inspect logs and rate-limit usage if needed.</p>
 </blockquote>
 <hr />
 <h2 id="66-testing-with-rate-limits">6.6 Testing with Rate Limits<a class="headerlink" href="#66-testing-with-rate-limits" title="Permanent link">&para;</a></h2>
@@ -1816,7 +1822,7 @@
 <p>Start with APIs, then optimize with free or local alternatives when scaling.</p>
 </blockquote>
 <p>--</p>
-<h2 id="chapter-summary">✅ Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">&para;</a></h2>
+<h2 id="chapter-summary">Chapter Summary<a class="headerlink" href="#chapter-summary" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>You’ve integrated OpenAI and Replicate APIs into your backend.</p>
@@ -1839,8 +1845,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

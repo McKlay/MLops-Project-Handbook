@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1500,7 +1502,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1612,11 +1616,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-10-how-to-stay-within-free-tiers">📘 Chapter 10: How to Stay Within Free Tiers<a class="headerlink" href="#chapter-10-how-to-stay-within-free-tiers" title="Permanent link">&para;</a></h1>
-<p>With great deployment comes great responsibility, 🧾 Chapter 10 is all about smart cost control and usage monitoring — the key to sustainably running your AI apps, especially when using paid APIs (like OpenAI/Replicate) or free-tier compute (Railway/Hugging Face/Vercel). Let’s protect your wallet 💳 while scaling your impact 🌍.</p>
+
+<h1 id="chapter-10-how-to-stay-within-free-tiers">Chapter 10: How to Stay Within Free Tiers<a class="headerlink" href="#chapter-10-how-to-stay-within-free-tiers" title="Permanent link">&para;</a></h1>
+<p>With great deployment comes great responsibility, Chapter 10 is all about smart cost control and usage monitoring — the key to sustainably running your AI apps, especially when using paid APIs (like OpenAI/Replicate) or free-tier compute (Railway/Hugging Face/Vercel). Let’s protect your wallet while scaling your impact.</p>
 <hr />
 <h2 id="101-why-cost-optimization-matters">10.1 Why Cost Optimization Matters<a class="headerlink" href="#101-why-cost-optimization-matters" title="Permanent link">&para;</a></h2>
 <p>Even small AI/ML apps can rack up unexpected costs due to:<br />
@@ -1669,11 +1675,13 @@
 </blockquote>
 <hr />
 <h2 id="103-control-api-costs-with-smart-code">10.3 Control API Costs with Smart Code<a class="headerlink" href="#103-control-api-costs-with-smart-code" title="Permanent link">&para;</a></h2>
-<p>✅ 1. Set Prompt Length Limits (for OpenAI)
+<ol>
+<li>Set Prompt Length Limits (for OpenAI)
 <div class="highlight"><pre><span></span><code>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">250</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Prompt too long&quot;</span><span class="p">}</span>
-</code></pre></div>
-✅ 2. Add a Global Cooldown (e.g. 10 seconds)</p>
+</code></pre></div></li>
+<li>Add a Global Cooldown (e.g. 10 seconds)</li>
+</ol>
 <div class="highlight"><pre><span></span><code>    <span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
     <span class="n">last_used</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">safe_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
@@ -1684,7 +1692,9 @@
         <span class="n">last_used</span> <span class="o">=</span> <span class="n">now</span>
         <span class="c1"># call your OpenAI API</span>
 </code></pre></div>
-<p>✅ 3. Use Small Models First</p>
+<ol>
+<li>Use Small Models First</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -1708,7 +1718,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>➡️ Use gpt-3.5-turbo by default for text.</p>
+<p>Use gpt-3.5-turbo by default for text.</p>
 </blockquote>
 <hr />
 <h2 id="104-optimize-image-inference-replicate">10.4 Optimize Image Inference (Replicate)<a class="headerlink" href="#104-optimize-image-inference-replicate" title="Permanent link">&para;</a></h2>
@@ -1739,7 +1749,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>✅ You can also pre-generate results for demos to avoid live inference costs.</p>
+<p>You can also pre-generate results for demos to avoid live inference costs.</p>
 </blockquote>
 <hr />
 <h2 id="105-monitoring-usage-logs">10.5 Monitoring Usage &amp; Logs<a class="headerlink" href="#105-monitoring-usage-logs" title="Permanent link">&para;</a></h2>
@@ -1784,7 +1794,7 @@
 </blockquote>
 <hr />
 <h2 id="106-add-logging-to-your-backend">10.6 Add Logging to Your Backend<a class="headerlink" href="#106-add-logging-to-your-backend" title="Permanent link">&para;</a></h2>
-<p><strong>📄 utils/logger.py</strong>
+<p><strong>utils/logger.py</strong>
 <div class="highlight"><pre><span></span><code>    <span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">log_usage</span><span class="p">(</span><span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">input_data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;logs.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -1886,8 +1896,13 @@ Great for apps you plan to monetize later!</p>
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

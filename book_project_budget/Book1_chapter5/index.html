@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1491,7 +1493,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1594,10 +1598,12 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-5-building-the-frontend-ui">📘 Chapter 5: Building the Frontend UI<a class="headerlink" href="#chapter-5-building-the-frontend-ui" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-5-building-the-frontend-ui">Chapter 5: Building the Frontend UI<a class="headerlink" href="#chapter-5-building-the-frontend-ui" title="Permanent link">&para;</a></h1>
 <h2 id="51-choosing-your-ui-strategy">5.1 Choosing Your UI Strategy<a class="headerlink" href="#51-choosing-your-ui-strategy" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1629,22 +1635,22 @@
 </tr>
 </tbody>
 </table>
-<p>✅ For professional, portfolio-ready apps: Use React + Vercel
-✅ For fast, model-focused demos: Use Gradio + Hugging Face</p>
+<p>For professional, portfolio-ready apps: Use React + Vercel<br />
+For fast, model-focused demos: Use Gradio + Hugging Face</p>
 <hr />
 <h2 id="52-setting-up-a-react-frontend-with-api-integration">5.2 Setting Up a React Frontend (with API Integration)<a class="headerlink" href="#52-setting-up-a-react-frontend-with-api-integration" title="Permanent link">&para;</a></h2>
-<p><strong>📂 Folder: frontend/</strong>
+<p><strong>Folder: frontend/</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>npx<span class="w"> </span>create-react-app<span class="w"> </span>frontend
 <span class="w">    </span><span class="nb">cd</span><span class="w"> </span>frontend
 <span class="w">    </span>npm<span class="w"> </span>install
 </code></pre></div></p>
-<p><strong>🌐 Add .env in frontend/</strong>
+<p><strong>Add .env in frontend/</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nv">REACT_APP_API_URL</span><span class="o">=</span>http://localhost:8000
 <span class="w">    </span>Make<span class="w"> </span>sure<span class="w"> </span>to<span class="w"> </span>restart<span class="w"> </span>npm<span class="w"> </span>start<span class="w"> </span>after<span class="w"> </span>editing<span class="w"> </span>.env.
 </code></pre></div></p>
 <hr />
 <h2 id="53-basic-frontend-example-meme-generator-ui">5.3 Basic Frontend Example: Meme Generator UI<a class="headerlink" href="#53-basic-frontend-example-meme-generator-ui" title="Permanent link">&para;</a></h2>
-<p><strong>📄 src/App.js</strong>
+<p><strong>src/App.js</strong>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;react&quot;</span><span class="p">;</span>
 <span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">prompt</span><span class="p">,</span><span class="w"> </span><span class="nx">setPrompt</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
@@ -1730,7 +1736,7 @@
 <hr />
 <h2 id="56-connecting-to-gradio-instead-alternative-ui">5.6 Connecting to Gradio Instead (Alternative UI)<a class="headerlink" href="#56-connecting-to-gradio-instead-alternative-ui" title="Permanent link">&para;</a></h2>
 <p>For rapid prototyping, use Gradio directly instead of building a frontend:
-<strong>📄 app.py</strong>
+<strong>app.py</strong>
 <div class="highlight"><pre><span></span><code>    <span class="kn">import</span><span class="w"> </span><span class="nn">gradio</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gr</span>
     <span class="kn">from</span><span class="w"> </span><span class="nn">cartoonize</span><span class="w"> </span><span class="kn">import</span> <span class="n">cartoonize_image</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
@@ -1780,8 +1786,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

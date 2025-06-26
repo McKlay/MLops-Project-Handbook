@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-11-graphs-functions-tffunction" class="md-skip">
+        <a href="#chapter-11-prompt-engineering-basics" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1212,72 +1214,114 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#111-why-graphs" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      11.1 Why Graphs?
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#112-enter-tffunction" class="md-nav__link">
+  <a href="#opening-reflection-words-as-levers" class="md-nav__link">
     <span class="md-ellipsis">
-      11.2 Enter @tf.function
+      Opening Reflection: Words as Levers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#113-benefits-of-using-tffunction" class="md-nav__link">
+  <a href="#111-what-is-prompt-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      11.3 Benefits of Using @tf.function
+      11.1 What Is Prompt Engineering?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#114-gotchas-debugging-tips" class="md-nav__link">
+  <a href="#112-prompt-structure-the-core-recipe" class="md-nav__link">
     <span class="md-ellipsis">
-      11.4 Gotchas &amp; Debugging Tips
+      11.2 Prompt Structure: The Core Recipe
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.2 Prompt Structure: The Core Recipe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-sentiment-analysis-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (Sentiment Analysis Prompt):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-common-prompting-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Common Prompting Tasks
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#115-input-signatures-optional" class="md-nav__link">
+  <a href="#114-techniques-that-boost-prompt-quality" class="md-nav__link">
     <span class="md-ellipsis">
-      11.5 Input Signatures (Optional)
+      11.4 Techniques That Boost Prompt Quality
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#116-retrieving-the-graph" class="md-nav__link">
+  <a href="#115-prompt-engineering-in-code-openai" class="md-nav__link">
     <span class="md-ellipsis">
-      11.6 Retrieving the Graph
+      11.5 Prompt Engineering in Code (OpenAI)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#117-common-use-cases" class="md-nav__link">
+  <a href="#116-when-prompting-fails-debug-like-a-builder" class="md-nav__link">
     <span class="md-ellipsis">
-      11.7 Common Use Cases
+      11.6 When Prompting Fails: Debug Like a Builder
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#118-summary" class="md-nav__link">
+  <a href="#117-builders-perspective-your-prompt-is-a-prototype" class="md-nav__link">
     <span class="md-ellipsis">
-      11.8 Summary
+      11.7 Builder’s Perspective: Your Prompt Is a Prototype
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1491,7 +1535,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1510,72 +1556,114 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#111-why-graphs" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      11.1 Why Graphs?
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#112-enter-tffunction" class="md-nav__link">
+  <a href="#opening-reflection-words-as-levers" class="md-nav__link">
     <span class="md-ellipsis">
-      11.2 Enter @tf.function
+      Opening Reflection: Words as Levers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#113-benefits-of-using-tffunction" class="md-nav__link">
+  <a href="#111-what-is-prompt-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      11.3 Benefits of Using @tf.function
+      11.1 What Is Prompt Engineering?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#114-gotchas-debugging-tips" class="md-nav__link">
+  <a href="#112-prompt-structure-the-core-recipe" class="md-nav__link">
     <span class="md-ellipsis">
-      11.4 Gotchas &amp; Debugging Tips
+      11.2 Prompt Structure: The Core Recipe
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.2 Prompt Structure: The Core Recipe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-sentiment-analysis-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (Sentiment Analysis Prompt):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-common-prompting-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Common Prompting Tasks
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#115-input-signatures-optional" class="md-nav__link">
+  <a href="#114-techniques-that-boost-prompt-quality" class="md-nav__link">
     <span class="md-ellipsis">
-      11.5 Input Signatures (Optional)
+      11.4 Techniques That Boost Prompt Quality
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#116-retrieving-the-graph" class="md-nav__link">
+  <a href="#115-prompt-engineering-in-code-openai" class="md-nav__link">
     <span class="md-ellipsis">
-      11.6 Retrieving the Graph
+      11.5 Prompt Engineering in Code (OpenAI)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#117-common-use-cases" class="md-nav__link">
+  <a href="#116-when-prompting-fails-debug-like-a-builder" class="md-nav__link">
     <span class="md-ellipsis">
-      11.7 Common Use Cases
+      11.6 When Prompting Fails: Debug Like a Builder
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#118-summary" class="md-nav__link">
+  <a href="#117-builders-perspective-your-prompt-is-a-prototype" class="md-nav__link">
     <span class="md-ellipsis">
-      11.8 Summary
+      11.7 Builder’s Perspective: Your Prompt Is a Prototype
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1594,112 +1682,234 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-11-graphs-functions-tffunction">Chapter 11: Graphs &amp; Functions (@tf.function)<a class="headerlink" href="#chapter-11-graphs-functions-tffunction" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>“<em>First you write Python. Then you write TensorFlow. Then you make Python act like TensorFlow.</em>”</p>
-</blockquote>
+
+<h1 id="chapter-11-prompt-engineering-basics">Chapter 11: Prompt Engineering Basics<a class="headerlink" href="#chapter-11-prompt-engineering-basics" title="Permanent link">&para;</a></h1>
+<p><em>“Talk to models like you mean it.”</em></p>
+<p>This chapter is one of the most <strong>human</strong> in this journey — it’s not about code, or containers, or GPUs. It’s about <strong>language</strong>.
+And how we, as builders, can shape AI behavior simply by choosing the right words.</p>
+<p>Welcome to the artful world of <strong>Prompt Engineering</strong>.</p>
 <hr />
-<h2 id="111-why-graphs">11.1 Why Graphs?<a class="headerlink" href="#111-why-graphs" title="Permanent link">&para;</a></h2>
-<p>Python is great for prototyping. But it’s slow when you scale to:<br />
-- Production inference<br />
-- Deployment across devices<br />
-- Multi-GPU/TPU execution<br />
-- Model export for TFLite or TensorFlow Serving</p>
-<p>TensorFlow solves this with graphs: dataflow representations that can be optimized and executed outside the Python runtime.</p>
-<hr />
-<h2 id="112-enter-tffunction">11.2 Enter @tf.function<a class="headerlink" href="#112-enter-tffunction" title="Permanent link">&para;</a></h2>
-<p>You write regular Python—but TensorFlow traces it once and converts it into a graph.</p>
-<p>✅ Example:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
-
-<span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">compute</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">compute</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)))</span>  <span class="c1"># tf.Tensor(11.0, shape=(), dtype=float32)</span>
-</code></pre></div>
-This runs like Python but is compiled under the hood.</p>
-<hr />
-<h2 id="113-benefits-of-using-tffunction">11.3 Benefits of Using @tf.function<a class="headerlink" href="#113-benefits-of-using-tffunction" title="Permanent link">&para;</a></h2>
+<h2 id="this-chapter-covers">This Chapter Covers<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Faster execution: Runs as a graph instead of interpreted Python  </li>
-<li>Cross-platform compatibility: Can run on GPUs, TPUs, mobile, etc.  </li>
-<li>Serialization: Enables saving models in SavedModel format  </li>
-<li>Deployment: Used in TensorFlow Serving, TFLite, and TF.js</li>
+<li>What prompt engineering is (and why it matters)</li>
+<li>The structure of a good prompt</li>
+<li>Task types: classify, generate, reason, summarize</li>
+<li>Techniques: instruction, examples, tone, constraints</li>
+<li>Builder’s lens: shaping intelligence through intention</li>
 </ul>
 <hr />
-<h2 id="114-gotchas-debugging-tips">11.4 Gotchas &amp; Debugging Tips<a class="headerlink" href="#114-gotchas-debugging-tips" title="Permanent link">&para;</a></h2>
-<p>❗ Be careful of Python-side effects:
-<div class="highlight"><pre><span></span><code><span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">bad_func</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This won&#39;t show up&quot;</span><span class="p">)</span>  <span class="c1"># Runs only during tracing, not each call</span>
-</code></pre></div>
-Only TensorFlow ops are tracked. Use <code>tf.print()</code> instead of Python <code>print()</code>:
-<div class="highlight"><pre><span></span><code><span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">good_func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">tf</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;Value of x:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-</code></pre></div></p>
+<h2 id="opening-reflection-words-as-levers">Opening Reflection: Words as Levers<a class="headerlink" href="#opening-reflection-words-as-levers" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“Give me the right words, and I will move the model.”</em></p>
+</blockquote>
+<p>You don’t need to change the architecture.
+You don’t need to retrain the weights.
+You don’t even need to touch the API.</p>
+<p>You just need to say the right thing — in the right way — and watch the model become:</p>
+<ul>
+<li>A poet</li>
+<li>A helper</li>
+<li>A data analyst</li>
+<li>A sarcastic comedian</li>
+<li>A highly specific meme captionist</li>
+</ul>
+<p>This is <strong>prompt engineering</strong>:
+The art of talking to machines… and getting exactly what you meant.</p>
 <hr />
-<h2 id="115-input-signatures-optional">11.5 Input Signatures (Optional)<a class="headerlink" href="#115-input-signatures-optional" title="Permanent link">&para;</a></h2>
-<p>Restrict the function to a fixed input type and shape for optimization:
-<div class="highlight"><pre><span></span><code><span class="nd">@tf</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="n">input_signature</span><span class="o">=</span><span class="p">[</span><span class="n">tf</span><span class="o">.</span><span class="n">TensorSpec</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="kc">None</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)])</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">model</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</code></pre></div>
-This makes tracing more predictable and speeds up model serving.</p>
+<h2 id="111-what-is-prompt-engineering">11.1 What Is Prompt Engineering?<a class="headerlink" href="#111-what-is-prompt-engineering" title="Permanent link">&para;</a></h2>
+<p><strong>Prompt engineering</strong> is the craft of designing inputs to language models (e.g. GPT, Claude, Mistral) that guide the model to produce useful, accurate, or creative output.
+It’s part programming, part psychology, part UX.</p>
 <hr />
-<h2 id="116-retrieving-the-graph">11.6 Retrieving the Graph<a class="headerlink" href="#116-retrieving-the-graph" title="Permanent link">&para;</a></h2>
-<p>You can inspect the computation graph like this:
-<div class="highlight"><pre><span></span><code><span class="nd">@tf</span><span class="o">.</span><span class="n">function</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">square</span><span class="o">.</span><span class="n">get_concrete_function</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">2.0</span><span class="p">))</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">as_graph_def</span><span class="p">())</span>
+<h2 id="112-prompt-structure-the-core-recipe">11.2 Prompt Structure: The Core Recipe<a class="headerlink" href="#112-prompt-structure-the-core-recipe" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Instruction  
+(Optional) Examples  
+Constraints / Formatting  
+User Input
 </code></pre></div>
-This shows you the internal graph ops (used for debugging, export, or tooling).</p>
+<h3 id="example-sentiment-analysis-prompt">Example (Sentiment Analysis Prompt):<a class="headerlink" href="#example-sentiment-analysis-prompt" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Classify the sentiment of the following sentence as Positive, Negative, or Neutral:
+Input: "I don’t love this product, but it works."
+Sentiment:</p>
+</blockquote>
+<p>The model fills in the blank: <code>"Neutral"</code></p>
 <hr />
-<h2 id="117-common-use-cases">11.7 Common Use Cases<a class="headerlink" href="#117-common-use-cases" title="Permanent link">&para;</a></h2>
+<h2 id="113-common-prompting-tasks">11.3 Common Prompting Tasks<a class="headerlink" href="#113-common-prompting-tasks" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Use Case</th>
-<th>Benefit</th>
+<th>Task Type</th>
+<th>Goal</th>
+<th>Example Prompt</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Training loops</td>
-<td>Speed boost</td>
+<td>Classification</td>
+<td>Label text (e.g., intent)</td>
+<td>“Label this text as Happy, Sad, or Angry.”</td>
 </tr>
 <tr>
-<td>Model export (SavedModel)</td>
-<td>Required</td>
+<td>Summarization</td>
+<td>Compress info</td>
+<td>“Summarize this article in 3 bullets.”</td>
 </tr>
 <tr>
-<td>TF Serving / deployment</td>
-<td>Required</td>
+<td>Generation</td>
+<td>Produce text</td>
+<td>“Write a tweet about AI in 10 words.”</td>
 </tr>
 <tr>
-<td>Writing reusable pipelines</td>
-<td>Cleaner graph structure</td>
+<td>Reasoning</td>
+<td>Chain of logic</td>
+<td>“Explain why gravity decreases with distance.”</td>
+</tr>
+<tr>
+<td>Extraction</td>
+<td>Pull structure from chaos</td>
+<td>“Extract dates and names from this text.”</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="118-summary">11.8 Summary<a class="headerlink" href="#118-summary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>@tf.function converts Python code into high-performance TensorFlow graphs.  </li>
-<li>It enables speed, portability, deployment, and tracing.  </li>
-<li>Use tf.print instead of regular print() inside graph code.  </li>
-<li>It’s a must for production workflows, but test in eager mode first.  </li>
-</ul>
+<h2 id="114-techniques-that-boost-prompt-quality">11.4 Techniques That Boost Prompt Quality<a class="headerlink" href="#114-techniques-that-boost-prompt-quality" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>Example / Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explicit roles</td>
+<td>“You are a meme caption generator…”</td>
+</tr>
+<tr>
+<td>Few-shot learning</td>
+<td>Show 1–3 examples before user input</td>
+</tr>
+<tr>
+<td>Chain of Thought</td>
+<td>“Let’s think step by step…”</td>
+</tr>
+<tr>
+<td>Output formatting</td>
+<td>“Respond in JSON: {‘label’: … }”</td>
+</tr>
+<tr>
+<td>Style injection</td>
+<td>“Respond as if you're Shakespeare.”</td>
+</tr>
+</tbody>
+</table>
 <hr />
+<h2 id="115-prompt-engineering-in-code-openai">11.5 Prompt Engineering in Code (OpenAI)<a class="headerlink" href="#115-prompt-engineering-in-code-openai" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">openai</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">openai</span><span class="o">.</span><span class="n">ChatCompletion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+  <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-3.5-turbo&quot;</span><span class="p">,</span>
+  <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;You are a product description writer.&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Describe a smart water bottle for athletes.&quot;</span><span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s2">&quot;choices&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;message&quot;</span><span class="p">][</span><span class="s2">&quot;content&quot;</span><span class="p">])</span>
+</code></pre></div>
+<p>This is where the <strong>magic</strong> happens.</p>
+<hr />
+<h2 id="116-when-prompting-fails-debug-like-a-builder">11.6 When Prompting Fails: Debug Like a Builder<a class="headerlink" href="#116-when-prompting-fails-debug-like-a-builder" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Try This Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Too generic / vague</td>
+<td>Add examples or clarify instruction</td>
+</tr>
+<tr>
+<td>Output too long/short</td>
+<td>Add constraints: “&lt;30 words” or “3 lines”</td>
+</tr>
+<tr>
+<td>Repeats itself</td>
+<td>Add: “Do not repeat yourself.”</td>
+</tr>
+<tr>
+<td>Hallucinates info</td>
+<td>Add: “Only use the info provided.”</td>
+</tr>
+</tbody>
+</table>
+<p>Prompting is <strong>iterative</strong>.
+You’ll get better through <strong>play</strong>.</p>
+<hr />
+<h2 id="117-builders-perspective-your-prompt-is-a-prototype">11.7 Builder’s Perspective: Your Prompt Is a Prototype<a class="headerlink" href="#117-builders-perspective-your-prompt-is-a-prototype" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>“<em>First you write Python. Then you write TensorFlow. Then you make Python act like TensorFlow.</em>”</p>
+<p><em>“In a world where models know everything,
+what matters is how you ask the question.”</em></p>
 </blockquote>
+<p>Your prompt:</p>
+<ul>
+<li>Is your interface</li>
+<li>Is your architecture</li>
+<li>Is your business logic</li>
+<li>Is your UX</li>
+</ul>
+<p>It's the single string of text that determines whether your app feels:</p>
+<ul>
+<li>Confident</li>
+<li>Helpful</li>
+<li>Funny</li>
+<li>Human</li>
+</ul>
+<p>You don’t need to <strong>know more</strong>.
+You need to <strong>ask better</strong>.</p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prompting = shaping behavior</td>
+<td>No code changes needed</td>
+</tr>
+<tr>
+<td>Clear, specific input</td>
+<td>More reliable, useful outputs</td>
+</tr>
+<tr>
+<td>Few-shot + structure help</td>
+<td>Reduces hallucination, increases control</td>
+</tr>
+<tr>
+<td>Prompt = soft interface</td>
+<td>Easy to change, test, and improve</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“The model has intelligence.
+You have intention.
+Prompt engineering is the conversation between the two.”</em></p>
+</blockquote>
+<hr />
 
 
 
@@ -1707,8 +1917,13 @@ This shows you the internal graph ops (used for debugging, export, or tooling).<
 
 
 
+  
+  
 
 
+
+
+  
 
 
 
