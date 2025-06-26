@@ -1,40 +1,56 @@
-# Part I: Understanding TensorFlow Fundamentals
+---
+hide:
+  - toc
+---
 
-> “*You can’t build AI until you understand the engine that powers it.*”
+# Part I: Development & Deployment Essentials
+
+> *“Before you build AI, you need to master the invisible tools that hold everything together.”*
 
 ---
 
-Part I lays the foundation for everything you’ll do with TensorFlow. Whether you’re building a neural network, deploying to mobile, or diving into transformers, it all starts here—with understanding what TensorFlow actually is, how it works under the hood, and how to set it up properly.
+Part I is your **foundation of tooling**—the behind-the-scenes infrastructure that makes your AI projects reliable, scalable, and professional. While machine learning may grab the spotlight, it's tools like FastAPI, Docker, and CI/CD that bring your ideas to life and into production.
 
-By the end of this section, you’ll know how TensorFlow thinks, and how to speak its language fluently—starting with tensors, variables, and graphs.
+This section demystifies those tools. No more guessing how `.env` files work, or why CI/CD pipelines are essential. You’ll get clear explanations, practical examples, and real-world integration tips for every tool in the modern AI developer’s kit.
 
-✅ Chapter 1: What is TensorFlow?
-An introduction to the TensorFlow ecosystem, its purpose, and its core components. You’ll learn what makes it different from other frameworks and why it’s more than just a library—it's a complete ML platform.
+✅ Chapter 1: CI/CD – Continuous Integration & Deployment  
 
-✅ Chapter 2: Architecture of TensorFlow
-A deeper look into how TensorFlow works internally. You'll explore computation graphs, eager execution, the gradient engine, the deployment stack (TFLite, TFX), and how everything fits together.
+- Understand what CI/CD means in practice. You’ll learn how to automate testing, builds, and deployments using GitHub Actions. We’ll show how this applies to AI workflows—like auto-deploying a model to Hugging Face or Vercel on every commit.
 
-✅ Chapter 3: TensorFlow vs Keras
-Not all Keras is TensorFlow—and not all TensorFlow needs Keras. This chapter clarifies the relationship between them, compares standalone Keras with tf.keras, and shows which one to use when (spoiler: it's tf.keras).
+✅ Chapter 2: FastAPI Explained  
 
-✅ Chapter 4: Installing TensorFlow (Windows, Linux, MacOS)
-You’ll learn how to properly install TensorFlow with or without GPU support, how to create virtual environments, and how to verify CUDA and device configuration. Practical, essential, and clean.
+- A clean, modern, async-first Python web framework perfect for AI backends. You’ll learn how to define API endpoints, serve ML models, handle JSON inputs/outputs, and use `uvicorn` for local testing. This is the foundation for most scalable AI APIs today.
 
-✅ Chapter 5: First Tensor Example – Hello, tf.Tensor!
-This is your “hello world” moment. You’ll learn how to create tensors, inspect them, perform basic math, and understand shapes, ranks, and types. It's the first hands-on look at how TensorFlow represents and manipulates data.
+✅ Chapter 3: Gradio vs. React  
+
+- What’s better for your AI app’s frontend—a quick Gradio demo or a custom React interface? This chapter compares both approaches, including pros/cons, hosting options, and how to transition from one to the other.
+
+✅ Chapter 4: Docker for AI Apps  
+
+- Discover how Docker lets you package your entire ML app—including Python code, dependencies, and model files—into a portable container. We’ll walk through creating a `Dockerfile`, building your image, and pushing to cloud platforms like Railway or GCP.
+
+✅ Chapter 5: .env Files & Secret Management  
+
+- Learn how to manage secrets like API keys, access tokens, and environment configs securely. This chapter covers `.env` syntax, using `dotenv` in Python, and how secrets are handled on platforms like Vercel, Railway, and Render.
+
+✅ Chapter 6: Railway, Hugging Face, and Render Compared  
+
+- Not all deployment platforms are created equal. This chapter compares three of the most popular platforms for AI deployment:
+
+* **Railway** (best for Docker/FastAPI backends)
+* **Hugging Face Spaces** (best for Gradio or lightweight demos)
+* **Render** (a versatile fallback with generous free tier)
+  We’ll look at startup time, GPU support, pricing, environment setup, and which one to use when.
 
 After Part I, You Will Be Able To:
 
-- Understand the role and scope of TensorFlow in machine learning  
-
-- Differentiate between TensorFlow and Keras (and when to use each)  
-
-- Set up your local dev environment (with GPU acceleration)  
-
-- Create and manipulate basic tensors with confidence  
-
-- Prepare for deeper topics like training models and computing gradients  
+* Use CI/CD to automate your AI deployment workflow
+* Create secure, fast AI backends using FastAPI
+* Decide whether to prototype with Gradio or customize with React
+* Package your ML app into a Docker container
+* Manage environment variables and secrets safely
+* Choose the best hosting platform for your project’s needs
 
 ---
 
-> Part I is where the groundwork is laid. The rest of the book builds upon it—one tensor at a time.
+> *Part I turns you from a script-runner into an engineer—someone who ships projects that are modular, secure, and scalable.*

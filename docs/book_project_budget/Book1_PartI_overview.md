@@ -1,40 +1,36 @@
-# Part I: Understanding TensorFlow Fundamentals
+---
+hide:
+  - toc
+---
 
-> “*You can’t build AI until you understand the engine that powers it.*”
+# Part I: Foundations
+
+> *“Before you ship AI to the world, you need to understand the building blocks—tools, models, and the trade-offs that shape your project.”*
 
 ---
 
-Part I lays the foundation for everything you’ll do with TensorFlow. Whether you’re building a neural network, deploying to mobile, or diving into transformers, it all starts here—with understanding what TensorFlow actually is, how it works under the hood, and how to set it up properly.
+Part I lays the **foundational mindset and technical awareness** you’ll need before diving into your first AI/ML project. Too many tutorials throw you straight into notebooks without explaining the *why* behind your choices: local vs. cloud inference, code vs. API, free vs. paid—this section fixes that.
 
-By the end of this section, you’ll know how TensorFlow thinks, and how to speak its language fluently—starting with tensors, variables, and graphs.
+You’ll learn how real-world AI projects are structured, what makes them viable, and how to pick the right tools to match your goals and budget.
 
-✅ Chapter 1: What is TensorFlow?
-An introduction to the TensorFlow ecosystem, its purpose, and its core components. You’ll learn what makes it different from other frameworks and why it’s more than just a library—it's a complete ML platform.
+✅ Chapter 1: Understanding the Landscape of AI/ML Projects  
 
-✅ Chapter 2: Architecture of TensorFlow
-A deeper look into how TensorFlow works internally. You'll explore computation graphs, eager execution, the gradient engine, the deployment stack (TFLite, TFX), and how everything fits together.
+- Explore what makes an AI/ML project “good.” You'll learn how to balance creativity, feasibility, and deployment readiness. We’ll also walk through popular beginner-friendly use cases like meme generators, cartoonizers, and chatbots—plus how API vs local training decisions shape them.
 
-✅ Chapter 3: TensorFlow vs Keras
-Not all Keras is TensorFlow—and not all TensorFlow needs Keras. This chapter clarifies the relationship between them, compares standalone Keras with tf.keras, and shows which one to use when (spoiler: it's tf.keras).
+✅ Chapter 2: Essential Tools & Technologies  
 
-✅ Chapter 4: Installing TensorFlow (Windows, Linux, MacOS)
-You’ll learn how to properly install TensorFlow with or without GPU support, how to create virtual environments, and how to verify CUDA and device configuration. Practical, essential, and clean.
-
-✅ Chapter 5: First Tensor Example – Hello, tf.Tensor!
-This is your “hello world” moment. You’ll learn how to create tensors, inspect them, perform basic math, and understand shapes, ranks, and types. It's the first hands-on look at how TensorFlow represents and manipulates data.
+- This chapter gives you the lay of the land. From Python and JavaScript to PyTorch and Hugging Face, you’ll get a working map of the tools you’ll actually use to build AI. We also review free and paid APIs, plus deployment platforms like Vercel, Railway, and Hugging Face Spaces.
 
 After Part I, You Will Be Able To:
 
-- Understand the role and scope of TensorFlow in machine learning  
-
-- Differentiate between TensorFlow and Keras (and when to use each)  
-
-- Set up your local dev environment (with GPU acceleration)  
-
-- Create and manipulate basic tensors with confidence  
-
-- Prepare for deeper topics like training models and computing gradients  
+* Describe the end-to-end flow of an AI project: from concept to deployment
+* Choose between using a pretrained model locally or via a hosted API
+* Identify tools that match your budget, skill level, and deployment needs
+* Understand how cloud platforms and model APIs fit into modern AI workflows
+* Move into project development with clarity and confidence
 
 ---
 
-> Part I is where the groundwork is laid. The rest of the book builds upon it—one tensor at a time.
+> *Part I is where you pause, observe the battlefield, and pick the right tools for your mission. The real building begins in Part II.*
+
+---

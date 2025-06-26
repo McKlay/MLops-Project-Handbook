@@ -5,51 +5,103 @@
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=McKlay.MLops-Project-Handbook)
 
-# AI/ML Companion Site
+![Dark Mode](https://img.shields.io/badge/theme-dark--mode-111827?style=flat&logo=materialdesign&logoColor=white)
+![Built with Python](https://img.shields.io/badge/built%20with-Python-3776AB?style=flat&logo=python&logoColor=white)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/McKlay/MLops-Project-Handbook/blob/main/path_to_notebook.ipynb)
 
-This repository hosts two structured, book-style documentation projects combined into a single, modular MkDocs-powered site. It serves as a comprehensive resource for developers, engineers, and researchers working at the intersection of AI, ML, and MLOps.
+# AI/ML Builder’s Companion Site
 
-Whether you're building end-to-end AI applications or exploring deployment strategies, this companion site provides practical guidance and tooling insights grounded in real-world project experience.
+> “From cost-conscious builders to cloud-ready engineers—this is your blueprint for real-world AI.”
 
----
-
-## 📚 Included Books
-
-- `📘 Mastering AI/ML Projects on a Budget`  
-  A hands-on guide to designing and deploying AI/ML applications using cost-effective workflows, open-source tools, and free-tier infrastructure such as Hugging Face Spaces, Railway, and Vercel.
-
-- `📘 AI/ML Project Toolkit`  
-  A technical handbook detailing key development tools and deployment patterns, including CI/CD, Docker, FastAPI, Gradio, secret management, cloud hosting options, and production-readiness strategies.
-
-**Built With:**
-- MkDocs + Material Theme
-- Hosted via GitHub Pages
-- Automated using GitHub Actions
-
-**Live Site** [AI/ML Companion Site](https://mcklay.github.io/MLops-Project-Handbook/)
+**Live Site**: [https://mcklay.github.io/MLops-Project-Handbook/](https://mcklay.github.io/MLops-Project-Handbook/)  
+Author: [Clay Mark Sarte](https://github.com/McKlay)  
+Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) | Powered by real-world AI projects & MLOps experience
 
 ---
 
-## Getting Started
+## 📘 What This Is
+
+The **AI/ML Builder’s Companion Site** is a dual-book documentation project designed to guide engineers, students, and AI developers through:
+
+1. **Practical AI/ML Project Development**
+2. **Modern Deployment and Tooling Strategies**
+
+Each book is modular, deployment-aware, and grounded in actual project experience—from deploying Hugging Face demos to scaling Dockerized APIs.
+
+---
+
+## Included Books
+
+### 📘 Mastering AI/ML Projects on a Budget  
+*A practical guide to building and shipping AI apps using free-tier tools like Hugging Face, Railway, Vercel, and Replicate.*
+
+- Build full AI pipelines—from model to UI  
+- Choose between local or API-based inference  
+- Deploy backend & frontend on cloud platforms  
+- Avoid billing pitfalls using smart cost strategies
+
+### 📘 AI/ML Project Toolkit  
+*A tool-by-tool breakdown of the ecosystem: FastAPI, Gradio, CI/CD, Docker, databases, logging, and more.*
+
+- Learn the tools that productionize AI systems  
+- Build secure and scalable infrastructures  
+- Understand rate limits, GPU runtimes, auth, and cloud hosting  
+- Develop a builder’s mindset and ship faster
+
+---
+
+## Book Structure & Table of Contents
+
+Both books are split into logical, practical parts:
+
+### 🔹 Mastering AI/ML Projects on a Budget
+- Part I: Foundations
+- Part II: Project Development (Backend, UI, APIs)
+- Part III: Free-Tier Deployment Strategies
+- Part IV: Cost-Optimization & API Scaling
+- Part V: Builder Roadmap & Templates
+
+### 🔹 AI/ML Project Toolkit
+- Part I: Dev & Deployment Essentials (FastAPI, Docker, CI/CD)
+- Part II: AI/ML Tools (Transformers, APIs, Tokenizers)
+- Part III: Scaling, Monitoring, Security (Rate Limits, Logs, Auth)
+- Part IV: Philosophy & Builder Mindset
+
+---
+
+## Run the Site Locally
 
 ```bash
-# Install dependencies
+git clone https://github.com/McKlay/MLops-Project-Handbook.git
+cd MLops-Project-Handbook
 pip install -r requirements.txt
+mkdocs serve
+# Open: http://127.0.0.1:8000
+````
+
+To deploy via GitHub Pages:
+
+```bash
+mkdocs gh-deploy
 ```
 
 ---
 
-# Preview the site locally
-mkdocs serve
+## Contributing
 
----
+You’re welcome to:
 
-## Status
-The content of the site is still a work in progress.
+* Open issues for bugs, improvements, or new chapter ideas
+* Submit PRs for formatting, typo fixes, or better code examples
+* Share your own deployment tips or platform configs
 
 ---
 
 ## License
 
-MIT License © Clay Mark Sarte  
-Free to learn, fork, and remix with attribution.
+MIT License © Clay Mark Sarte
+Feel free to learn, fork, and remix—with attribution.
+
+> “Every working ML system starts with an idea. This site helps you ship it.”
+
+---

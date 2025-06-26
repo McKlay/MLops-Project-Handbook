@@ -1,40 +1,38 @@
-# Part IV Summary: Natural Language Processing with TensorFlow
+---
+hide:
+  - toc
+---
 
-In Part IV, we shift from numeric tensors to language understanding. This section explores how TensorFlow handles text—turning characters and sentences into meaningful vectors that machines can process.
+# Part IV: Cost-Optimized Strategies
 
-From classic NLP methods like Bag-of-Words and TF-IDF, to advanced architectures like LSTMs and Transformers, this part teaches you to build systems that interpret and generate language.
+> *“Free-tier is not a limit—it’s a challenge. How far can you go before you need to pay?”*
 
 ---
 
-Here’s what you’ll master across Chapters 21 to 25:
+Part IV is all about **stretching your resources smartly**. Whether you're bootstrapping an idea, building a demo for clients, or simply learning the ropes, this section teaches you how to **make the most out of free-tier plans**—without compromising quality or performance.
 
-✅ Chapter 21: Text Preprocessing & Tokenization
-Learn how to clean, tokenize, and vectorize raw text using TensorFlow’s TextVectorization layer and Keras’s Tokenizer API. You’ll prepare sequence data for embedding layers and deep NLP models.
+You’ll learn optimization strategies for each platform, how to monitor your usage, and when (and what) to invest in once you start scaling.
 
-✅ Chapter 22: TF-IDF, Bag-of-Words Representations
-Explore foundational NLP techniques—count-based and frequency-based vectorization. Use CountVectorizer and TfidfVectorizer from scikit-learn to create interpretable, fast baselines for text classification tasks.
+✅ Chapter 10: How to Stay Within Free Tiers  
 
-✅ Chapter 23: RNNs & LSTMs
-Dive into Recurrent Neural Networks and Long Short-Term Memory (LSTM) layers for learning from sequential text. You’ll build a sentiment classifier and understand how memory helps capture temporal context.
+- We break down usage limits for Hugging Face Spaces, Railway, and Render. Learn when to use **Gradio vs FastAPI**, how to avoid **cold starts**, and how to schedule activity to minimize idle time. This chapter gives you tactical strategies to stay 100% free.
 
-✅ Chapter 24: Transformers in TensorFlow (from Scratch)
-Discover the self-attention mechanism and build a mini Transformer Encoder using pure TensorFlow. This chapter provides an inside-out understanding of what powers BERT, GPT, and modern NLP architectures.
+✅ Chapter 11: Investing Smartly in Paid APIs  
 
-✅ Chapter 25: NLP Projects – Spam Detection, Sentiment Analysis, Autocomplete
-Apply everything you’ve learned in three mini-projects that span traditional and deep learning workflows. You’ll build and deploy real models that understand, classify, and even complete natural language.
+- If you decide to pay for usage, **pay wisely**. We compare pricing for OpenAI, Replicate, and Stability AI APIs, then show you how to set **rate limits**, implement **usage caps**, and detect runaway costs before they happen. We also introduce billing dashboards and quota alerts.
 
----
+✅ Chapter 12: Scaling Beyond Free Tiers  
+
+- When you’ve outgrown the free plans, what should you upgrade first? We explore when to go PRO on Hugging Face, move from Railway Hobby to Pro, or start paying for GPU runtime. We also cover **student credits**, the GitHub Student Pack, and grants that help you scale sustainably.
 
 After Part IV, You Will Be Able To:
 
-- Preprocess text and convert it to model-ready tensors
+* Maximize usage within free-tier limits across all major services
+* Implement cost-saving techniques like batching, lazy loading, and caching
+* Set up budget alerts and usage monitoring
+* Know when (and what) to start paying for as your project grows
+* Leverage student benefits and cloud credits to keep building without hitting a wall
 
-- Choose the right representation (TF-IDF, embeddings, etc.) for your task
+---
 
-- Build sequence models using RNNs, LSTMs, and Transformers
-
-- Create and deploy end-to-end NLP systems like sentiment analyzers or spam filters
-
-- Understand the inner workings of attention-based architectures
-
-> Part IV turns raw text into signals of meaning—paving the way for intelligent systems that speak, understand, and respond.
+> *This part turns you from a builder into a strategist—someone who knows how to scale smart, not just fast.*

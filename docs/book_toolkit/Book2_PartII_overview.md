@@ -1,55 +1,46 @@
-#  Part II: Tensor Mechanics and Computation
+---
+hide:
+  - toc
+---
 
-> “*Before models can learn, data must be shaped, sliced, and understood.*”
+# Part II: AI/ML-Specific Tooling
+
+> *“You don’t just need tools—you need the right tools for AI.”*
 
 ---
 
-In Part II, you move from simply knowing what a tensor is to mastering how to manipulate, structure, and compute with them efficiently. This section gives you the foundational mechanics required to build, debug, and optimize any deep learning pipeline.
+Part II shifts the focus to the **core components of AI/ML development**—from GPU runtimes and tokenizers to transformer models and inference pipelines. These are the tools that directly impact how your models run, scale, and serve real-world tasks.
 
-These chapters are not flashy—but they’re absolutely essential. Every model, from CNNs to Transformers, starts with clean tensor ops under the hood.
+This section explains these tools *practically*—with examples drawn from real projects like sentiment analysis, image generation, and chatbot deployment. If you've ever wondered what a tokenizer really does or what "inference mode" actually means, you're in the right place.
 
----
+✅ Chapter 7: What Is a GPU Runtime?  
 
-✅ Chapter 6: Tensor Indexing & Reshaping
+- Learn why GPU runtimes matter, when you need them, and how to access them for free on platforms like Kaggle, Colab, or Hugging Face. We cover GPU vs CPU performance for training and inference, memory pitfalls, and runtime debugging.
 
-You’ll learn how to slice and reshape tensors like a ninja: selecting rows, flattening shapes, adding batch dimensions, and preparing inputs for layers.
+✅ Chapter 8: Transformers, Tokenizers & Hugging Face Ecosystem  
 
-✅ Chapter 7: Tensor Broadcasting
+- Dive into the modern backbone of AI—transformer-based models. We explain the role of tokenizers, model configs, and pipelines. You'll learn how to use `AutoTokenizer`, `AutoModel`, and `pipeline()` from Hugging Face to run tasks like sentiment classification or summarization.
 
-One of TensorFlow’s most elegant features. This chapter demystifies how tensors of different shapes are automatically aligned and expanded during element-wise operations—no boilerplate reshaping required.
+✅ Chapter 9: Inference vs Training – Know the Difference  
 
-✅ Chapter 8: Ragged, Sparse, and String Tensors
+- Too many tutorials blur the line between training and inference. This chapter breaks it down clearly: from model freezing and dropout behavior, to `model.eval()` vs `model.train()` modes. You’ll understand when you're truly “training” vs just running predictions.
 
-Not all tensors are pretty. You’ll work with jagged text sequences (ragged), memory-efficient structures (sparse), and string tensors for natural language processing—crucial for real-world data.
+✅ Chapter 10: Understanding Replicate & Stability API  
 
-✅ Chapter 9: Variables & Trainable Parameters
+- Learn how to access powerful models (like Stable Diffusion, U-GAT-IT, etc.) via hosted inference APIs. This chapter covers endpoints, model versions, pricing patterns, authentication, and how to integrate these APIs into your own projects safely and efficiently.
 
-Meet tf.Variable, the mutable tensor that learns. You'll explore how TensorFlow stores, updates, and tracks parameters across training steps.
+✅ Chapter 11: Prompt Engineering Basics  
 
-✅ Chapter 10: Automatic Differentiation (tf.GradientTape)
-
-This is the engine behind learning. You'll record forward passes and compute gradients for optimization using TensorFlow's autodiff system—step by step.
-
-✅ Chapter 11: Graphs & Functions (@tf.function)
-
-Performance mode, engaged. You’ll convert Python into TensorFlow graphs, improving speed and enabling deployment to GPUs, TPUs, and production systems.
-
-✅ Chapter 12: Bitwise & Numerical Operations
-
-The finishing move. Learn advanced operations like clipping, rounding, modulo, one-hot encoding, and bitwise ops—used for loss design, masking, and precision tuning.
-
----
+- Text-in, magic-out? Not quite. Learn how to craft prompts that consistently guide models toward the outputs you want. We explore few-shot prompting, role-conditioning, temperature settings, and real-world examples using OpenAI and Hugging Face models.
 
 After Part II, You Will Be Able To:
 
-- Slice, reshape, and broadcast tensors confidently
+* Choose the right compute runtime for your AI tasks
+* Use transformer models and tokenizers with the Hugging Face ecosystem
+* Distinguish between training mode and inference mode (and avoid costly mistakes)
+* Integrate hosted models into your apps via Replicate or Stability AI
+* Write better prompts that improve NLP task performance
 
-- Work with variable-length and sparse data
+---
 
-- Write training loops that compute and apply gradients
-
-- Build efficient TensorFlow graphs for speed
-
-- Understand the math operations that power model internals
-
-> Part II gives you the raw power of TensorFlow. Part III shows you how to channel it into models.
+> *This part gives you the core “language” of AI systems—the invisible configurations that make or break performance.*

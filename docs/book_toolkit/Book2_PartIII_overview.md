@@ -1,57 +1,42 @@
-# Part III Summary: Model Building with TensorFlow & Keras
+---
+hide:
+  - toc
+---
 
-In Part III, we shift gears from understanding tensors and computation to actually building trainable models. This section teaches you how to construct, train, evaluate, and deploy neural networks using tf.keras, TensorFlow’s high-level model API.
+# Part III: Scalability, Monitoring & Security
 
-Whether you’re designing a simple feedforward neural network or preparing a model for production with callbacks and TensorBoard, this part forms the core skillset of any TensorFlow engineer.
+> *“Building an AI app is easy—keeping it alive, safe, and fast is the real challenge.”*
 
 ---
 
-Here’s what you’ll master across Chapters 13 to 20:  
+Part III takes you from project launch to **real-world readiness**. Once your AI app is deployed, you’ll need to manage usage spikes, avoid surprise bills, detect bugs, and protect user data. This section is your practical guide to **running production-grade AI/ML systems**—even if you’re still using free-tier platforms.
 
-✅ Chapter 13: TensorFlow Keras API – Anatomy of a Model  
+From rate limits to user auth, from log monitoring to database connections—this is where engineering discipline meets AI creativity.
 
-You’ll explore how tf.keras is structured and learn three different ways to build models: Sequential, Functional, and Subclassing. This chapter is the gateway into deep learning architecture—laying the foundation for everything that follows.
+✅ Chapter 12: Rate Limits, Cooldowns, and Billing Safety
 
-✅ Chapter 14: Building a Neural Network from Scratch
+- Learn how APIs impose rate limits and how to avoid overage charges using techniques like request batching, exponential backoff, and cooldown timers. We’ll show examples from OpenAI, Replicate, and Hugging Face Inference APIs, plus how to implement your own basic limiter.
 
-Get hands-on with your first end-to-end model: from layer initialization to compiling and training it on actual data. You'll apply everything from Chapter 13 and feel what it’s like to breathe life into a neural net.
+✅ Chapter 13: Logging, Monitoring & Debugging
 
-✅ Chapter 15: Layers & Activation Functions
+- Logs are your second pair of eyes. This chapter shows how to log requests, errors, and model outputs. You’ll learn to use tools like Railway logs, Hugging Face console, and custom logging in FastAPI to spot bugs, trace crashes, and debug silently failing models.
 
-Understand the different layer types (Dense, Conv2D, Dropout, etc.) and how to design them effectively. This chapter also dives into activation functions like ReLU, Sigmoid, and Softmax—and when to use them.
+✅ Chapter 14: Authentication, Databases & User Management
 
-✅ Chapter 16: Loss Functions & Optimizers
+- Need users to log in? Want to store data or track feedback? You’ll learn how to integrate basic authentication, manage user sessions with JWT or OAuth, and connect to databases (like SQLite, PostgreSQL, or Supabase) to store predictions, logs, or user-generated content.
 
-Explore the mathematical functions that guide your model’s learning. You’ll learn when to use categorical crossentropy vs MSE, and how optimizers like Adam, SGD, and RMSprop affect convergence.
+✅ Chapter 15: CI/CD for Teams & SaaS-Ready Projects
 
-✅ Chapter 17: Backpropagation & Gradient Descent
-
-Peek under the hood of how training actually works. This chapter demystifies backpropagation, how gradients flow through layers, and how loss and weight updates are calculated—bridging theory and TensorFlow code.
-
-✅ Chapter 18: Model Training with fit() and evaluate()
-
-This is where the magic happens: you’ll learn how to use Keras’s fit(), evaluate(), and predict() to handle training loops, batch sizes, and validation data—all with minimal code.
-
-✅ Chapter 19: Saving, Loading, and Callbacks
-
-Preserve your model with model.save(), reload it for inference, and customize training with callbacks like EarlyStopping, ModelCheckpoint, and LearningRateScheduler—tools every serious model needs.
-
-✅ Chapter 20: Visualizing Model Progress with TensorBoard
-
-You’ll learn how to monitor model training in real time using TensorBoard, TensorFlow’s built-in visualization tool. This chapter introduces logs, scalars, histograms, and graphs for debugging and performance tracking.
-
----
+- Solo projects are great—but if you’re working with a team or building a product, you need CI/CD. This chapter expands on GitHub Actions to include **team workflows**, **branch protection**, **test coverage**, and **SaaS-readiness** for continuously shipping features and updates.
 
 After Part III, You Will Be Able To:
 
-- Build models of increasing complexity, from scratch  
+* Protect your API usage with request limits and cooldown strategies
+* Monitor AI system health using logs and error tracking
+* Add authentication, user roles, and session management
+* Connect your app to a live database for persistent storage
+* Build team-friendly CI/CD workflows for shipping updates safely
 
-- Choose the right architecture, optimizer, and loss function  
+---
 
-- Train efficiently and debug performance issues  
-
-- Save and serve your models  
-
-- Visualize learning in real time with TensorBoard  
-
-> Part III transforms you from a Tensor user into a TensorFlow builder.
+> *This part is your operations manual—it turns your AI project from a fragile demo into a reliable product.*

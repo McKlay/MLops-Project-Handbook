@@ -1,55 +1,46 @@
-#  Part II: Tensor Mechanics and Computation
+---
+hide:
+  - toc
+---
 
-> “*Before models can learn, data must be shaped, sliced, and understood.*”
+# Part II: Step-by-Step AI/ML Project Development
+
+> *“You don’t need a PhD to build an AI app—just a clear path from folder to frontend.”*
 
 ---
 
-In Part II, you move from simply knowing what a tensor is to mastering how to manipulate, structure, and compute with them efficiently. This section gives you the foundational mechanics required to build, debug, and optimize any deep learning pipeline.
+Part II is where we roll up our sleeves and **build real AI/ML projects from the ground up**. This section walks you through every critical step—from organizing your repository to writing inference code, building a frontend, and integrating with paid APIs.
 
-These chapters are not flashy—but they’re absolutely essential. Every model, from CNNs to Transformers, starts with clean tensor ops under the hood.
+Unlike generic tutorials, this part focuses on **modularity**, **deployment readiness**, and **cost-efficiency**—giving you repeatable patterns you can apply to any AI idea.
 
----
+✅ Chapter 3: Setting Up Your Project Repository  
 
-✅ Chapter 6: Tensor Indexing & Reshaping
+- Learn how to structure your project folders for clean separation between backend and frontend. We’ll create a Python virtual environment, set up `requirements.txt`, `README.md`, and connect your GitHub repo with version control best practices.
 
-You’ll learn how to slice and reshape tensors like a ninja: selecting rows, flattening shapes, adding batch dimensions, and preparing inputs for layers.
+✅ Chapter 4: Building the ML Logic  
 
-✅ Chapter 7: Tensor Broadcasting
+- This chapter covers both options:  
+  (A) Running a local pretrained model like CartoonGAN using PyTorch, or  
+  (B) Using a cloud API (OpenAI, Replicate) for inference.  
 
-One of TensorFlow’s most elegant features. This chapter demystifies how tensors of different shapes are automatically aligned and expanded during element-wise operations—no boilerplate reshaping required.
+- You’ll learn how to write clean inference code, test your outputs, and prepare for integration.
 
-✅ Chapter 8: Ragged, Sparse, and String Tensors
+✅ Chapter 5: Building the Frontend UI  
 
-Not all tensors are pretty. You’ll work with jagged text sequences (ragged), memory-efficient structures (sparse), and string tensors for natural language processing—crucial for real-world data.
+- Choose your frontend framework—Vite or Create React App (CRA)—and build an engaging UI that interacts with your AI backend. We’ll cover styling tips (dark mode, export buttons), managing input/output states, and fetching predictions in real-time.
 
-✅ Chapter 9: Variables & Trainable Parameters
+✅ Chapter 6: Integrating with Paid APIs  
 
-Meet tf.Variable, the mutable tensor that learns. You'll explore how TensorFlow stores, updates, and tracks parameters across training steps.
-
-✅ Chapter 10: Automatic Differentiation (tf.GradientTape)
-
-This is the engine behind learning. You'll record forward passes and compute gradients for optimization using TensorFlow's autodiff system—step by step.
-
-✅ Chapter 11: Graphs & Functions (@tf.function)
-
-Performance mode, engaged. You’ll convert Python into TensorFlow graphs, improving speed and enabling deployment to GPUs, TPUs, and production systems.
-
-✅ Chapter 12: Bitwise & Numerical Operations
-
-The finishing move. Learn advanced operations like clipping, rounding, modulo, one-hot encoding, and bitwise ops—used for loss design, masking, and precision tuning.
-
----
+- Whether you’re using GPT for chatbot responses or Stability AI for image generation, this chapter shows how to integrate safely and affordably. We’ll also explore `.env` files, secret management, fallback logic, and how to avoid surprise bills.
 
 After Part II, You Will Be Able To:
 
-- Slice, reshape, and broadcast tensors confidently
+* Set up a clean, scalable AI/ML project repo with modular structure
+* Write and test ML inference code using local or cloud models
+* Build frontend interfaces that call your AI backend or API
+* Securely manage API keys and environment secrets
+* Launch fully working prototypes with minimal cost
 
-- Work with variable-length and sparse data
+---
 
-- Write training loops that compute and apply gradients
-
-- Build efficient TensorFlow graphs for speed
-
-- Understand the math operations that power model internals
-
-> Part II gives you the raw power of TensorFlow. Part III shows you how to channel it into models.
+> *This part is the heart of the book—where code meets creativity, and ideas turn into apps.*
