@@ -29,7 +29,7 @@ theme:
     - toc
 
 nav:
-  - Introduction: Introduction.md
+  - Introduction: index.md
 
   - "📘 Mastering AI/ML Projects":
       - "&nbsp; Table of Contents": book_project_budget/TOC.md
