@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -660,7 +662,7 @@
         <li class="md-nav__item">
   <a href="#84-deployment-to-netlify-alternative-option" class="md-nav__link">
     <span class="md-ellipsis">
-      🌐 8.4 Deployment to Netlify (Alternative Option)
+      8.4 Deployment to Netlify (Alternative Option)
     </span>
   </a>
   
@@ -1482,7 +1484,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1530,7 +1534,7 @@
         <li class="md-nav__item">
   <a href="#84-deployment-to-netlify-alternative-option" class="md-nav__link">
     <span class="md-ellipsis">
-      🌐 8.4 Deployment to Netlify (Alternative Option)
+      8.4 Deployment to Netlify (Alternative Option)
     </span>
   </a>
   
@@ -1576,11 +1580,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-8-frontend-deployment-vercel-netlify">📘 Chapter 8: Frontend Deployment (Vercel, Netlify)<a class="headerlink" href="#chapter-8-frontend-deployment-vercel-netlify" title="Permanent link">&para;</a></h1>
-<p>🧑‍💻 Chapter 8 is where we make your frontend live, hosted on platforms like Vercel or Netlify, and connected to your deployed backend (Railway, Hugging Face, or Render). Once done, your project will be accessible worldwide 🌍⚡</p>
+
+<h1 id="chapter-8-frontend-deployment-vercel-netlify">Chapter 8: Frontend Deployment (Vercel, Netlify)<a class="headerlink" href="#chapter-8-frontend-deployment-vercel-netlify" title="Permanent link">&para;</a></h1>
+<p>Chapter 8 is where we make your frontend live, hosted on platforms like Vercel or Netlify, and connected to your deployed backend (Railway, Hugging Face, or Render). Once done, your project will be accessible worldwide.</p>
 <hr />
 <h2 id="81-choose-the-right-platform">8.1 Choose the Right Platform<a class="headerlink" href="#81-choose-the-right-platform" title="Permanent link">&para;</a></h2>
 <table>
@@ -1608,11 +1614,11 @@
 </tbody>
 </table>
 <blockquote>
-<p>✅ Recommendation: Vercel for React projects — seamless with GitHub, supports environment variables.</p>
+<p>Recommendation: Vercel for React projects — seamless with GitHub, supports environment variables.</p>
 </blockquote>
 <hr />
 <h2 id="82-preparing-your-react-frontend-for-deployment">8.2 Preparing Your React Frontend for Deployment<a class="headerlink" href="#82-preparing-your-react-frontend-for-deployment" title="Permanent link">&para;</a></h2>
-<p>📁 Folder: frontend/
+<p>Folder: frontend/
 Structure should look like this:
 <div class="highlight"><pre><span></span><code><span class="w">    </span>frontend/
 <span class="w">    </span>├──<span class="w"> </span>public/
@@ -1621,10 +1627,10 @@ Structure should look like this:
 <span class="w">    </span>├──<span class="w"> </span>package.json
 <span class="w">    </span>└──<span class="w"> </span>README.md
 </code></pre></div>
-✅ Sample .env:
+Sample .env:
 <div class="highlight"><pre><span></span><code><span class="nv">REACT_APP_API_URL</span><span class="o">=</span>https://my-railway-backend.up.railway.app
 </code></pre></div>
-📄 Sample fetch in App.js:
+Sample fetch in App.js:
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="n">fetch</span><span class="p">(</span><span class="err">`</span><span class="n">$</span><span class="p">{</span><span class="n">process</span><span class="p">.</span><span class="na">env</span><span class="p">.</span><span class="na">REACT_APP_API_URL</span><span class="p">}</span><span class="o">/</span><span class="n">generate</span><span class="err">`</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="n">method</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="n">headers</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s">&quot;Content-Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;application/json&quot;</span><span class="w"> </span><span class="p">},</span>
@@ -1633,7 +1639,7 @@ Structure should look like this:
 </code></pre></div></p>
 <hr />
 <h2 id="83-deployment-to-vercel-step-by-step">8.3 Deployment to Vercel (Step-by-Step)<a class="headerlink" href="#83-deployment-to-vercel-step-by-step" title="Permanent link">&para;</a></h2>
-<p>🧰 Prerequisites:</p>
+<p>Prerequisites:</p>
 <ul>
 <li>
 <p>A GitHub account</p>
@@ -1643,7 +1649,7 @@ Structure should look like this:
 </li>
 </ul>
 <p>Deployment Process:<br />
-    1. 🔗 Go to https://vercel.com<br />
+    1. Go to https://vercel.com<br />
     2. Click "New Project" → Import from GitHub<br />
     3. Select your frontend repo<br />
     4. Set Environment Variables (from .env):  </p>
@@ -1651,11 +1657,11 @@ Structure should look like this:
 <div class="codehilite"><pre><span></span><code><span class="mf">5.</span><span class="w"> </span><span class="n">Click</span><span class="w"> </span><span class="n">Deploy</span><span class="w"> </span><span class="err">—</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">you</span><span class="err">’</span><span class="n">re</span><span class="w"> </span><span class="n">done</span><span class="w"> </span><span class="err">🎉</span>
 </code></pre></div>
 
-<p>📦 Build command (auto-detected):
+<p>Build command (auto-detected):
 <div class="highlight"><pre><span></span><code><span class="w">    </span>npm<span class="w"> </span>run<span class="w"> </span>build
 </code></pre></div></p>
 <hr />
-<h2 id="84-deployment-to-netlify-alternative-option">🌐 8.4 Deployment to Netlify (Alternative Option)<a class="headerlink" href="#84-deployment-to-netlify-alternative-option" title="Permanent link">&para;</a></h2>
+<h2 id="84-deployment-to-netlify-alternative-option">8.4 Deployment to Netlify (Alternative Option)<a class="headerlink" href="#84-deployment-to-netlify-alternative-option" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>netlify-cli
 <span class="w">    </span>netlify<span class="w"> </span>login
 </code></pre></div>
@@ -1689,7 +1695,7 @@ Structure should look like this:
 </tbody>
 </table>
 <blockquote>
-<p>🚫 Don’t hardcode backend URLs directly into code. Use .env.</p>
+<p>Don’t hardcode backend URLs directly into code. Use .env.</p>
 </blockquote>
 <p>---\</p>
 <h2 id="86-final-checklist-for-production">8.6 Final Checklist for Production<a class="headerlink" href="#86-final-checklist-for-production" title="Permanent link">&para;</a></h2>
@@ -1733,7 +1739,7 @@ Structure should look like this:
 <p>Vercel and Netlify both support free subdomains (like myapp.vercel.app), but you can:</p>
 <ul>
 <li>
-<p>🌐 Add a custom domain (like claylabs.ai)</p>
+<p>Add a custom domain (like claylabs.ai)</p>
 </li>
 <li>
 <p>Use Vercel/Netlify DNS to manage the domain</p>
@@ -1761,8 +1767,13 @@ Structure should look like this:
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

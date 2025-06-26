@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1473,7 +1475,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1558,10 +1562,12 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-4-building-the-ml-logic">📘 Chapter 4: Building the ML Logic<a class="headerlink" href="#chapter-4-building-the-ml-logic" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-4-building-the-ml-logic">Chapter 4: Building the ML Logic<a class="headerlink" href="#chapter-4-building-the-ml-logic" title="Permanent link">&para;</a></h1>
 <h2 id="41-choose-your-model-strategy">4.1 Choose Your Model Strategy<a class="headerlink" href="#41-choose-your-model-strategy" title="Permanent link">&para;</a></h2>
 <p>There are two major approaches you can take depending on your goal and available compute:</p>
 <table>
@@ -1587,7 +1593,7 @@
 <h2 id="42-method-a-local-inference-using-pretrained-model">4.2 Method A: Local Inference Using Pretrained Model<a class="headerlink" href="#42-method-a-local-inference-using-pretrained-model" title="Permanent link">&para;</a></h2>
 <p>Perfect for small NLP tasks or lightweight image models.</p>
 <p><strong>Example: Local Sentiment Classifier with BERT</strong></p>
-<p>📂 backend/app/main.py</p>
+<p>backend/app/main.py</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">BertTokenizer</span><span class="p">,</span> <span class="n">BertForSequenceClassification</span>
@@ -1621,7 +1627,7 @@
 </li>
 </ul>
 <p><strong>Example: GPT-based Caption Generator (OpenAI)</strong>
-📂 backend/app/main.py
+backend/app/main.py
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">openai</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
@@ -1644,8 +1650,8 @@
     <span class="n">caption</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;choices&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;content&#39;</span><span class="p">]</span>
     <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;caption&quot;</span><span class="p">:</span> <span class="n">caption</span><span class="p">}</span>
 </code></pre></div></p>
-<p><strong>🖼️ Example: CartoonGAN via Replicate API</strong>
-📂 backend/app/model/cartoonize.py</p>
+<p><strong>Example: CartoonGAN via Replicate API</strong>
+backend/app/model/cartoonize.py</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">replicate</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">replicate</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">api_token</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;REPLICATE_API_TOKEN&quot;</span><span class="p">))</span>
@@ -1733,8 +1739,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

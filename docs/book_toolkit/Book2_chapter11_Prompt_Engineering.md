@@ -1,109 +1,173 @@
-# Chapter 11: Graphs & Functions (@tf.function)
+---
+hide:
+  - toc
+---
 
-> “*First you write Python. Then you write TensorFlow. Then you make Python act like TensorFlow.*”
+# Chapter 11: Prompt Engineering Basics
+
+*“Talk to models like you mean it.”*
+
+This chapter is one of the most **human** in this journey — it’s not about code, or containers, or GPUs. It’s about **language**.
+And how we, as builders, can shape AI behavior simply by choosing the right words.
+
+Welcome to the artful world of **Prompt Engineering**.
 
 ---
 
-## 11.1 Why Graphs?
+## This Chapter Covers
 
-Python is great for prototyping. But it’s slow when you scale to:  
-- Production inference  
-- Deployment across devices  
-- Multi-GPU/TPU execution  
-- Model export for TFLite or TensorFlow Serving
-
-TensorFlow solves this with graphs: dataflow representations that can be optimized and executed outside the Python runtime.
+* What prompt engineering is (and why it matters)
+* The structure of a good prompt
+* Task types: classify, generate, reason, summarize
+* Techniques: instruction, examples, tone, constraints
+* Builder’s lens: shaping intelligence through intention
 
 ---
 
-## 11.2 Enter @tf.function
+## Opening Reflection: Words as Levers
 
-You write regular Python—but TensorFlow traces it once and converts it into a graph.
+> *“Give me the right words, and I will move the model.”*
 
-✅ Example:
-```python
-import tensorflow as tf
+You don’t need to change the architecture.
+You don’t need to retrain the weights.
+You don’t even need to touch the API.
 
-@tf.function
-def compute(x):
-    return x**2 + 3*x + 1
+You just need to say the right thing — in the right way — and watch the model become:
 
-print(compute(tf.constant(2.0)))  # tf.Tensor(11.0, shape=(), dtype=float32)
+* A poet
+* A helper
+* A data analyst
+* A sarcastic comedian
+* A highly specific meme captionist
+
+This is **prompt engineering**:
+The art of talking to machines… and getting exactly what you meant.
+
+---
+
+## 11.1 What Is Prompt Engineering?
+
+**Prompt engineering** is the craft of designing inputs to language models (e.g. GPT, Claude, Mistral) that guide the model to produce useful, accurate, or creative output.
+It’s part programming, part psychology, part UX.
+
+---
+
+## 11.2 Prompt Structure: The Core Recipe
+
 ```
-This runs like Python but is compiled under the hood.
-
----
-
-## 11.3 Benefits of Using @tf.function
-
-- Faster execution: Runs as a graph instead of interpreted Python  
-- Cross-platform compatibility: Can run on GPUs, TPUs, mobile, etc.  
-- Serialization: Enables saving models in SavedModel format  
-- Deployment: Used in TensorFlow Serving, TFLite, and TF.js
-
----
-
-## 11.4 Gotchas & Debugging Tips
-
-❗ Be careful of Python-side effects:
-```python
-@tf.function
-def bad_func():
-    print("This won't show up")  # Runs only during tracing, not each call
-```
-Only TensorFlow ops are tracked. Use `tf.print()` instead of Python `print()`:
-```python
-@tf.function
-def good_func(x):
-    tf.print("Value of x:", x)
+Instruction  
+(Optional) Examples  
+Constraints / Formatting  
+User Input
 ```
 
+### Example (Sentiment Analysis Prompt):
+
+> Classify the sentiment of the following sentence as Positive, Negative, or Neutral:
+> Input: "I don’t love this product, but it works."
+> Sentiment:
+
+The model fills in the blank: `"Neutral"`
+
 ---
 
-## 11.5 Input Signatures (Optional)
+## 11.3 Common Prompting Tasks
 
-Restrict the function to a fixed input type and shape for optimization:
+| Task Type      | Goal                      | Example Prompt                                 |
+| -------------- | ------------------------- | ---------------------------------------------- |
+| Classification | Label text (e.g., intent) | “Label this text as Happy, Sad, or Angry.”     |
+| Summarization  | Compress info             | “Summarize this article in 3 bullets.”         |
+| Generation     | Produce text              | “Write a tweet about AI in 10 words.”          |
+| Reasoning      | Chain of logic            | “Explain why gravity decreases with distance.” |
+| Extraction     | Pull structure from chaos | “Extract dates and names from this text.”      |
+
+---
+
+## 11.4 Techniques That Boost Prompt Quality
+
+| Technique         | Example / Effect                    |
+| ----------------- | ----------------------------------- |
+| Explicit roles    | “You are a meme caption generator…” |
+| Few-shot learning | Show 1–3 examples before user input |
+| Chain of Thought  | “Let’s think step by step…”         |
+| Output formatting | “Respond in JSON: {‘label’: … }”    |
+| Style injection   | “Respond as if you're Shakespeare.” |
+
+---
+
+## 11.5 Prompt Engineering in Code (OpenAI)
+
 ```python
-@tf.function(input_signature=[tf.TensorSpec(shape=[None], dtype=tf.float32)])
-def model(x):
-    return tf.reduce_sum(x)
+import openai
+
+response = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a product description writer."},
+    {"role": "user", "content": "Describe a smart water bottle for athletes."}
+  ]
+)
+
+print(response["choices"][0]["message"]["content"])
 ```
-This makes tracing more predictable and speeds up model serving.
+
+This is where the **magic** happens.
 
 ---
 
-## 11.6 Retrieving the Graph
+## 11.6 When Prompting Fails: Debug Like a Builder
 
-You can inspect the computation graph like this:
-```python
-@tf.function
-def square(x):
-    return x * x
+| Symptom               | Try This Fix                              |
+| --------------------- | ----------------------------------------- |
+| Too generic / vague   | Add examples or clarify instruction       |
+| Output too long/short | Add constraints: “<30 words” or “3 lines” |
+| Repeats itself        | Add: “Do not repeat yourself.”            |
+| Hallucinates info     | Add: “Only use the info provided.”        |
 
-print(square.get_concrete_function(tf.constant(2.0)).graph.as_graph_def())
-```
-This shows you the internal graph ops (used for debugging, export, or tooling).
-
----
-
-## 11.7 Common Use Cases
-
-|Use Case	                    |Benefit                    |
-|-------------------------------|---------------------------|
-|Training loops	                |Speed boost                |
-|Model export (SavedModel)	    |Required                   |
-|TF Serving / deployment	    |Required                   |
-|Writing reusable pipelines	    |Cleaner graph structure    |
+Prompting is **iterative**.
+You’ll get better through **play**.
 
 ---
 
-## 11.8 Summary  
+## 11.7 Builder’s Perspective: Your Prompt Is a Prototype
 
-- @tf.function converts Python code into high-performance TensorFlow graphs.  
-- It enables speed, portability, deployment, and tracing.  
-- Use tf.print instead of regular print() inside graph code.  
-- It’s a must for production workflows, but test in eager mode first.  
+> *“In a world where models know everything,
+> what matters is how you ask the question.”*
+
+Your prompt:
+
+* Is your interface
+* Is your architecture
+* Is your business logic
+* Is your UX
+
+It's the single string of text that determines whether your app feels:
+
+* Confident
+* Helpful
+* Funny
+* Human
+
+You don’t need to **know more**.
+You need to **ask better**.
 
 ---
 
-> “*First you write Python. Then you write TensorFlow. Then you make Python act like TensorFlow.*”
+## Summary Takeaways
+
+| Concept                      | Why It Matters                           |
+| ---------------------------- | ---------------------------------------- |
+| Prompting = shaping behavior | No code changes needed                   |
+| Clear, specific input        | More reliable, useful outputs            |
+| Few-shot + structure help    | Reduces hallucination, increases control |
+| Prompt = soft interface      | Easy to change, test, and improve        |
+
+---
+
+## 🌟 Closing Reflection
+
+> *“The model has intelligence.
+> You have intention.
+> Prompt engineering is the conversation between the two.”*
+
+---

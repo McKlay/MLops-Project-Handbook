@@ -17,7 +17,7 @@ hide:
 
 * [Why This Book Exists](Preface.md#why-this-book-exists)  
 * [Who Should Read This](Preface.md#who-should-read-this)  
-* [From Tutorials to Toolkits: How This Book Was Born](Preface.md#From-tutorials-to-toolkits-how-this-book-was-born)  
+* [From Tutorials to Toolkits: How This Book Was Born](Preface.md#from-tutorials-to-toolkits-how-this-book-was-born)  
 * [What You’ll Learn (and What You Won’t)](Preface.md#what-youll-learn-and-what-you-wont)  
 * [How to Read This Book (Even if You’re Just Starting Out)](Preface.md#how-to-read-this-book-even-if-youre-just-starting-out)  
 

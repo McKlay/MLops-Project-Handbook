@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # 1.1 What Makes a Great AI/ML Project?
 
 A great AI/ML project isn't about having the most complex model or the largest dataset. It's about:

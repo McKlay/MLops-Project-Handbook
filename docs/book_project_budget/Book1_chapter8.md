@@ -1,6 +1,11 @@
-# 📘 Chapter 8: Frontend Deployment (Vercel, Netlify)
+---
+hide:
+  - toc
+---
 
-🧑‍💻 Chapter 8 is where we make your frontend live, hosted on platforms like Vercel or Netlify, and connected to your deployed backend (Railway, Hugging Face, or Render). Once done, your project will be accessible worldwide 🌍⚡
+# Chapter 8: Frontend Deployment (Vercel, Netlify)
+
+Chapter 8 is where we make your frontend live, hosted on platforms like Vercel or Netlify, and connected to your deployed backend (Railway, Hugging Face, or Render). Once done, your project will be accessible worldwide.
 
 ---
 
@@ -11,12 +16,12 @@
 |Vercel	        |React, Vite, Next.js apps	|vercel	        |100GB bandwidth, 100 deployments/mo    |
 |Netlify	    |Static sites (React, HTML)	|netlify	    |100GB bandwidth, Forms, Edge Functions |
 
-> ✅ Recommendation: Vercel for React projects — seamless with GitHub, supports environment variables.
+> Recommendation: Vercel for React projects — seamless with GitHub, supports environment variables.
 
 ---
 
 ## 8.2 Preparing Your React Frontend for Deployment
-📁 Folder: frontend/
+Folder: frontend/
 Structure should look like this:
 ```bash
     frontend/
@@ -26,11 +31,11 @@ Structure should look like this:
     ├── package.json
     └── README.md
 ```
-✅ Sample .env:
+Sample .env:
 ```bash
 REACT_APP_API_URL=https://my-railway-backend.up.railway.app
 ```
-📄 Sample fetch in App.js:
+Sample fetch in App.js:
 ```java
     fetch(`${process.env.REACT_APP_API_URL}/generate`, {
       method: "POST",
@@ -42,14 +47,14 @@ REACT_APP_API_URL=https://my-railway-backend.up.railway.app
 ---
 
 ## 8.3 Deployment to Vercel (Step-by-Step)
-🧰 Prerequisites:
+Prerequisites:
 
 - A GitHub account
 
 - Frontend project pushed to GitHub
 
 Deployment Process:  
-    1. 🔗 Go to https://vercel.com  
+    1. Go to https://vercel.com  
     2. Click "New Project" → Import from GitHub  
     3. Select your frontend repo  
     4. Set Environment Variables (from .env):  
@@ -58,14 +63,14 @@ Deployment Process:
     
     5. Click Deploy — and you’re done 🎉
 
-📦 Build command (auto-detected):
+Build command (auto-detected):
 ```bash    
     npm run build
 ```
 
 ---
 
-## 🌐 8.4 Deployment to Netlify (Alternative Option)
+## 8.4 Deployment to Netlify (Alternative Option)
 
 ```bash    
     npm install -g netlify-cli
@@ -89,7 +94,7 @@ You’ll be asked for:
 |REACT_APP_API_URL	    |Backend API base URL	            |Vercel / Netlify → Settings → Environment  |
 |NODE_ENV=production	|Optional flag to optimize builds	|.env or host dashboard                     |
 
-> 🚫 Don’t hardcode backend URLs directly into code. Use .env.
+> Don’t hardcode backend URLs directly into code. Use .env.
 
 ---\
 
@@ -108,7 +113,7 @@ You’ll be asked for:
 
 Vercel and Netlify both support free subdomains (like myapp.vercel.app), but you can:
 
-- 🌐 Add a custom domain (like claylabs.ai)
+- Add a custom domain (like claylabs.ai)
 
 - Use Vercel/Netlify DNS to manage the domain
 

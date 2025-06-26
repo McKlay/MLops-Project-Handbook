@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1542,7 +1544,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1696,10 +1700,12 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-2-essential-tools-technologies">📘 Chapter 2: Essential Tools &amp; Technologies<a class="headerlink" href="#chapter-2-essential-tools-technologies" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-2-essential-tools-technologies">Chapter 2: Essential Tools &amp; Technologies<a class="headerlink" href="#chapter-2-essential-tools-technologies" title="Permanent link">&para;</a></h1>
 <p>2.1 Programming Languages You’ll Use</p>
 <table>
 <thead>
@@ -1727,7 +1733,7 @@
 </tr>
 </tbody>
 </table>
-<p>✅ Start with Python + React (JS) combo. Most AI projects can be fully built with these two.</p>
+<p>Start with Python + React (JS) combo. Most AI projects can be fully built with these two.</p>
 <hr />
 <h2 id="22-machine-learning-ai-libraries">2.2 Machine Learning &amp; AI Libraries<a class="headerlink" href="#22-machine-learning-ai-libraries" title="Permanent link">&para;</a></h2>
 <table>
@@ -1776,7 +1782,7 @@
 </tr>
 </tbody>
 </table>
-<p>📌 Use PyTorch + Hugging Face if working with models yourself.
+<p>Use PyTorch + Hugging Face if working with models yourself.
 Use OpenAI or Replicate APIs if you want fast &amp; powerful outputs.</p>
 <hr />
 <h2 id="23-local-environment-setup-tools">2.3 Local Environment Setup Tools<a class="headerlink" href="#23-local-environment-setup-tools" title="Permanent link">&para;</a></h2>
@@ -1867,7 +1873,7 @@ git<span class="w"> </span>init<span class="w"> </span><span class="o">&amp;&amp
 </tr>
 </tbody>
 </table>
-<p>✅ You’ll use Hugging Face or Railway for backend, and Vercel for frontend most of the time.</p>
+<p>You’ll use Hugging Face or Railway for backend, and Vercel for frontend most of the time.</p>
 <hr />
 <h2 id="25-api-integration-helpers">2.5 API Integration Helpers<a class="headerlink" href="#25-api-integration-helpers" title="Permanent link">&para;</a></h2>
 <table>
@@ -2145,11 +2151,11 @@ git<span class="w"> </span>init<span class="w"> </span><span class="o">&amp;&amp
 </ul>
 <hr />
 <h3 id="workflow-suggestion-for-fine-tuning">Workflow Suggestion (for Fine-Tuning)<a class="headerlink" href="#workflow-suggestion-for-fine-tuning" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="mf">1.</span><span class="w"> </span><span class="err">🧪</span><span class="w"> </span><span class="n">Prototype</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">Colab</span><span class="w"> </span><span class="n">Free</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">Kaggle</span><span class="o">.</span><span class="w">  </span>
-<span class="w">   </span><span class="mf">2.</span><span class="w"> </span><span class="err">🚀</span><span class="w"> </span><span class="n">Upgrade</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">Colab</span><span class="w"> </span><span class="n">Pro</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">rent</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">GPU</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">RunPod</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">needed</span><span class="o">.</span><span class="w">  </span>
-<span class="w">   </span><span class="mf">3.</span><span class="w"> </span><span class="err">📦</span><span class="w"> </span><span class="n">Save</span><span class="w"> </span><span class="n">model</span><span class="o">.</span><span class="n">pt</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">model</span><span class="o">.</span><span class="n">safetensors</span><span class="o">.</span><span class="w">  </span>
-<span class="w">   </span><span class="mf">4.</span><span class="w"> </span><span class="err">⬆️</span><span class="w"> </span><span class="n">Upload</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">Hugging</span><span class="w"> </span><span class="n">Face</span><span class="w"> </span><span class="n">Hub</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">backend</span><span class="w"> </span><span class="n">API</span><span class="o">.</span><span class="w">  </span>
-<span class="w">   </span><span class="mf">5.</span><span class="w"> </span><span class="err">🌐</span><span class="w"> </span><span class="n">Deploy</span><span class="w"> </span><span class="n">API</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">Railway</span><span class="o">/</span><span class="n">Hugging</span><span class="w"> </span><span class="n">Face</span><span class="w"> </span><span class="n">Spaces</span><span class="o">.</span>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="mf">1.</span><span class="w"> </span><span class="n">Prototype</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">Colab</span><span class="w"> </span><span class="n">Free</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">Kaggle</span><span class="o">.</span><span class="w">  </span>
+<span class="w">   </span><span class="mf">2.</span><span class="w"> </span><span class="n">Upgrade</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">Colab</span><span class="w"> </span><span class="n">Pro</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">rent</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">GPU</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">RunPod</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">needed</span><span class="o">.</span><span class="w">  </span>
+<span class="w">   </span><span class="mf">3.</span><span class="w"> </span><span class="n">Save</span><span class="w"> </span><span class="n">model</span><span class="o">.</span><span class="n">pt</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">model</span><span class="o">.</span><span class="n">safetensors</span><span class="o">.</span><span class="w">  </span>
+<span class="w">   </span><span class="mf">4.</span><span class="w"> </span><span class="n">Upload</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">Hugging</span><span class="w"> </span><span class="n">Face</span><span class="w"> </span><span class="n">Hub</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">backend</span><span class="w"> </span><span class="n">API</span><span class="o">.</span><span class="w">  </span>
+<span class="w">   </span><span class="mf">5.</span><span class="w"> </span><span class="n">Deploy</span><span class="w"> </span><span class="n">API</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">Railway</span><span class="o">/</span><span class="n">Hugging</span><span class="w"> </span><span class="n">Face</span><span class="w"> </span><span class="n">Spaces</span><span class="o">.</span>
 </code></pre></div>
 
 <h2 id="29-key-takeaways-from-chapter-2">2.9 Key Takeaways from Chapter 2<a class="headerlink" href="#29-key-takeaways-from-chapter-2" title="Permanent link">&para;</a></h2>
@@ -2175,8 +2181,13 @@ git<span class="w"> </span>init<span class="w"> </span><span class="o">&amp;&amp
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

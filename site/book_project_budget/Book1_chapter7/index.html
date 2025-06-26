@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -629,7 +631,7 @@
           <li class="md-nav__item">
   <a href="#73-option-b-railway-fastapi-openai-replicate" class="md-nav__link">
     <span class="md-ellipsis">
-      🛤️7.3 Option B: Railway (FastAPI + OpenAI + Replicate)
+      7.3 Option B: Railway (FastAPI + OpenAI + Replicate)
     </span>
   </a>
   
@@ -1488,7 +1490,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1528,7 +1532,7 @@
           <li class="md-nav__item">
   <a href="#73-option-b-railway-fastapi-openai-replicate" class="md-nav__link">
     <span class="md-ellipsis">
-      🛤️7.3 Option B: Railway (FastAPI + OpenAI + Replicate)
+      7.3 Option B: Railway (FastAPI + OpenAI + Replicate)
     </span>
   </a>
   
@@ -1588,14 +1592,16 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-7-backend-deployment-options-free-tier-ready">📘 Chapter 7: Backend Deployment Options (Free Tier Ready)<a class="headerlink" href="#chapter-7-backend-deployment-options-free-tier-ready" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-7-backend-deployment-options-free-tier-ready">Chapter 7: Backend Deployment Options (Free Tier Ready)<a class="headerlink" href="#chapter-7-backend-deployment-options-free-tier-ready" title="Permanent link">&para;</a></h1>
 <p>Chapter 7 is all about getting your AI backend online—so anyone in the world can use your model or app. We'll walk through free-tier deployment options like Hugging Face Spaces, Railway, and Render, and help you choose the one that fits your project best.</p>
 <hr />
 <h2 id="71-before-you-deploy-checklist">7.1 Before You Deploy — Checklist<a class="headerlink" href="#71-before-you-deploy-checklist" title="Permanent link">&para;</a></h2>
-<p>✅ You should already have:</p>
+<p>You should already have:</p>
 <ul>
 <li>
 <p>/backend/app/main.py (your FastAPI logic or app.py for Gradio)</p>
@@ -1638,20 +1644,20 @@
 </li>
 </ul>
 <p>FastAPI Setup on HF Spaces
-<strong>📄 app.py</strong>
+<strong>app.py</strong>
 <div class="highlight"><pre><span></span><code>   <span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
    <span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
    <span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
    <span class="k">def</span><span class="w"> </span><span class="nf">root</span><span class="p">():</span>
        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello Hugging Face!&quot;</span><span class="p">}</span>
 </code></pre></div>
-<strong>📄 requirements.txt</strong>
+<strong>requirements.txt</strong>
 <div class="highlight"><pre><span></span><code><span class="w">   </span>fastapi
 <span class="w">   </span>uvicorn
 <span class="w">   </span>python-dotenv
 <span class="w">   </span>openai
 </code></pre></div>
-<strong>📄 README.md</strong>
+<strong>README.md</strong>
 <div class="highlight"><pre><span></span><code><span class="w">   </span><span class="o">---</span>
 <span class="w">   </span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="n">My</span><span class="w"> </span><span class="n">AI</span><span class="w"> </span><span class="n">API</span>
 <span class="w">   </span><span class="n">emoji</span><span class="p">:</span><span class="w"> </span><span class="err">🤖</span>
@@ -1662,7 +1668,7 @@
 <span class="w">   </span><span class="err">#</span><span class="w"> </span><span class="n">My</span><span class="w"> </span><span class="n">AI</span><span class="w"> </span><span class="n">App</span>
 <span class="w">   </span><span class="n">An</span><span class="w"> </span><span class="n">API</span><span class="w"> </span><span class="n">powered</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">FastAPI</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">OpenAI</span><span class="o">!</span>
 </code></pre></div>
-<strong>📄 Dockerfile (if needed)</strong>
+<strong>Dockerfile (if needed)</strong>
 <div class="highlight"><pre><span></span><code><span class="w">   </span><span class="n">FROM</span><span class="w"> </span><span class="n">python</span><span class="p">:</span><span class="mf">3.10</span>
 <span class="w">   </span><span class="n">WORKDIR</span><span class="w"> </span><span class="o">/</span><span class="n">app</span>
 <span class="w">   </span><span class="n">COPY</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="o">/</span><span class="n">app</span>
@@ -1677,7 +1683,7 @@
 <span class="w">   </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </code></pre></div></p>
 <hr />
-<h3 id="73-option-b-railway-fastapi-openai-replicate">🛤️7.3 Option B: Railway (FastAPI + OpenAI + Replicate)<a class="headerlink" href="#73-option-b-railway-fastapi-openai-replicate" title="Permanent link">&para;</a></h3>
+<h3 id="73-option-b-railway-fastapi-openai-replicate">7.3 Option B: Railway (FastAPI + OpenAI + Replicate)<a class="headerlink" href="#73-option-b-railway-fastapi-openai-replicate" title="Permanent link">&para;</a></h3>
 <p>✅ Pros:</p>
 <ul>
 <li>
@@ -1703,14 +1709,14 @@
 </li>
 </ul>
 <p><strong>FastAPI Setup for Railway</strong><br />
-<strong>📄 backend/requirements.txt</strong>
+<strong>backend/requirements.txt</strong>
 <div class="highlight"><pre><span></span><code><span class="w">   </span>fastapi
 <span class="w">   </span>uvicorn
 <span class="w">   </span>python-dotenv
 <span class="w">   </span>openai
 <span class="w">   </span>replicate
 </code></pre></div></p>
-<p><strong>📄 pyproject.toml</strong> (optional if you need Railway to detect the start command)</p>
+<p><strong>pyproject.toml</strong> (optional if you need Railway to detect the start command)</p>
 <div class="highlight"><pre><span></span><code><span class="w">   </span><span class="o">[</span>tool.poetry<span class="o">]</span>
 <span class="w">   </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;myaiapp&quot;</span>
 <span class="w">   </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
@@ -1810,7 +1816,7 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 <span class="w">   </span><span class="nv">REPLICATE_API_TOKEN</span><span class="o">=</span>r8_xxxx
 </code></pre></div></p>
 <blockquote>
-<p>🚫 Don’t commit .env to GitHub — keep it local or use .gitignore.</p>
+<p>Don’t commit .env to GitHub — keep it local or use .gitignore.</p>
 </blockquote>
 <hr />
 <h2 id="76-deployment-checklist">7.6 Deployment Checklist<a class="headerlink" href="#76-deployment-checklist" title="Permanent link">&para;</a></h2>
@@ -1850,8 +1856,13 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

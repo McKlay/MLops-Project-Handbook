@@ -1,4 +1,9 @@
-# 📘 Chapter 9: Fullstack Integration Walkthrough
+---
+hide:
+  - toc
+---
+
+# Chapter 9: Fullstack Integration Walkthrough
 
 Chapter 9 is the final integration checkpoint — the part where we connect everything: your frontend, your backend, your APIs, and your deployment pipeline. Think of this as your project launch checklist — just like prepping for spaceflight.
 
@@ -7,10 +12,10 @@ Chapter 9 is the final integration checkpoint — the part where we connect ever
 ## 9.1 What Does “Fullstack Integration” Mean?
 It means:
 
-- 🔗 Your frontend (React or Gradio UI) can talk to your backend.   
-- 🌐 Your backend is securely calling APIs like OpenAI or Replicate.  
-- 🚀 The app is deployed publicly and behaves exactly like your local version.  
-- 💬 Errors, logs, loading, and user interaction all work smoothly.
+- Your frontend (React or Gradio UI) can talk to your backend.   
+- Your backend is securely calling APIs like OpenAI or Replicate.  
+- The app is deployed publicly and behaves exactly like your local version.  
+- Errors, logs, loading, and user interaction all work smoothly.
 
 ---
 

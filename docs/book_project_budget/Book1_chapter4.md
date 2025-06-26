@@ -1,4 +1,9 @@
-# 📘 Chapter 4: Building the ML Logic
+---
+hide:
+  - toc
+---
+
+# Chapter 4: Building the ML Logic
 
 ## 4.1 Choose Your Model Strategy
 
@@ -19,7 +24,7 @@ Perfect for small NLP tasks or lightweight image models.
 
 **Example: Local Sentiment Classifier with BERT**
 
-📂 backend/app/main.py
+backend/app/main.py
 
 ```python
 from fastapi import FastAPI
@@ -54,7 +59,7 @@ This is best for:
 - Tasks like GPT chat, DALL·E image generation, image-to-image style transfer.
 
 **Example: GPT-based Caption Generator (OpenAI)**
-📂 backend/app/main.py
+backend/app/main.py
 ```python
 import os
 import openai
@@ -79,8 +84,8 @@ def generate_caption(input: PromptInput):
     return {"caption": caption}
 ```
 
-**🖼️ Example: CartoonGAN via Replicate API**
-📂 backend/app/model/cartoonize.py
+**Example: CartoonGAN via Replicate API**
+backend/app/model/cartoonize.py
 
 ```python
 import replicate

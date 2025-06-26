@@ -1,4 +1,9 @@
-# 📘 Chapter 7: Backend Deployment Options (Free Tier Ready)
+---
+hide:
+  - toc
+---
+
+# Chapter 7: Backend Deployment Options (Free Tier Ready)
 
 Chapter 7 is all about getting your AI backend online—so anyone in the world can use your model or app. We'll walk through free-tier deployment options like Hugging Face Spaces, Railway, and Render, and help you choose the one that fits your project best.
 
@@ -6,7 +11,7 @@ Chapter 7 is all about getting your AI backend online—so anyone in the world c
 
 ## 7.1 Before You Deploy — Checklist
 
-✅ You should already have:
+You should already have:
 
 - /backend/app/main.py (your FastAPI logic or app.py for Gradio)
 
@@ -39,7 +44,7 @@ We’ll now deploy this backend to one of these platforms:
 - Best for Gradio or lightweight FastAPI
 
 FastAPI Setup on HF Spaces
-**📄 app.py**
+**app.py**
 ```python
    from fastapi import FastAPI
    app = FastAPI()
@@ -47,14 +52,14 @@ FastAPI Setup on HF Spaces
    def root():
        return {"message": "Hello Hugging Face!"}
 ```
-**📄 requirements.txt**
+**requirements.txt**
 ```bash
    fastapi
    uvicorn
    python-dotenv
    openai
 ```
-**📄 README.md**
+**README.md**
 ```java
    ---
    title: My AI API
@@ -66,7 +71,7 @@ FastAPI Setup on HF Spaces
    # My AI App
    An API powered by FastAPI and OpenAI!
 ```   
-**📄 Dockerfile (if needed)**
+**Dockerfile (if needed)**
 ```java   
    FROM python:3.10
    WORKDIR /app
@@ -84,7 +89,7 @@ FastAPI Setup on HF Spaces
 ```
 ---
 
-### 🛤️7.3 Option B: Railway (FastAPI + OpenAI + Replicate)
+### 7.3 Option B: Railway (FastAPI + OpenAI + Replicate)
 
 ✅ Pros:
 
@@ -103,7 +108,7 @@ FastAPI Setup on HF Spaces
 - Can timeout on long API responses
 
 **FastAPI Setup for Railway**  
-**📄 backend/requirements.txt**
+**backend/requirements.txt**
 ```bash
    fastapi
    uvicorn
@@ -112,7 +117,7 @@ FastAPI Setup on HF Spaces
    replicate
 ```
 
-**📄 pyproject.toml** (optional if you need Railway to detect the start command)
+**pyproject.toml** (optional if you need Railway to detect the start command)
 
 ```bash
    [tool.poetry]
@@ -187,7 +192,7 @@ Add:
    REPLICATE_API_TOKEN=r8_xxxx
 ```
 
-> 🚫 Don’t commit .env to GitHub — keep it local or use .gitignore.
+> Don’t commit .env to GitHub — keep it local or use .gitignore.
 
 ---
 

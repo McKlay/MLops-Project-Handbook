@@ -16,7 +16,7 @@ hide:
 
 * [Why This Book Exists](Preface.md#why-this-book-exists)
 * [Who Should Read This](Preface.md#who-should-read-this)
-* [From Idea to Infrastructure: How This Book Was Born](Preface.md#from-idea-to-infrastructure-how-this-nook-was-born)
+* [From Idea to Infrastructure: How This Book Was Born](Preface.md#from-idea-to-infrastructure-how-this-book-was-born)
 * [What You’ll Learn (and What You Won’t)](Preface.md#what-youll-learn-and-what-you-wont)
 * [How to Read This Book (Even if You’re Just Starting Out)](Preface.md#how-to-read-this-book-even-if-youre-just-starting-out)
 

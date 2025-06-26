@@ -1,4 +1,9 @@
-# 📘 Chapter 5: Building the Frontend UI
+---
+hide:
+  - toc
+---
+
+# Chapter 5: Building the Frontend UI
 
 
 ## 5.1 Choosing Your UI Strategy
@@ -9,20 +14,20 @@
 |Gradio	                |Python	            |Fast ML prototyping & demo	        |Hugging Face   |
 |Streamlit	            |Python	            |Interactive analytics dashboards	|Streamlit Cloud|
 
-✅ For professional, portfolio-ready apps: Use React + Vercel
-✅ For fast, model-focused demos: Use Gradio + Hugging Face
+For professional, portfolio-ready apps: Use React + Vercel  
+For fast, model-focused demos: Use Gradio + Hugging Face
 
 ---
 
 ## 5.2 Setting Up a React Frontend (with API Integration)
-**📂 Folder: frontend/**
+**Folder: frontend/**
 ```bash
     npx create-react-app frontend
     cd frontend
     npm install
 ```
 
-**🌐 Add .env in frontend/**
+**Add .env in frontend/**
 ```bash
     REACT_APP_API_URL=http://localhost:8000
     Make sure to restart npm start after editing .env.
@@ -32,7 +37,7 @@
 
 ## 5.3 Basic Frontend Example: Meme Generator UI
 
-**📄 src/App.js**
+**src/App.js**
 ```javascript
     import { useState } from "react";
     function App() {
@@ -103,7 +108,7 @@
 ## 5.6 Connecting to Gradio Instead (Alternative UI)
 
 For rapid prototyping, use Gradio directly instead of building a frontend:
-**📄 app.py**
+**app.py**
 ```python
     import gradio as gr
     from cartoonize import cartoonize_image

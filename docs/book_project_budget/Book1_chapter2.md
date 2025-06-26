@@ -1,5 +1,9 @@
-# 📘 Chapter 2: Essential Tools & Technologies
+---
+hide:
+  - toc
+---
 
+# Chapter 2: Essential Tools & Technologies
 
 2.1 Programming Languages You’ll Use
 
@@ -9,7 +13,7 @@
 |JavaScript (React)	      |Frontend UI + interaction	              |Needed for web apps and frontend deployment     |
 |Shell/CLI (Bash, CMD)     |Environment management	              |Used in deployment, Git, Docker, etc.           |
 
-✅ Start with Python + React (JS) combo. Most AI projects can be fully built with these two.
+Start with Python + React (JS) combo. Most AI projects can be fully built with these two.
 
 ---
 
@@ -25,7 +29,7 @@
 |Scikit-learn	              |Traditional ML (classification, regression)	|Lightweight, not GPU-heavy               |
 |FastAPI	              |Build ML APIs with Python	                     |Ideal for backend deployment             |
 
-📌 Use PyTorch + Hugging Face if working with models yourself.
+Use PyTorch + Hugging Face if working with models yourself.
 Use OpenAI or Replicate APIs if you want fast & powerful outputs.
 
 ---
@@ -61,7 +65,7 @@ git init && git remote add origin <your-repo>
 |Render	       |Backend             |Alt to Railway for APIs	       |GUI-based                  |
 |Netlify	       |Frontend	       |Static React sites	              |netlify deploy             |
 
-✅ You’ll use Hugging Face or Railway for backend, and Vercel for frontend most of the time.
+You’ll use Hugging Face or Railway for backend, and Vercel for frontend most of the time.
 
 ---
 
@@ -162,11 +166,11 @@ RunPod / Lambda Labs	              |A100, RTX3090	              |❌ Pay-as-you-
 
 ### Workflow Suggestion (for Fine-Tuning)
 
-       1. 🧪 Prototype in Colab Free or Kaggle.  
-       2. 🚀 Upgrade to Colab Pro or rent a GPU on RunPod if needed.  
-       3. 📦 Save model.pt or model.safetensors.  
-       4. ⬆️ Upload model to Hugging Face Hub or host in backend API.  
-       5. 🌐 Deploy API on Railway/Hugging Face Spaces.
+       1. Prototype in Colab Free or Kaggle.  
+       2. Upgrade to Colab Pro or rent a GPU on RunPod if needed.  
+       3. Save model.pt or model.safetensors.  
+       4. Upload model to Hugging Face Hub or host in backend API.  
+       5. Deploy API on Railway/Hugging Face Spaces.
 
 
 ## 2.9 Key Takeaways from Chapter 2

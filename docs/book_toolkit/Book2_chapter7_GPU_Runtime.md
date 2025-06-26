@@ -1,110 +1,187 @@
-# Chapter 7: Tensor Broadcasting
+---
+hide:
+  - toc
+---
 
-> “Broadcasting is TensorFlow’s way of saying: ‘Relax, I’ve got this shape mismatch.’”
+# Chapter 7: What Is a GPU Runtime?
+
+*“More power, less waiting.”*
+
+This time, we’re strapping in for **compute power**. This chapter explores GPU runtimes—the fuel behind modern AI/ML magic. Whether you're fine-tuning a model or running style transfer in real-time, this is where your code meets hardware acceleration.
 
 ---
 
-## 7.1 What is Broadcasting?
+## This Chapter Covers
 
-Broadcasting allows tensors with different shapes to participate in operations as if they had the same shape.  
-It's like auto-expanding dimensions on the fly so that element-wise operations just work—without explicitly reshaping anything.  
-It’s a core part of NumPy, PyTorch, and yes—TensorFlow.
-
----
-
-## 7.2 Broadcasting in Action
-Let’s take a practical example:
-```python
-import tensorflow as tf
-
-a = tf.constant([[1, 2], [3, 4]])       # Shape: (2, 2)
-b = tf.constant([10, 20])               # Shape: (2,)
-
-result = a + b
-print(result)
-```
-TensorFlow “broadcasts” b from shape (2,) → (2, 2) by duplicating it across rows:
-```lua
-[[1 + 10, 2 + 20],
- [3 + 10, 4 + 20]]
-= [[11, 22],
-   [13, 24]]
-```
+* Why GPUs matter in machine learning
+* The difference between CPU and GPU workloads
+* Runtimes: Colab, RunPod, Hugging Face, Kaggle
+* Beginner to pro: when to scale your compute
+* Builder’s perspective: using power wisely
 
 ---
 
-## 7.3 Broadcasting Rules (The Intuition)
-TensorFlow compares dimensions from right to left:
+## Opening Reflection: The Engine Beneath the Intellect
 
-If same, they’re compatible.
+> “Brains need bodies. Algorithms need hardware.”
 
-If one is 1, it’s stretched to match.
+You’ve written the model.
+You’ve got the data.
+But something feels… slow:
 
-If they don’t match and neither is 1, it’s an error.  
-**Example:**
-```python
-a: (4, 1, 3)
-b: (  , 5, 1)
-```
-→ Resulting shape: `(4, 5, 3)`
-The middle `1` in `a` stretches to `5`
-The last `1` in `b` stretches to `3`
+* Your CNN takes 45 minutes to train a few epochs
+* Your style transfer freezes the browser
+* Your chatbot lags behind every keypress
 
----
+At that point, it’s not your code that’s holding you back — it’s your hardware.
 
-## 7.4 Common Broadcasting Use Cases
-
-✅ Adding a bias vector to each row:
-```python
-x = tf.constant([[1, 2, 3], [4, 5, 6]])
-bias = tf.constant([10, 20, 30])
-print(x + bias)
-```
-✅ Multiplying by a scalar:
-```python
-x = tf.constant([[1.0, 2.0], [3.0, 4.0]])
-print(x * 2.5)
-```
-✅ Normalizing each feature (column-wise):
-```python
-x = tf.constant([[1., 2.], [3., 4.], [5., 6.]])
-mean = tf.reduce_mean(x, axis=0)  # Shape: (2,)
-print(x - mean)  # Subtracts mean from each row
-```
+That’s where **GPUs** — Graphics Processing Units — change everything.
+Not because they’re faster at everything, but because they’re faster at the **right** things.
 
 ---
 
-## 7.5 When Broadcasting Fails
+## 7.1 Why Do AI Models Love GPUs?
 
-Some operations won’t broadcast if shapes are completely incompatible:
-```python
-a = tf.constant([1, 2, 3])      # Shape: (3,)
-b = tf.constant([[1, 2], [3, 4]])  # Shape: (2, 2)
+| Operation             | What It Involves                            |
+| --------------------- | ------------------------------------------- |
+| Matrix multiplication | Used in every layer of deep nets            |
+| Tensor operations     | Batched math: dot products, conv2d          |
+| Backpropagation       | Needs fast gradient computation             |
+| Image generation      | Requires thousands of operations per second |
 
-# tf.add(a, b) → ❌ Error: Shapes can't broadcast
-```
-Always check shape compatibility first:
-```python
-print("Shape A:", a.shape)
-print("Shape B:", b.shape)
-```
-If needed, use:
+GPUs are built to handle:
 
-- `tf.expand_dims()`
+* Thousands of **parallel operations**
+* On **large chunks of data**
+* At **high throughput**
 
-- `tf.reshape()`
-
-- or `tf.broadcast_to()` to explicitly adjust shapes
+> Your CPU is a smart sprinter.
+> Your GPU is a battalion of soldiers.
 
 ---
 
-## 7.6 Summary
+## 7.2 What Is a Runtime?
 
-- Broadcasting lets tensors with different shapes interact during operations.
-- TensorFlow automatically stretches dimensions when one of them is 1.
-- Most common use cases involve scalars, bias addition, and feature-wise normalization.
-- Broadcasting removes boilerplate reshaping—just mind your axes.
+A **runtime** is an environment that includes:
+
+* OS (e.g., Ubuntu)
+* Python environment
+* Installed libraries (torch, transformers, etc.)
+* GPU access (if enabled)
+
+You run your code **inside the runtime**, often through Jupyter Notebooks, Docker containers, or virtual machines.
 
 ---
 
-> “Broadcasting is TensorFlow’s way of saying: ‘Relax, I’ve got this shape mismatch.’”
+## 7.3 The Runtimes You Should Know
+
+Let’s break down the most beginner-friendly to advanced options:
+
+### Google Colab
+
+**Best for:** learning, prototyping, small dataset training
+**GPU types:** Tesla T4, P100, A100 (rare)
+
+| Feature    | Free Tier              | Pro Tier (\$9.99–\$49.99)    |
+| ---------- | ---------------------- | ---------------------------- |
+| GPU Access | 12 hrs/session (T4)    | Longer sessions, faster GPUs |
+| Timeout    | Disconnects after idle | Persistent                   |
+| Use Cases  | BERT, CNNs, tutorials  | More advanced modeling       |
+
+Good for:
+
+* BERT fine-tuning on small sets
+* LSTM experiments
+* Kaggle competitions
+
+---
+
+### RunPod.io
+
+**Best for:** pay-per-use compute with full control
+**GPU types:** A4000, A5000, A6000, RTX 3090, 4090, etc.
+
+| Feature        | Value                                | Notes                           |
+| -------------- | ------------------------------------ | ------------------------------- |
+| Hourly Price   | \~\$0.20/hr (T4) to \$1.50/hr (4090) | Pay by GPU type and storage     |
+| Docker Support | Yes                                  | Run your Docker images directly |
+| Use Cases      | Full pipelines, large-scale training | High precision control          |
+
+> Feels like renting a dedicated GPU workstation.
+
+---
+
+### Hugging Face Spaces (PRO GPU Tier)
+
+**Best for:** showcasing GPU-powered inference demos
+**GPU types:** T4, A10G (depends on plan)
+
+| Feature    | Free Tier        | PRO Tier (\$9–\$29/mo)           |
+| ---------- | ---------------- | -------------------------------- |
+| GPU Access | CPU only         | Shared GPU (1–6 hrs/day)         |
+| Deployment | Gradio/Streamlit | Public hosting, not for training |
+
+> Best for real-time generation, not long training tasks.
+
+---
+
+### Kaggle Notebooks
+
+**Best for:** reproducible, GPU-based public experiments
+**GPU types:** Tesla P100
+
+| Feature       | Limitations               | Notes                  |
+| ------------- | ------------------------- | ---------------------- |
+| Runtime Limit | \~30 hrs/week             | Resettable weekly      |
+| Use Cases     | Competitions, prototyping | More stable than Colab |
+
+> Ideal for reproducible research and notebooks.
+
+---
+
+## 7.4 When Should You Upgrade to GPU?
+
+| If Your Model...                     | Then Use GPU? |
+| ------------------------------------ | ------------- |
+| Trains in >1 hour on CPU             | Yes           |
+| Uses images or video input           | Definitely    |
+| Needs real-time performance          | Required      |
+| Is tiny (like regex or lookup rules) | No            |
+| Only does inference                  | Maybe         |
+
+---
+
+## 7.5 Builder’s Perspective: Renting a Mind, Not Just a Machine
+
+> “When you rent GPU time, you’re not just buying speed —
+> You’re buying focus, rhythm, and the feeling that you can build without limits.”
+
+There’s power in:
+
+* Watching your model train live
+* Trying larger architectures you previously couldn’t
+* Feeling unblocked by your own hardware
+
+It’s not indulgence — it’s **momentum**.
+
+---
+
+## Summary Takeaways
+
+| Runtime      | Best For                          |
+| ------------ | --------------------------------- |
+| Google Colab | Prototyping, classroom, tutorials |
+| RunPod       | Full control, deep training       |
+| Hugging Face | Hosting GPU-powered demos         |
+| Kaggle       | Free reproducible training        |
+
+> GPUs aren’t luxury anymore — they’re table stakes for deep learning.
+
+---
+
+## Closing Reflection
+
+> “A model is only as fast as the power behind it.
+> And sometimes, the right runtime can unlock ideas you never thought were possible.”
+
+---

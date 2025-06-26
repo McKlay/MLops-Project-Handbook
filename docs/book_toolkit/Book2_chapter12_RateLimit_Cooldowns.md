@@ -1,131 +1,205 @@
-# Chapter 12: Bitwise & Numerical Operations
+---
+hide:
+  - toc
+---
 
-> “*Machine learning is built on numbers—but sharpened with operations.*”
+# Chapter 12: Rate Limits, Cooldowns & Billing Safety
+
+**“Control is the first feature of scale.”**
+
+This chapter focuses on something every developer needs to master early: cost control, rate limits, and user safety mechanisms.
+Because it’s not just about making a smart app — it’s about making one that doesn’t surprise you with a \$500 bill.
 
 ---
 
-## 12.1 Why These Ops Matter
+## This Chapter Covers
 
-These operations may seem low-level, but they power:  
-
-- Loss functions  
-- Data normalization  
-- Activation functions  
-- Efficient GPU/TPU processing  
-- Feature engineering & logical masking  
-
-If you want full control over your data pipeline or model internals, this is your toolkit.
+* Why AI apps need usage control
+* Rate limiting vs cooldowns vs quotas
+* How to prevent API abuse (especially with OpenAI/Replicate)
+* Billing guardrails and alert setups
+* Builder’s lens: safety as a service
 
 ---
 
-## 12.2 Numerical Operations
+## Opening Reflection: The Cost of Every Click
 
-TensorFlow supports a full range of math operations:
+> “A single API call costs cents. A few thousand? That’s your rent.”
 
-### ✅ Element-wise Math:
-```python
-x = tf.constant([1.0, 2.0, 3.0])
+You’ve done it — your app is live.
+People are clicking “Generate,”
+sending prompts, uploading selfies, hitting `/predict`.
 
-print(tf.math.square(x))     # [1, 4, 9]
-print(tf.math.sqrt(x))       # [1.0, 1.4142, 1.7320]
-print(tf.math.exp(x))        # Exponential
-print(tf.math.log(x))        # Natural log
+But behind the scenes:
+
+* OpenAI is charging per 1K tokens
+* Replicate is charging per image processed
+* Your free tier is disappearing like steam
+
+Suddenly, your fun AI meme generator…
+is costing real money — and fast.
+
+Welcome to the part of AI dev no one talks about: cost safety.
+
+---
+
+## 12.1 Why This Matters
+
+Every time a user:
+
+* Sends a prompt to GPT
+* Uploads an image to Replicate
+* Requests a Hugging Face inference
+
+You’re paying for it — or burning compute hours.
+
+Without limits, your app is:
+
+* Vulnerable to spam
+* Expensive at scale
+* Unpredictable in usage patterns
+
+---
+
+## 12.2 The 3 Layers of Cost Control
+
+| Layer      | What It Means                | Example Tool / Method         |
+| ---------- | ---------------------------- | ----------------------------- |
+| Rate Limit | Max calls per minute/hour    | “5 requests per minute”       |
+| Cooldown   | Delay between calls          | “Wait 10 seconds after click” |
+| Quota      | Max total calls per user/day | “100 calls per user/day”      |
+
+These can be implemented at:
+
+* Backend level (e.g. FastAPI)
+* Frontend level (e.g. React/Gradio logic)
+* API provider level (e.g. OpenAI usage limits)
+
+---
+
+## 12.3 How to Rate Limit in FastAPI
+
+**Install:**
+
 ```
-### ✅ Reduction Ops:
-```python
-matrix = tf.constant([[1.0, 2.0], [3.0, 4.0]])
-
-print(tf.reduce_sum(matrix))           # 10.0
-print(tf.reduce_mean(matrix))          # 2.5
-print(tf.reduce_max(matrix, axis=0))   # [3.0, 4.0]
-```
-> 💡 Reduction ops collapse tensors along a specified axis.
-
----
-
-## 12.3 Rounding & Clipping
-
-```python
-a = tf.constant([1.2, 2.5, 3.8])
-
-print(tf.round(a))       # [1.0, 2.0, 4.0]
-print(tf.floor(a))       # [1.0, 2.0, 3.0]
-print(tf.math.ceil(a))   # [2.0, 3.0, 4.0]
-print(tf.clip_by_value(a, 1.5, 3.0))  # [1.5, 2.5, 3.0]
+pip install slowapi
 ```
 
----
-
-## 12.4 Bitwise Operations (for Integers Only)
-
-Bitwise operations are useful for:  
-- Masks and binary logic  
-- Pixel manipulation (in image tasks)  
-- Efficient boolean filters
-
-```python
-x = tf.constant([0b1010, 0b1100], dtype=tf.int32)
-y = tf.constant([0b0101, 0b1010], dtype=tf.int32)
-
-print(tf.bitwise.bitwise_and(x, y))  # [0b0000, 0b1000]
-print(tf.bitwise.bitwise_or(x, y))   # [0b1111, 0b1110]
-print(tf.bitwise.invert(x))          # Bitwise NOT
-print(tf.bitwise.left_shift(x, 1))   # Shift left (×2)
-print(tf.bitwise.right_shift(x, 1))  # Shift right (÷2)
-```
-
----
-
-## 12.5 Modulo and Sign
-
-```python
-print(tf.math.mod(17, 5))         # 2
-print(tf.math.floormod(17, 5))    # 2
-print(tf.math.sign([-2.0, 0.0, 3.0]))  # [-1.0, 0.0, 1.0]
-```
-These are useful in:  
-
-- Cycle detection  
-- Position encoding  
-- Boolean masks for data pipelines
-
----
-
-## 12.6 One-Hot Encoding (Bonus)
+**main.py:**
 
 ```python
-labels = tf.constant([0, 2, 1])
-one_hot = tf.one_hot(labels, depth=3)
-print(one_hot)
+from fastapi import FastAPI, Request
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+
+limiter = Limiter(key_func=get_remote_address)
+app = FastAPI()
+app.state.limiter = limiter
+
+@app.get("/predict")
+@limiter.limit("5/minute")
+async def predict(request: Request):
+    return {"result": "OK"}
 ```
-### Output:
-```lua
-[[1. 0. 0.]
- [0. 0. 1.]
- [0. 1. 0.]]
+
+This stops users from overloading your endpoints.
+
+---
+
+## 12.4 Cooldown (Frontend Style)
+
+**React snippet:**
+
+```javascript
+const [lastUsed, setLastUsed] = useState(null);
+const cooldown = 10000; // 10 seconds
+
+function handleClick() {
+  const now = Date.now();
+  if (lastUsed && now - lastUsed < cooldown) {
+    alert("Please wait a moment before trying again.");
+    return;
+  }
+  setLastUsed(now);
+  // Call backend
+}
 ```
-This is crucial for classification tasks before training.
+
+Prevents users from spamming “Generate” or “Submit” buttons.
 
 ---
 
-## 12.7 Summary
+## 12.5 Quotas Per User
 
-- TensorFlow supports a wide range of numerical, reduction, and bitwise operations.  
-- These ops form the foundation for loss computation, feature preprocessing, and low-level tensor control.  
-- Mastering them helps you go beyond layers—into the math powering them.
+Store user usage in:
+
+* Firebase
+* Supabase
+* Tiny JSON file or SQLite
+
+**Example logic:**
+
+```python
+if user_usage_today >= MAX_DAILY_QUOTA:
+    return {"error": "You’ve hit today’s limit. Try again tomorrow."}
+```
+
+Great for freemium models or early monetization.
 
 ---
 
-> “*Machine learning is built on numbers—but sharpened with operations.*”
+## 12.6 Billing Safety with APIs
+
+**OpenAI**
+
+* Set usage caps per API key at [platform.openai.com/account/usage](https://platform.openai.com/account/usage)
+* View per-request logs and token counts
+* Get billing alerts via email
+
+**Replicate**
+
+* See run costs before calling each model
+* Monitor credit balance in dashboard
+* Rotate tokens every 30 days
+
+**Hugging Face**
+
+* No billing unless using Inference Endpoints
+* Free-tier RAM/CPU limits will throttle requests
 
 ---
 
-## End of Part II: Tensor Mechanics and Computation
+## 12.7 Builder’s Lens: Guardrails Are a Service
 
-You now know how to:  
+> “A good AI app doesn’t just respond fast.
+> It responds responsibly.”
 
-- Slice, reshape, and broadcast tensors  
-- Work with ragged, sparse, and string data  
-- Create trainable variables  
-- Record and compute gradients  
-- Write high-performance TensorFlow graphs
+Rate limits aren’t just about saving money.
+They’re about:
+
+* Building trust with users
+* Preventing accidental overuse
+* Supporting sustainable scaling
+
+In fact, adding usage rules early on tells your users:
+**“This tool is stable. You can rely on it.”**
+
+---
+
+## Summary Takeaways
+
+| Safety Layer   | Why It’s Important                          |
+| -------------- | ------------------------------------------- |
+| Rate limits    | Prevents request spam                       |
+| Cooldowns      | Controls behavior from frontend             |
+| Quotas         | Helps enforce freemium tiers or budget caps |
+| Billing alerts | Protects you from financial surprises       |
+
+---
+
+## 🌟 Closing Reflection
+
+> “Creativity needs power.
+> But power without control is chaos.”
+
+---

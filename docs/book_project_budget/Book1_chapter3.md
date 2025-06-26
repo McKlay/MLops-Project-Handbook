@@ -1,7 +1,11 @@
-# 📘 Chapter 3: Setting Up Your AI/ML Project Repository
+---
+hide:
+  - toc
+---
 
+# Chapter 3: Setting Up Your AI/ML Project Repository
 
-## 🏗️ 3.1 Why Structure Matters
+## 3.1 Why Structure Matters
 
 Before you write a single line of code, a well-organized project structure will help you:
 
@@ -15,11 +19,11 @@ Before you write a single line of code, a well-organized project structure will 
 
 - Smoothly deploy on Hugging Face, Railway, or Vercel.
 
-📌 Goal: Create a modular structure that can be reused for any of your future AI/ML projects: Chatbots, Meme Generators, Cartoonizers, etc.
+Goal: Create a modular structure that can be reused for any of your future AI/ML projects: Chatbots, Meme Generators, Cartoonizers, etc.
 
 ---
 
-## 📁 3.2 Recommended Folder Structure
+## 3.2 Recommended Folder Structure
 
 **For Fullstack AI Projects (Frontend + Backend + Model/API):**
 ```bash
@@ -67,7 +71,7 @@ pip install fastapi uvicorn transformers openai python-dotenv
 pip freeze > requirements.txt
 ```
 
-**📂 Inside backend/app/main.py:**
+**Inside backend/app/main.py:**
 
 ```python
 from fastapi import FastAPI
@@ -115,13 +119,13 @@ fetch(`${process.env.REACT_APP_API_URL}/generate`, {
 
 ## 3.5 Managing Secrets Safely
 
-**✅ backend/.env**
+**backend/.env**
 ```python
   OPENAI_API_KEY=sk-xxxxxxxxxx
   REPLICATE_API_TOKEN=r8_abc...
 ```
 
-**✅ .gitignore**
+**.gitignore**
 ```python
   venv/
   __pycache__/

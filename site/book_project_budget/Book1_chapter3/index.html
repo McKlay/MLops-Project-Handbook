@@ -211,6 +211,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -495,7 +497,7 @@
         <li class="md-nav__item">
   <a href="#31-why-structure-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ 3.1 Why Structure Matters
+      3.1 Why Structure Matters
     </span>
   </a>
   
@@ -504,7 +506,7 @@
         <li class="md-nav__item">
   <a href="#32-recommended-folder-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      📁 3.2 Recommended Folder Structure
+      3.2 Recommended Folder Structure
     </span>
   </a>
   
@@ -1491,7 +1493,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1512,7 +1516,7 @@
         <li class="md-nav__item">
   <a href="#31-why-structure-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ 3.1 Why Structure Matters
+      3.1 Why Structure Matters
     </span>
   </a>
   
@@ -1521,7 +1525,7 @@
         <li class="md-nav__item">
   <a href="#32-recommended-folder-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      📁 3.2 Recommended Folder Structure
+      3.2 Recommended Folder Structure
     </span>
   </a>
   
@@ -1594,11 +1598,13 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-3-setting-up-your-aiml-project-repository">📘 Chapter 3: Setting Up Your AI/ML Project Repository<a class="headerlink" href="#chapter-3-setting-up-your-aiml-project-repository" title="Permanent link">&para;</a></h1>
-<h2 id="31-why-structure-matters">🏗️ 3.1 Why Structure Matters<a class="headerlink" href="#31-why-structure-matters" title="Permanent link">&para;</a></h2>
+
+<h1 id="chapter-3-setting-up-your-aiml-project-repository">Chapter 3: Setting Up Your AI/ML Project Repository<a class="headerlink" href="#chapter-3-setting-up-your-aiml-project-repository" title="Permanent link">&para;</a></h1>
+<h2 id="31-why-structure-matters">3.1 Why Structure Matters<a class="headerlink" href="#31-why-structure-matters" title="Permanent link">&para;</a></h2>
 <p>Before you write a single line of code, a well-organized project structure will help you:</p>
 <ul>
 <li>
@@ -1617,9 +1623,9 @@
 <p>Smoothly deploy on Hugging Face, Railway, or Vercel.</p>
 </li>
 </ul>
-<p>📌 Goal: Create a modular structure that can be reused for any of your future AI/ML projects: Chatbots, Meme Generators, Cartoonizers, etc.</p>
+<p>Goal: Create a modular structure that can be reused for any of your future AI/ML projects: Chatbots, Meme Generators, Cartoonizers, etc.</p>
 <hr />
-<h2 id="32-recommended-folder-structure">📁 3.2 Recommended Folder Structure<a class="headerlink" href="#32-recommended-folder-structure" title="Permanent link">&para;</a></h2>
+<h2 id="32-recommended-folder-structure">3.2 Recommended Folder Structure<a class="headerlink" href="#32-recommended-folder-structure" title="Permanent link">&para;</a></h2>
 <p><strong>For Fullstack AI Projects (Frontend + Backend + Model/API):</strong>
 <div class="highlight"><pre><span></span><code>your_project/
 │
@@ -1658,7 +1664,7 @@
 <span class="n">pip</span> <span class="n">install</span> <span class="n">fastapi</span> <span class="n">uvicorn</span> <span class="n">transformers</span> <span class="n">openai</span> <span class="n">python</span><span class="o">-</span><span class="n">dotenv</span>
 <span class="n">pip</span> <span class="n">freeze</span> <span class="o">&gt;</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
-<p><strong>📂 Inside backend/app/main.py:</strong></p>
+<p><strong>Inside backend/app/main.py:</strong></p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
@@ -1693,11 +1699,11 @@
 </code></pre></div></p>
 <hr />
 <h2 id="35-managing-secrets-safely">3.5 Managing Secrets Safely<a class="headerlink" href="#35-managing-secrets-safely" title="Permanent link">&para;</a></h2>
-<p><strong>✅ backend/.env</strong>
+<p><strong>backend/.env</strong>
 <div class="highlight"><pre><span></span><code>  <span class="n">OPENAI_API_KEY</span><span class="o">=</span><span class="n">sk</span><span class="o">-</span><span class="n">xxxxxxxxxx</span>
   <span class="n">REPLICATE_API_TOKEN</span><span class="o">=</span><span class="n">r8_abc</span><span class="o">...</span>
 </code></pre></div></p>
-<p><strong>✅ .gitignore</strong>
+<p><strong>.gitignore</strong>
 <div class="highlight"><pre><span></span><code>  <span class="n">venv</span><span class="o">/</span>
   <span class="n">__pycache__</span><span class="o">/</span>
   <span class="o">*.</span><span class="n">pyc</span>
@@ -1786,8 +1792,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

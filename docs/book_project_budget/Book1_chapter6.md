@@ -1,4 +1,9 @@
-# 📘 Chapter 6: Integrating with Paid APIs
+---
+hide:
+  - toc
+---
+
+# Chapter 6: Integrating with Paid APIs
 
 ## 6.1 Why Use Paid APIs?
 
@@ -30,11 +35,11 @@ Examples of what you can do:
 ```bash
     pip install openai python-dotenv
 ```
-**📂 .env (in backend/)**
+**.env (in backend/)**
 ```bash
     OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxx
 ```
-**📄 backend/app/main.py**
+**backend/app/main.py**
 ```python
     import openai
     import os
@@ -61,11 +66,11 @@ Examples of what you can do:
 ```bash
     pip install replicate
 ```
-**📂 .env**
+**.env**
 ```bash
     REPLICATE_API_TOKEN=r8_your_api_token_here
 ```
-**📄 backend/app/cartoonize.py**
+**backend/app/cartoonize.py**
 ```python
     import replicate
     import os
@@ -82,7 +87,7 @@ Examples of what you can do:
 
 ## 6.4 Securing API Keys in Production
 
-✅ Best Practices:
+Best Practices:
 
 - Use .env for local development.
 
@@ -105,7 +110,7 @@ Examples of what you can do:
 |🔁 Add caching	                |Cache repeated results (e.g., for meme captions)           |
 |💬 Summarize before sending	|If chaining user inputs, summarize old messages            |
 
-> ✅ Hugging Face & Railway let you inspect logs and rate-limit usage if needed.
+> Hugging Face & Railway let you inspect logs and rate-limit usage if needed.
 
 ---
 
@@ -146,7 +151,7 @@ For production, you can use:
 
 --
 
-## ✅ Chapter Summary
+## Chapter Summary
 
 - You’ve integrated OpenAI and Replicate APIs into your backend.
 

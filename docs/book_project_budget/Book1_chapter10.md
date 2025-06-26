@@ -1,6 +1,11 @@
-# 📘 Chapter 10: How to Stay Within Free Tiers
+---
+hide:
+  - toc
+---
 
-With great deployment comes great responsibility, 🧾 Chapter 10 is all about smart cost control and usage monitoring — the key to sustainably running your AI apps, especially when using paid APIs (like OpenAI/Replicate) or free-tier compute (Railway/Hugging Face/Vercel). Let’s protect your wallet 💳 while scaling your impact 🌍.
+# Chapter 10: How to Stay Within Free Tiers
+
+With great deployment comes great responsibility, Chapter 10 is all about smart cost control and usage monitoring — the key to sustainably running your AI apps, especially when using paid APIs (like OpenAI/Replicate) or free-tier compute (Railway/Hugging Face/Vercel). Let’s protect your wallet while scaling your impact.
 
 ---
 
@@ -31,12 +36,12 @@ Even small AI/ML apps can rack up unexpected costs due to:
 
 ## 10.3 Control API Costs with Smart Code
 
-✅ 1. Set Prompt Length Limits (for OpenAI)
+1. Set Prompt Length Limits (for OpenAI)
 ```python    
     if len(prompt) > 250:
         return {"error": "Prompt too long"}
 ```
-✅ 2. Add a Global Cooldown (e.g. 10 seconds)
+2. Add a Global Cooldown (e.g. 10 seconds)
 
 ```python    
     import time
@@ -50,7 +55,7 @@ Even small AI/ML apps can rack up unexpected costs due to:
         # call your OpenAI API
 ```
 
-✅ 3. Use Small Models First
+3. Use Small Models First
 
 |Model	                    |Est. Cost per 1K tokens    |
 |---------------------------|---------------------------|
@@ -58,7 +63,7 @@ Even small AI/ML apps can rack up unexpected costs due to:
 |gpt-4	                    |~$0.03–$0.06               |
 |openai/text-davinci-003	|~$0.02                     |
 
-> ➡️ Use gpt-3.5-turbo by default for text.
+> Use gpt-3.5-turbo by default for text.
 
 ---
 
@@ -71,7 +76,7 @@ Even small AI/ML apps can rack up unexpected costs due to:
 |Use “Preview” mode in demos	|Lower-res output = cheaper |
 |Bundle image post-processing	|Avoid second inference step|
 
-> ✅ You can also pre-generate results for demos to avoid live inference costs.
+> You can also pre-generate results for demos to avoid live inference costs.
 
 ---
 
@@ -91,7 +96,7 @@ Even small AI/ML apps can rack up unexpected costs due to:
 
 ## 10.6 Add Logging to Your Backend
 
-**📄 utils/logger.py**
+**utils/logger.py**
 ```python    
     import datetime
     def log_usage(endpoint: str, input_data: dict):
