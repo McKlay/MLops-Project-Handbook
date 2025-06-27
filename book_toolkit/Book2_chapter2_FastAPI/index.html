@@ -1696,7 +1696,7 @@ FastAPI doesn’t just help you build APIs. It flows with you.</p>
 </blockquote>
 <hr />
 <h2 id="24-anatomy-of-a-minimal-fastapi-app">2.4 Anatomy of a Minimal FastAPI App<a class="headerlink" href="#24-anatomy-of-a-minimal-fastapi-app" title="Permanent link">&para;</a></h2>
-<p>📄 main.py
+<p>main.py
 <div class="highlight"><pre><span></span><code>       <span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
        <span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
        <span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
@@ -1706,7 +1706,7 @@ FastAPI doesn’t just help you build APIs. It flows with you.</p>
        <span class="k">def</span><span class="w"> </span><span class="nf">generate_text</span><span class="p">(</span><span class="n">prompt</span><span class="p">:</span> <span class="n">Prompt</span><span class="p">):</span>
            <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Received: </span><span class="si">{</span><span class="n">prompt</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
 </code></pre></div>
-🔁 Test locally:
+Test locally:
 <div class="highlight"><pre><span></span><code><span class="w">       </span>uvicorn<span class="w"> </span>main:app<span class="w"> </span>--reload
 </code></pre></div></p>
 <p>Then go to http://localhost:8000/docs for a live, interactive UI.<br />
@@ -1739,7 +1739,7 @@ Yes. It builds its own documentation. Automatically.</p>
        <span class="p">)</span>
 </code></pre></div>
 <blockquote>
-<p>💡 Without this, your frontend will hit CORS errors when making requests to your backend.</p>
+<p>Without this, your frontend will hit CORS errors when making requests to your backend.</p>
 </blockquote>
 <hr />
 <h2 id="27-fastapi-vs-flask-vs-django-which-to-choose">2.7 FastAPI vs Flask vs Django: Which to Choose?<a class="headerlink" href="#27-fastapi-vs-flask-vs-django-which-to-choose" title="Permanent link">&para;</a></h2>
@@ -1779,9 +1779,9 @@ Yes. It builds its own documentation. Automatically.</p>
 </tr>
 <tr>
 <td>Dev Ergonomics</td>
-<td>🧪 Manual</td>
-<td>🏗️ Heavy</td>
-<td>🧘 Smooth</td>
+<td>Manual</td>
+<td>Heavy</td>
+<td>Smooth</td>
 </tr>
 </tbody>
 </table>

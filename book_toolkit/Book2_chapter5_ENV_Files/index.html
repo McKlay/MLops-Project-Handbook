@@ -1705,14 +1705,14 @@ REPLICATE_API_TOKEN=r8_abcdefg
 <p>Install <code>python-dotenv</code> (for FastAPI or custom scripts):</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>python-dotenv
 </code></pre></div>
-<p>📄 <strong>In <code>main.py</code></strong>:</p>
+<p><strong>In <code>main.py</code></strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
 
-<span class="n">load_dotenv</span><span class="p">()</span>  <span class="c1"># ⬅️ Reads from .env file automatically</span>
+<span class="n">load_dotenv</span><span class="p">()</span>  <span class="c1"># ⬅Reads from .env file automatically</span>
 <span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;OPENAI_API_KEY&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>✅ Works with:</p>
+<p>Works with:</p>
 <ul>
 <li>Hugging Face Transformers</li>
 <li>OpenAI SDK</li>
@@ -1806,8 +1806,8 @@ Teammates rename <code>.env.example → .env</code> and fill in their own keys.<
 <p>React uses:</p>
 <div class="highlight"><pre><span></span><code>REACT_APP_API_URL=https://your-backend.com
 </code></pre></div>
-<p>❌ But never expose secrets like <code>OPENAI_API_KEY</code> here.
-🧠 Frontend <strong>should never</strong> call OpenAI directly.</p>
+<p>But never expose secrets like <code>OPENAI_API_KEY</code> here.
+Frontend <strong>should never</strong> call OpenAI directly.</p>
 <blockquote>
 <p>Flow: <strong>Frontend → Backend → OpenAI</strong> (secure key stays in backend)</p>
 </blockquote>
