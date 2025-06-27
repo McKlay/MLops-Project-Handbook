@@ -72,7 +72,7 @@ React gives you:
 
 -  Easy integration with backend APIs
 
-**📁 Typical Structure:**
+**Typical Structure:**
 ```bash  
   frontend/
   ├── src/

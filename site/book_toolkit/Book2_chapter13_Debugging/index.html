@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-13-tensorflow-keras-api-anatomy-of-a-model" class="md-skip">
+        <a href="#chapter-13-logging-monitoring-debugging-for-ai-apps" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1281,87 +1283,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#131-what-is-tfkeras" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      13.1 What is tf.keras?
+      This chapter covers:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#132-the-3-model-building-styles" class="md-nav__link">
+  <a href="#opening-reflection-seeing-the-invisible" class="md-nav__link">
     <span class="md-ellipsis">
-      13.2 The 3 Model Building Styles
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="13.2 The 3 Model Building Styles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-sequential-api-beginner-friendly" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 1. Sequential API (Beginner-friendly)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-functional-api-flexible-architectures" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 2. Functional API (Flexible architectures)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-subclassing-api-for-full-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 3. Subclassing API (For full control)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#133-anatomy-of-a-keras-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      13.3 Anatomy of a Keras Model
+      Opening Reflection: Seeing the Invisible
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#134-model-compilation" class="md-nav__link">
+  <a href="#131-logging-vs-monitoring-vs-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      13.4 Model Compilation
+      13.1 Logging vs Monitoring vs Debugging
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#135-summary-of-a-simple-model-lifecycle" class="md-nav__link">
+  <a href="#132-logging-in-fastapi" class="md-nav__link">
     <span class="md-ellipsis">
-      13.5 Summary of a Simple Model Lifecycle
+      13.2 Logging in FastAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#136-summary" class="md-nav__link">
+  <a href="#133-logging-in-react-frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      13.6 Summary
+      13.3 Logging in React (Frontend)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-model-debugging-watch-the-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.4 Model Debugging: Watch the Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-monitoring-tools-when-to-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.5 Monitoring Tools (When to Scale)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-add-your-own-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.6 Add Your Own Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-builders-lens-debugging-listening-to-your-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.7 Builder’s Lens: Debugging = Listening to Your App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1506,7 +1520,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1525,87 +1541,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#131-what-is-tfkeras" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      13.1 What is tf.keras?
+      This chapter covers:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#132-the-3-model-building-styles" class="md-nav__link">
+  <a href="#opening-reflection-seeing-the-invisible" class="md-nav__link">
     <span class="md-ellipsis">
-      13.2 The 3 Model Building Styles
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="13.2 The 3 Model Building Styles">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-sequential-api-beginner-friendly" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 1. Sequential API (Beginner-friendly)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-functional-api-flexible-architectures" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 2. Functional API (Flexible architectures)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-subclassing-api-for-full-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 3. Subclassing API (For full control)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#133-anatomy-of-a-keras-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      13.3 Anatomy of a Keras Model
+      Opening Reflection: Seeing the Invisible
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#134-model-compilation" class="md-nav__link">
+  <a href="#131-logging-vs-monitoring-vs-debugging" class="md-nav__link">
     <span class="md-ellipsis">
-      13.4 Model Compilation
+      13.1 Logging vs Monitoring vs Debugging
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#135-summary-of-a-simple-model-lifecycle" class="md-nav__link">
+  <a href="#132-logging-in-fastapi" class="md-nav__link">
     <span class="md-ellipsis">
-      13.5 Summary of a Simple Model Lifecycle
+      13.2 Logging in FastAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#136-summary" class="md-nav__link">
+  <a href="#133-logging-in-react-frontend" class="md-nav__link">
     <span class="md-ellipsis">
-      13.6 Summary
+      13.3 Logging in React (Frontend)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-model-debugging-watch-the-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.4 Model Debugging: Watch the Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-monitoring-tools-when-to-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.5 Monitoring Tools (When to Scale)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-add-your-own-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.6 Add Your Own Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-builders-lens-debugging-listening-to-your-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.7 Builder’s Lens: Debugging = Listening to Your App
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1624,136 +1652,233 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-13-tensorflow-keras-api-anatomy-of-a-model">Chapter 13: TensorFlow Keras API – Anatomy of a Model<a class="headerlink" href="#chapter-13-tensorflow-keras-api-anatomy-of-a-model" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>“<em>A model is just an idea—until it gets layers, weights, and shape.</em>”</p>
-</blockquote>
+
+<h1 id="chapter-13-logging-monitoring-debugging-for-ai-apps">Chapter 13: Logging, Monitoring &amp; Debugging for AI Apps<a class="headerlink" href="#chapter-13-logging-monitoring-debugging-for-ai-apps" title="Permanent link">&para;</a></h1>
+<p><em>“What you can’t see… you can’t fix.”</em></p>
+<p>This chapter is where <strong>intuition meets visibility</strong>. Because after you build and deploy an AI app, the most important question becomes:
+<strong>“What’s actually happening under the hood?”</strong>
+This chapter gives you the tools and mindset for <strong>logging, monitoring, and debugging</strong> your AI systems — so you can fix bugs, track usage, and scale with confidence.</p>
 <hr />
-<h2 id="131-what-is-tfkeras">13.1 What is <code>tf.keras</code>?<a class="headerlink" href="#131-what-is-tfkeras" title="Permanent link">&para;</a></h2>
-<p><code>tf.keras</code> is TensorFlow’s official high-level API for building, training, and deploying machine learning models.</p>
-<p>It's designed to be:  </p>
+<h2 id="this-chapter-covers">This chapter covers:<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
 <ul>
-<li>User-friendly (simple syntax)  </li>
-<li>Modular (layers, optimizers, callbacks)  </li>
-<li>Extensible (custom layers/models)  </li>
-<li>Integrated (with TensorFlow ecosystem)  </li>
+<li>What logging and monitoring mean for AI/ML projects</li>
+<li>The difference between print, logs, metrics, traces</li>
+<li>Logs in FastAPI, React, and deployment platforms</li>
+<li>Debugging techniques for model pipelines</li>
+<li>Builder’s lens: visibility as power</li>
 </ul>
+<hr />
+<h2 id="opening-reflection-seeing-the-invisible">Opening Reflection: Seeing the Invisible<a class="headerlink" href="#opening-reflection-seeing-the-invisible" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Keras wraps the complexity of TensorFlow so you can focus on structure and logic, not boilerplate.</p>
+<p><em>“The best AI apps don’t just think.
+They reflect — and report.”</em></p>
 </blockquote>
+<p>Imagine a user types in a prompt… but nothing happens.
+Or your backend runs fine locally… but fails silently in production.
+Or worse — your model is returning bad predictions, and no one notices.</p>
+<p><strong>Logs are your eyes inside the machine.</strong>
+<strong>Monitoring tools are your heartbeat monitor.</strong>
+<strong>Debugging is your path to insight.</strong></p>
+<p>You don’t need to guess what’s wrong.
+You need to ask the system to speak.</p>
 <hr />
-<h2 id="132-the-3-model-building-styles">13.2 The 3 Model Building Styles<a class="headerlink" href="#132-the-3-model-building-styles" title="Permanent link">&para;</a></h2>
-<p>There are three ways to build models using <code>tf.keras</code>:</p>
-<h3 id="1-sequential-api-beginner-friendly">✅ 1. Sequential API (Beginner-friendly)<a class="headerlink" href="#1-sequential-api-beginner-friendly" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras</span><span class="w"> </span><span class="kn">import</span> <span class="n">layers</span><span class="p">,</span> <span class="n">models</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
-    <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,)),</span>
-    <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
-<span class="p">])</span>
-</code></pre></div>
-<h3 id="2-functional-api-flexible-architectures">✅ 2. Functional API (Flexible architectures)<a class="headerlink" href="#2-functional-api-flexible-architectures" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="n">inputs</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,))</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
-<span class="n">outputs</span> <span class="o">=</span> <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">outputs</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="3-subclassing-api-for-full-control">✅ 3. Subclassing API (For full control)<a class="headerlink" href="#3-subclassing-api-for-full-control" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MyModel</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dense1</span> <span class="o">=</span> <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">out</span> <span class="o">=</span> <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dense1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">()</span>
-</code></pre></div>
-Each has trade-offs. Start with Sequential, move to Functional for branching inputs/outputs, and use Subclassing for full customization.</p>
-<hr />
-<h2 id="133-anatomy-of-a-keras-model">13.3 Anatomy of a Keras Model<a class="headerlink" href="#133-anatomy-of-a-keras-model" title="Permanent link">&para;</a></h2>
-<p>Here’s what makes up a model under the hood:</p>
+<h2 id="131-logging-vs-monitoring-vs-debugging">13.1 Logging vs Monitoring vs Debugging<a class="headerlink" href="#131-logging-vs-monitoring-vs-debugging" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Component</th>
-<th>Description</th>
+<th>Term</th>
+<th>What It Means</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Input Layer</td>
-<td>Defines the shape of input data</td>
+<td>Logging</td>
+<td>Human-readable traces of what happened</td>
+<td><code>print("Received input...")</code></td>
 </tr>
 <tr>
-<td>Hidden Layers</td>
-<td>The intermediate processing units</td>
+<td>Monitoring</td>
+<td>Graphs &amp; metrics over time (infra, usage)</td>
+<td>RAM usage, API call count</td>
 </tr>
 <tr>
-<td>Output Layer</td>
-<td>Final layer for predictions</td>
-</tr>
-<tr>
-<td>Loss Function</td>
-<td>Measures model’s error</td>
-</tr>
-<tr>
-<td>Optimizer</td>
-<td>Updates weights based on gradients</td>
-</tr>
-<tr>
-<td>Metrics</td>
-<td>Monitors performance (accuracy, loss, etc.)</td>
+<td>Debugging</td>
+<td>Interactive tracing of bugs/errors</td>
+<td>Try/except, breakpoints</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="134-model-compilation">13.4 Model Compilation<a class="headerlink" href="#134-model-compilation" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
-    <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
-    <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span>
-    <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
-<span class="p">)</span>
+<h2 id="132-logging-in-fastapi">13.2 Logging in FastAPI<a class="headerlink" href="#132-logging-in-fastapi" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/predict&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span><span class="nb">input</span><span class="p">:</span> <span class="n">InputModel</span><span class="p">):</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Received input: </span><span class="si">{</span><span class="nb">input</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prediction: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">}</span>
 </code></pre></div>
-This sets the training configuration, including how the model learns and what it tracks.</p>
-<hr />
-<h2 id="135-summary-of-a-simple-model-lifecycle">13.5 Summary of a Simple Model Lifecycle<a class="headerlink" href="#135-summary-of-a-simple-model-lifecycle" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># 1. Build the model</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
-    <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
-    <span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
-<span class="p">])</span>
-
-<span class="c1"># 2. Compile</span>
-<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
-              <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;sparse_categorical_crossentropy&#39;</span><span class="p">,</span>
-              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
-
-<span class="c1"># 3. Train</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="c1"># 4. Evaluate</span>
-<span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-
-<span class="c1"># 5. Predict</span>
-<span class="n">preds</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_new</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="136-summary">13.6 Summary<a class="headerlink" href="#136-summary" title="Permanent link">&para;</a></h2>
+<p>✅ Logs show up in:</p>
 <ul>
-<li>tf.keras is TensorFlow’s high-level API for model building.  </li>
-<li>You can build models using Sequential, Functional, or Subclassing styles.  </li>
-<li>Models have layers, losses, optimizers, and metrics—all handled cleanly.  </li>
-<li>Knowing the anatomy helps you debug, customize, and scale efficiently.  </li>
+<li>Local dev terminal</li>
+<li>Railway/Render logs</li>
+<li>Hugging Face Spaces log console</li>
 </ul>
 <hr />
-<p>“A model is just an idea—until it gets layers, weights, and shape.”</p>
+<h2 id="133-logging-in-react-frontend">13.3 Logging in React (Frontend)<a class="headerlink" href="#133-logging-in-react-frontend" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;User clicked submit.&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s2">&quot;No input detected.&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Failed to fetch from backend.&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>In production, you can route logs to:</p>
+<ul>
+<li>Vercel Analytics (PRO)</li>
+<li>LogRocket</li>
+<li>Sentry</li>
+</ul>
+<p>You can track:</p>
+<ul>
+<li>Button clicks</li>
+<li>Page views</li>
+<li>Inference time per generation</li>
+</ul>
+<hr />
+<h2 id="134-model-debugging-watch-the-flow">13.4 Model Debugging: Watch the Flow<a class="headerlink" href="#134-model-debugging-watch-the-flow" title="Permanent link">&para;</a></h2>
+<p>If your AI app isn’t working as expected:</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Empty / wrong predictions</td>
+<td>Model not loaded, bad input shape</td>
+<td>Log input/output, check types</td>
+</tr>
+<tr>
+<td>Timeout or 502 error</td>
+<td>Large model loading, cold start</td>
+<td>Add loading spinner, preload</td>
+</tr>
+<tr>
+<td>App crashes after upload</td>
+<td>Wrong file format or MIME type</td>
+<td>Use <code>PIL.Image.verify()</code></td>
+</tr>
+</tbody>
+</table>
+<p>Always log:</p>
+<ul>
+<li>What was received</li>
+<li>What was processed</li>
+<li>What was returned</li>
+</ul>
+<hr />
+<h2 id="135-monitoring-tools-when-to-scale">13.5 Monitoring Tools (When to Scale)<a class="headerlink" href="#135-monitoring-tools-when-to-scale" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What It Tracks</th>
+<th>Great For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prometheus</td>
+<td>Custom metrics (in FastAPI)</td>
+<td>DIY infra / backend metrics</td>
+</tr>
+<tr>
+<td>Sentry</td>
+<td>Frontend + backend errors</td>
+<td>Crash reports + debugging</td>
+</tr>
+<tr>
+<td>Railway Logs</td>
+<td>App logs and performance</td>
+<td>Most AI projects in dev</td>
+</tr>
+<tr>
+<td>Vercel Analytics</td>
+<td>Page views, traffic, usage</td>
+<td>React dashboards</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="136-add-your-own-analytics">13.6 Add Your Own Analytics<a class="headerlink" href="#136-add-your-own-analytics" title="Permanent link">&para;</a></h2>
+<p><strong>utils/logger.py</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">log_usage</span><span class="p">(</span><span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">user_input</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;logs.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">endpoint</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">user_input</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>✅ Append logs to local file or S3
+✅ Helps track usage patterns
+✅ Later used for analytics, dashboards, limits</p>
+<hr />
+<h2 id="137-builders-lens-debugging-listening-to-your-app">13.7 Builder’s Lens: Debugging = Listening to Your App<a class="headerlink" href="#137-builders-lens-debugging-listening-to-your-app" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“Your app is speaking. The logs are its voice.”</em></p>
+</blockquote>
+<p>As AI builders, we don’t just write code.
+We write conversations with the unknown.</p>
+<p>Logs tell us:</p>
+<ul>
+<li>When users are confused</li>
+<li>When something fails quietly</li>
+<li>What needs to scale or evolve</li>
+</ul>
+<p><strong>When you listen to your app, you hear its soul.</strong></p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Insight</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logging = awareness</td>
+<td>Know what happened, when, and how</td>
+</tr>
+<tr>
+<td>Monitoring = metrics</td>
+<td>See trends over time (cost, traffic)</td>
+</tr>
+<tr>
+<td>Debugging = investigation</td>
+<td>Trace cause → fix with precision</td>
+</tr>
+<tr>
+<td>Use logs early</td>
+<td>Don’t wait for bugs to get serious</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“AI is not magic.
+It’s engineering — and good engineers listen.”</em></p>
+</blockquote>
+<hr />
 
 
 
@@ -1761,8 +1886,13 @@ This sets the training configuration, including how the model learns and what it
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

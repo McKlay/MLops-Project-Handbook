@@ -69,17 +69,17 @@ Install `python-dotenv` (for FastAPI or custom scripts):
 pip install python-dotenv
 ```
 
-📄 **In `main.py`**:
+**In `main.py`**:
 
 ```python
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # ⬅️ Reads from .env file automatically
+load_dotenv()  # ⬅Reads from .env file automatically
 api_key = os.getenv("OPENAI_API_KEY")
 ```
 
-✅ Works with:
+Works with:
 
 * Hugging Face Transformers
 * OpenAI SDK
@@ -151,8 +151,8 @@ React uses:
 REACT_APP_API_URL=https://your-backend.com
 ```
 
-❌ But never expose secrets like `OPENAI_API_KEY` here.
-🧠 Frontend **should never** call OpenAI directly.
+But never expose secrets like `OPENAI_API_KEY` here.
+Frontend **should never** call OpenAI directly.
 
 > Flow: **Frontend → Backend → OpenAI** (secure key stays in backend)
 

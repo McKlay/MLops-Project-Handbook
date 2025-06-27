@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-12-bitwise-numerical-operations" class="md-skip">
+        <a href="#chapter-12-rate-limits-cooldowns-billing-safety" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1258,111 +1260,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#121-why-these-ops-matter" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      12.1 Why These Ops Matter
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#122-numerical-operations" class="md-nav__link">
+  <a href="#opening-reflection-the-cost-of-every-click" class="md-nav__link">
     <span class="md-ellipsis">
-      12.2 Numerical Operations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="12.2 Numerical Operations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#element-wise-math" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Element-wise Math:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reduction-ops" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Reduction Ops:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#123-rounding-clipping" class="md-nav__link">
-    <span class="md-ellipsis">
-      12.3 Rounding &amp; Clipping
+      Opening Reflection: The Cost of Every Click
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#124-bitwise-operations-for-integers-only" class="md-nav__link">
+  <a href="#121-why-this-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      12.4 Bitwise Operations (for Integers Only)
+      12.1 Why This Matters
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#125-modulo-and-sign" class="md-nav__link">
+  <a href="#122-the-3-layers-of-cost-control" class="md-nav__link">
     <span class="md-ellipsis">
-      12.5 Modulo and Sign
+      12.2 The 3 Layers of Cost Control
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#126-one-hot-encoding-bonus" class="md-nav__link">
+  <a href="#123-how-to-rate-limit-in-fastapi" class="md-nav__link">
     <span class="md-ellipsis">
-      12.6 One-Hot Encoding (Bonus)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="12.6 One-Hot Encoding (Bonus)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#127-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      12.7 Summary
+      12.3 How to Rate Limit in FastAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#end-of-part-ii-tensor-mechanics-and-computation" class="md-nav__link">
+  <a href="#124-cooldown-frontend-style" class="md-nav__link">
     <span class="md-ellipsis">
-      End of Part II: Tensor Mechanics and Computation
+      12.4 Cooldown (Frontend Style)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-quotas-per-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.5 Quotas Per User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-billing-safety-with-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6 Billing Safety with APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-builders-lens-guardrails-are-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.7 Builder’s Lens: Guardrails Are a Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1530,7 +1520,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1549,111 +1541,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#121-why-these-ops-matter" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      12.1 Why These Ops Matter
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#122-numerical-operations" class="md-nav__link">
+  <a href="#opening-reflection-the-cost-of-every-click" class="md-nav__link">
     <span class="md-ellipsis">
-      12.2 Numerical Operations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="12.2 Numerical Operations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#element-wise-math" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Element-wise Math:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reduction-ops" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Reduction Ops:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#123-rounding-clipping" class="md-nav__link">
-    <span class="md-ellipsis">
-      12.3 Rounding &amp; Clipping
+      Opening Reflection: The Cost of Every Click
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#124-bitwise-operations-for-integers-only" class="md-nav__link">
+  <a href="#121-why-this-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      12.4 Bitwise Operations (for Integers Only)
+      12.1 Why This Matters
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#125-modulo-and-sign" class="md-nav__link">
+  <a href="#122-the-3-layers-of-cost-control" class="md-nav__link">
     <span class="md-ellipsis">
-      12.5 Modulo and Sign
+      12.2 The 3 Layers of Cost Control
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#126-one-hot-encoding-bonus" class="md-nav__link">
+  <a href="#123-how-to-rate-limit-in-fastapi" class="md-nav__link">
     <span class="md-ellipsis">
-      12.6 One-Hot Encoding (Bonus)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="12.6 One-Hot Encoding (Bonus)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#127-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      12.7 Summary
+      12.3 How to Rate Limit in FastAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#end-of-part-ii-tensor-mechanics-and-computation" class="md-nav__link">
+  <a href="#124-cooldown-frontend-style" class="md-nav__link">
     <span class="md-ellipsis">
-      End of Part II: Tensor Mechanics and Computation
+      12.4 Cooldown (Frontend Style)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-quotas-per-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.5 Quotas Per User
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-billing-safety-with-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6 Billing Safety with APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127-builders-lens-guardrails-are-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.7 Builder’s Lens: Guardrails Are a Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1672,114 +1652,209 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-12-bitwise-numerical-operations">Chapter 12: Bitwise &amp; Numerical Operations<a class="headerlink" href="#chapter-12-bitwise-numerical-operations" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-12-rate-limits-cooldowns-billing-safety">Chapter 12: Rate Limits, Cooldowns &amp; Billing Safety<a class="headerlink" href="#chapter-12-rate-limits-cooldowns-billing-safety" title="Permanent link">&para;</a></h1>
+<p><strong>“Control is the first feature of scale.”</strong></p>
+<p>This chapter focuses on something every developer needs to master early: cost control, rate limits, and user safety mechanisms.
+Because it’s not just about making a smart app — it’s about making one that doesn’t surprise you with a \$500 bill.</p>
+<hr />
+<h2 id="this-chapter-covers">This Chapter Covers<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Why AI apps need usage control</li>
+<li>Rate limiting vs cooldowns vs quotas</li>
+<li>How to prevent API abuse (especially with OpenAI/Replicate)</li>
+<li>Billing guardrails and alert setups</li>
+<li>Builder’s lens: safety as a service</li>
+</ul>
+<hr />
+<h2 id="opening-reflection-the-cost-of-every-click">Opening Reflection: The Cost of Every Click<a class="headerlink" href="#opening-reflection-the-cost-of-every-click" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>“<em>Machine learning is built on numbers—but sharpened with operations.</em>”</p>
+<p>“A single API call costs cents. A few thousand? That’s your rent.”</p>
+</blockquote>
+<p>You’ve done it — your app is live.
+People are clicking “Generate,”
+sending prompts, uploading selfies, hitting <code>/predict</code>.</p>
+<p>But behind the scenes:</p>
+<ul>
+<li>OpenAI is charging per 1K tokens</li>
+<li>Replicate is charging per image processed</li>
+<li>Your free tier is disappearing like steam</li>
+</ul>
+<p>Suddenly, your fun AI meme generator…
+is costing real money — and fast.</p>
+<p>Welcome to the part of AI dev no one talks about: cost safety.</p>
+<hr />
+<h2 id="121-why-this-matters">12.1 Why This Matters<a class="headerlink" href="#121-why-this-matters" title="Permanent link">&para;</a></h2>
+<p>Every time a user:</p>
+<ul>
+<li>Sends a prompt to GPT</li>
+<li>Uploads an image to Replicate</li>
+<li>Requests a Hugging Face inference</li>
+</ul>
+<p>You’re paying for it — or burning compute hours.</p>
+<p>Without limits, your app is:</p>
+<ul>
+<li>Vulnerable to spam</li>
+<li>Expensive at scale</li>
+<li>Unpredictable in usage patterns</li>
+</ul>
+<hr />
+<h2 id="122-the-3-layers-of-cost-control">12.2 The 3 Layers of Cost Control<a class="headerlink" href="#122-the-3-layers-of-cost-control" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>What It Means</th>
+<th>Example Tool / Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rate Limit</td>
+<td>Max calls per minute/hour</td>
+<td>“5 requests per minute”</td>
+</tr>
+<tr>
+<td>Cooldown</td>
+<td>Delay between calls</td>
+<td>“Wait 10 seconds after click”</td>
+</tr>
+<tr>
+<td>Quota</td>
+<td>Max total calls per user/day</td>
+<td>“100 calls per user/day”</td>
+</tr>
+</tbody>
+</table>
+<p>These can be implemented at:</p>
+<ul>
+<li>Backend level (e.g. FastAPI)</li>
+<li>Frontend level (e.g. React/Gradio logic)</li>
+<li>API provider level (e.g. OpenAI usage limits)</li>
+</ul>
+<hr />
+<h2 id="123-how-to-rate-limit-in-fastapi">12.3 How to Rate Limit in FastAPI<a class="headerlink" href="#123-how-to-rate-limit-in-fastapi" title="Permanent link">&para;</a></h2>
+<p><strong>Install:</strong></p>
+<div class="highlight"><pre><span></span><code>pip install slowapi
+</code></pre></div>
+<p><strong>main.py:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">Request</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">slowapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">Limiter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">slowapi.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_remote_address</span>
+
+<span class="n">limiter</span> <span class="o">=</span> <span class="n">Limiter</span><span class="p">(</span><span class="n">key_func</span><span class="o">=</span><span class="n">get_remote_address</span><span class="p">)</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+<span class="n">app</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">limiter</span> <span class="o">=</span> <span class="n">limiter</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/predict&quot;</span><span class="p">)</span>
+<span class="nd">@limiter</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="s2">&quot;5/minute&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">predict</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="s2">&quot;OK&quot;</span><span class="p">}</span>
+</code></pre></div>
+<p>This stops users from overloading your endpoints.</p>
+<hr />
+<h2 id="124-cooldown-frontend-style">12.4 Cooldown (Frontend Style)<a class="headerlink" href="#124-cooldown-frontend-style" title="Permanent link">&para;</a></h2>
+<p><strong>React snippet:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">lastUsed</span><span class="p">,</span><span class="w"> </span><span class="nx">setLastUsed</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">cooldown</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10000</span><span class="p">;</span><span class="w"> </span><span class="c1">// 10 seconds</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">handleClick</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">lastUsed</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">lastUsed</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">cooldown</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Please wait a moment before trying again.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nx">setLastUsed</span><span class="p">(</span><span class="nx">now</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Call backend</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Prevents users from spamming “Generate” or “Submit” buttons.</p>
+<hr />
+<h2 id="125-quotas-per-user">12.5 Quotas Per User<a class="headerlink" href="#125-quotas-per-user" title="Permanent link">&para;</a></h2>
+<p>Store user usage in:</p>
+<ul>
+<li>Firebase</li>
+<li>Supabase</li>
+<li>Tiny JSON file or SQLite</li>
+</ul>
+<p><strong>Example logic:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">user_usage_today</span> <span class="o">&gt;=</span> <span class="n">MAX_DAILY_QUOTA</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;You’ve hit today’s limit. Try again tomorrow.&quot;</span><span class="p">}</span>
+</code></pre></div>
+<p>Great for freemium models or early monetization.</p>
+<hr />
+<h2 id="126-billing-safety-with-apis">12.6 Billing Safety with APIs<a class="headerlink" href="#126-billing-safety-with-apis" title="Permanent link">&para;</a></h2>
+<p><strong>OpenAI</strong></p>
+<ul>
+<li>Set usage caps per API key at <a href="https://platform.openai.com/account/usage">platform.openai.com/account/usage</a></li>
+<li>View per-request logs and token counts</li>
+<li>Get billing alerts via email</li>
+</ul>
+<p><strong>Replicate</strong></p>
+<ul>
+<li>See run costs before calling each model</li>
+<li>Monitor credit balance in dashboard</li>
+<li>Rotate tokens every 30 days</li>
+</ul>
+<p><strong>Hugging Face</strong></p>
+<ul>
+<li>No billing unless using Inference Endpoints</li>
+<li>Free-tier RAM/CPU limits will throttle requests</li>
+</ul>
+<hr />
+<h2 id="127-builders-lens-guardrails-are-a-service">12.7 Builder’s Lens: Guardrails Are a Service<a class="headerlink" href="#127-builders-lens-guardrails-are-a-service" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“A good AI app doesn’t just respond fast.
+It responds responsibly.”</p>
+</blockquote>
+<p>Rate limits aren’t just about saving money.
+They’re about:</p>
+<ul>
+<li>Building trust with users</li>
+<li>Preventing accidental overuse</li>
+<li>Supporting sustainable scaling</li>
+</ul>
+<p>In fact, adding usage rules early on tells your users:
+<strong>“This tool is stable. You can rely on it.”</strong></p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Safety Layer</th>
+<th>Why It’s Important</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rate limits</td>
+<td>Prevents request spam</td>
+</tr>
+<tr>
+<td>Cooldowns</td>
+<td>Controls behavior from frontend</td>
+</tr>
+<tr>
+<td>Quotas</td>
+<td>Helps enforce freemium tiers or budget caps</td>
+</tr>
+<tr>
+<td>Billing alerts</td>
+<td>Protects you from financial surprises</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“Creativity needs power.
+But power without control is chaos.”</p>
 </blockquote>
 <hr />
-<h2 id="121-why-these-ops-matter">12.1 Why These Ops Matter<a class="headerlink" href="#121-why-these-ops-matter" title="Permanent link">&para;</a></h2>
-<p>These operations may seem low-level, but they power:  </p>
-<ul>
-<li>Loss functions  </li>
-<li>Data normalization  </li>
-<li>Activation functions  </li>
-<li>Efficient GPU/TPU processing  </li>
-<li>Feature engineering &amp; logical masking  </li>
-</ul>
-<p>If you want full control over your data pipeline or model internals, this is your toolkit.</p>
-<hr />
-<h2 id="122-numerical-operations">12.2 Numerical Operations<a class="headerlink" href="#122-numerical-operations" title="Permanent link">&para;</a></h2>
-<p>TensorFlow supports a full range of math operations:</p>
-<h3 id="element-wise-math">✅ Element-wise Math:<a class="headerlink" href="#element-wise-math" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>     <span class="c1"># [1, 4, 9]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>       <span class="c1"># [1.0, 1.4142, 1.7320]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>        <span class="c1"># Exponential</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>        <span class="c1"># Natural log</span>
-</code></pre></div>
-<h3 id="reduction-ops">✅ Reduction Ops:<a class="headerlink" href="#reduction-ops" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="n">matrix</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">]])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">reduce_sum</span><span class="p">(</span><span class="n">matrix</span><span class="p">))</span>           <span class="c1"># 10.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">matrix</span><span class="p">))</span>          <span class="c1"># 2.5</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">reduce_max</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>   <span class="c1"># [3.0, 4.0]</span>
-</code></pre></div>
-<blockquote>
-<p>💡 Reduction ops collapse tensors along a specified axis.</p>
-</blockquote>
-<hr />
-<h2 id="123-rounding-clipping">12.3 Rounding &amp; Clipping<a class="headerlink" href="#123-rounding-clipping" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.8</span><span class="p">])</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>       <span class="c1"># [1.0, 2.0, 4.0]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>       <span class="c1"># [1.0, 2.0, 3.0]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>   <span class="c1"># [2.0, 3.0, 4.0]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">clip_by_value</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">))</span>  <span class="c1"># [1.5, 2.5, 3.0]</span>
-</code></pre></div>
-<hr />
-<h2 id="124-bitwise-operations-for-integers-only">12.4 Bitwise Operations (for Integers Only)<a class="headerlink" href="#124-bitwise-operations-for-integers-only" title="Permanent link">&para;</a></h2>
-<p>Bitwise operations are useful for:<br />
-- Masks and binary logic<br />
-- Pixel manipulation (in image tasks)<br />
-- Efficient boolean filters</p>
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mb">0b1010</span><span class="p">,</span> <span class="mb">0b1100</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mb">0b0101</span><span class="p">,</span> <span class="mb">0b1010</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">bitwise</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>  <span class="c1"># [0b0000, 0b1000]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">bitwise</span><span class="o">.</span><span class="n">bitwise_or</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>   <span class="c1"># [0b1111, 0b1110]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">bitwise</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>          <span class="c1"># Bitwise NOT</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">bitwise</span><span class="o">.</span><span class="n">left_shift</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>   <span class="c1"># Shift left (×2)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">bitwise</span><span class="o">.</span><span class="n">right_shift</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Shift right (÷2)</span>
-</code></pre></div>
-<hr />
-<h2 id="125-modulo-and-sign">12.5 Modulo and Sign<a class="headerlink" href="#125-modulo-and-sign" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">mod</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>         <span class="c1"># 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">floormod</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>    <span class="c1"># 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">sign</span><span class="p">([</span><span class="o">-</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">]))</span>  <span class="c1"># [-1.0, 0.0, 1.0]</span>
-</code></pre></div>
-These are useful in:  </p>
-<ul>
-<li>Cycle detection  </li>
-<li>Position encoding  </li>
-<li>Boolean masks for data pipelines</li>
-</ul>
-<hr />
-<h2 id="126-one-hot-encoding-bonus">12.6 One-Hot Encoding (Bonus)<a class="headerlink" href="#126-one-hot-encoding-bonus" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">labels</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">one_hot</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">one_hot</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">one_hot</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="output">Output:<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code><span class="s">[[1. 0. 0.]</span>
-<span class="s"> [0. 0. 1.]</span>
-<span class="s"> [0. 1. 0.]]</span>
-</code></pre></div>
-This is crucial for classification tasks before training.</p>
-<hr />
-<h2 id="127-summary">12.7 Summary<a class="headerlink" href="#127-summary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>TensorFlow supports a wide range of numerical, reduction, and bitwise operations.  </li>
-<li>These ops form the foundation for loss computation, feature preprocessing, and low-level tensor control.  </li>
-<li>Mastering them helps you go beyond layers—into the math powering them.</li>
-</ul>
-<hr />
-<blockquote>
-<p>“<em>Machine learning is built on numbers—but sharpened with operations.</em>”</p>
-</blockquote>
-<hr />
-<h2 id="end-of-part-ii-tensor-mechanics-and-computation">End of Part II: Tensor Mechanics and Computation<a class="headerlink" href="#end-of-part-ii-tensor-mechanics-and-computation" title="Permanent link">&para;</a></h2>
-<p>You now know how to:  </p>
-<ul>
-<li>Slice, reshape, and broadcast tensors  </li>
-<li>Work with ragged, sparse, and string data  </li>
-<li>Create trainable variables  </li>
-<li>Record and compute gradients  </li>
-<li>Write high-performance TensorFlow graphs</li>
-</ul>
 
 
 
@@ -1787,8 +1862,13 @@ This is crucial for classification tasks before training.</p>
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

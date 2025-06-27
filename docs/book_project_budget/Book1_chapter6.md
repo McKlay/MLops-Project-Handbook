@@ -103,12 +103,12 @@ Best Practices:
 
 |Tip	                        |Description                                                |
 |-------------------------------|-----------------------------------------------------------|
-|🔁 Limit request frequency	    |Add cooldown or delay between calls (e.g., 1 call/10s)     |
-|📊 Monitor token usage	        |Log token usage per request (OpenAI provides this)         |
-|🧠 Use smaller models	        |Prefer gpt-3.5-turbo instead of gpt-4                      |
-|🚫 Block long prompts	        |Enforce input length limit from frontend                   |
-|🔁 Add caching	                |Cache repeated results (e.g., for meme captions)           |
-|💬 Summarize before sending	|If chaining user inputs, summarize old messages            |
+|Limit request frequency	    |Add cooldown or delay between calls (e.g., 1 call/10s)     |
+|Monitor token usage	        |Log token usage per request (OpenAI provides this)         |
+|Use smaller models	        |Prefer gpt-3.5-turbo instead of gpt-4                      |
+|Block long prompts	        |Enforce input length limit from frontend                   |
+|Add caching	                |Cache repeated results (e.g., for meme captions)           |
+|Summarize before sending	|If chaining user inputs, summarize old messages            |
 
 > Hugging Face & Railway let you inspect logs and rate-limit usage if needed.
 
@@ -138,14 +138,14 @@ For production, you can use:
 
 ## 6.7 When to Use Paid APIs (vs Free Models)
 
-|Situation	                    |Use Paid API? ✅               |
-|-------------------------------|-------------------------------|
-|You need quick prototyping	    |✅ Yes (fastest to deploy)     |
-|You’re demoing for recruiters	|✅ Yes (polished output)       |
-|You’re building MVP for users	|✅ Yes (lower risk)            |
-|You’re training custom models	|❌ Use open-source             |
-|You want offline access	    |❌ Use local inference         |
-|You’re processing huge volume	|❌ May be too expensive        |
+|Situation	                    |Use Paid API?               |
+|-------------------------------|----------------------------|
+|You need quick prototyping	    |Yes (fastest to deploy)     |
+|You’re demoing for recruiters	|Yes (polished output)       |
+|You’re building MVP for users	|Yes (lower risk)            |
+|You’re training custom models	|Use open-source             |
+|You want offline access	    |Use local inference         |
+|You’re processing huge volume	|May be too expensive        |
 
 > Start with APIs, then optimize with free or local alternatives when scaling.
 

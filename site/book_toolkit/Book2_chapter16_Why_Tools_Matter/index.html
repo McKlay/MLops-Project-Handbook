@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-16-loss-functions-optimizers" class="md-skip">
+        <a href="#chapter-16-why-tools-matter-speed-vs-reinvention" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1373,75 +1375,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-a-loss-function" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      What Is a Loss Function?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What Is a Loss Function?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-sparse-categorical-crossentropy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Sparse Categorical Crossentropy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-optimizers" class="md-nav__link">
-    <span class="md-ellipsis">
-      What Are Optimizers?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What Are Optimizers?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-compile-with-optimizer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Compile with Optimizer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-loss-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom Loss Function
+      This chapter covers:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-training-loop-optional-recap" class="md-nav__link">
+  <a href="#opening-reflection-the-chisel-and-the-cathedral" class="md-nav__link">
     <span class="md-ellipsis">
-      Custom Training Loop (Optional Recap)
+      Opening Reflection: The Chisel and the Cathedral
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#161-reinvention-vs-speed-the-eternal-tug-of-war" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      16.1 Reinvention vs Speed: The Eternal Tug-of-War
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-the-hidden-gift-of-fast-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.2 The Hidden Gift of Fast Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-every-tool-has-a-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.3 Every Tool Has a Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#164-the-danger-of-tool-fomo" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.4 The Danger of Tool FOMO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#165-builders-perspective-tools-as-allies-not-crutches" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.5 Builder’s Perspective: Tools as Allies, Not Crutches
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1494,7 +1502,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1513,75 +1523,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-a-loss-function" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      What Is a Loss Function?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What Is a Loss Function?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-sparse-categorical-crossentropy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Sparse Categorical Crossentropy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-optimizers" class="md-nav__link">
-    <span class="md-ellipsis">
-      What Are Optimizers?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What Are Optimizers?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-compile-with-optimizer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Compile with Optimizer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-loss-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Custom Loss Function
+      This chapter covers:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-training-loop-optional-recap" class="md-nav__link">
+  <a href="#opening-reflection-the-chisel-and-the-cathedral" class="md-nav__link">
     <span class="md-ellipsis">
-      Custom Training Loop (Optional Recap)
+      Opening Reflection: The Chisel and the Cathedral
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#161-reinvention-vs-speed-the-eternal-tug-of-war" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      16.1 Reinvention vs Speed: The Eternal Tug-of-War
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162-the-hidden-gift-of-fast-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.2 The Hidden Gift of Fast Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163-every-tool-has-a-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.3 Every Tool Has a Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#164-the-danger-of-tool-fomo" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.4 The Danger of Tool FOMO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#165-builders-perspective-tools-as-allies-not-crutches" class="md-nav__link">
+    <span class="md-ellipsis">
+      16.5 Builder’s Perspective: Tools as Allies, Not Crutches
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1600,140 +1616,203 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-16-loss-functions-optimizers">Chapter 16: Loss Functions &amp; Optimizers<a class="headerlink" href="#chapter-16-loss-functions-optimizers" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-16-why-tools-matter-speed-vs-reinvention">Chapter 16: Why Tools Matter – Speed vs Reinvention<a class="headerlink" href="#chapter-16-why-tools-matter-speed-vs-reinvention" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>“<em>Without a compass, even the smartest network gets lost. Loss guides learning. Optimization moves us forward.</em>”</p>
+<p>“Choose your tools. Choose your path.”</p>
+</blockquote>
+<p>We’re now stepping into <strong>Part IV: Mindset &amp; Philosophy</strong>. These final chapters aren’t about libraries or deployment. They’re about <strong>you</strong> — your approach, your rhythm, your identity as a builder in the age of AI.</p>
+<p>Let’s begin with a deep breath and a shift in lens…</p>
+<hr />
+<h2 id="this-chapter-covers">This chapter covers:<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The real purpose of tools in creative engineering</li>
+<li>The cost of reinvention vs the power of leverage</li>
+<li>Frameworks, APIs, and libraries as philosophical decisions</li>
+<li>Builder’s lens: how speed creates momentum</li>
+<li>Reflections on tool selection as a creative act</li>
+</ul>
+<hr />
+<h2 id="opening-reflection-the-chisel-and-the-cathedral">Opening Reflection: The Chisel and the Cathedral<a class="headerlink" href="#opening-reflection-the-chisel-and-the-cathedral" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“A sculptor doesn’t forge their own chisel.
+They choose the right one — and create something eternal.”</em></p>
+</blockquote>
+<p>There’s a romantic idea in tech:</p>
+<blockquote>
+<p><em>“Build everything from scratch.”</em></p>
+</blockquote>
+<p>But when your goal is to:</p>
+<ul>
+<li>Solve real problems</li>
+<li>Help real people</li>
+<li>Create something enduring</li>
+</ul>
+<p>The question becomes:</p>
+<p><strong>“What tool gets me there fastest — without compromising who I am as a builder?”</strong></p>
+<p>Sometimes it’s <code>FastAPI</code>.
+Sometimes it’s <code>Gradio</code>.
+Sometimes it’s <code>openai.ChatCompletion</code>.
+And sometimes… it’s <code>print()</code>.</p>
+<p>Choosing tools isn’t just technical.
+It’s <strong>strategic. Emotional. Philosophical.</strong></p>
+<hr />
+<h2 id="161-reinvention-vs-speed-the-eternal-tug-of-war">16.1 Reinvention vs Speed: The Eternal Tug-of-War<a class="headerlink" href="#161-reinvention-vs-speed-the-eternal-tug-of-war" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Mindset</th>
+<th>Strength</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reinvent from scratch</td>
+<td>Deep understanding, customizability</td>
+<td>Slower progress, reinvents basics</td>
+</tr>
+<tr>
+<td>Build with tools</td>
+<td>Fast feedback, modern standards</td>
+<td>Requires trust in abstraction</td>
+</tr>
+</tbody>
+</table>
+<p>Great builders blend both.
+They build core ideas <strong>from scratch</strong> when needed.
+They use tools <strong>when it accelerates the dream.</strong></p>
+<hr />
+<h2 id="162-the-hidden-gift-of-fast-tools">16.2 The Hidden Gift of Fast Tools<a class="headerlink" href="#162-the-hidden-gift-of-fast-tools" title="Permanent link">&para;</a></h2>
+<p>Tools give you:</p>
+<ul>
+<li>✅ Speed to finish before you lose momentum</li>
+<li>✅ Fewer bugs through battle-tested code</li>
+<li>✅ Focus on what makes your idea unique</li>
+<li>✅ Shared vocabulary with collaborators</li>
+</ul>
+<p>When I use:</p>
+<ul>
+<li>Hugging Face pipelines</li>
+<li>Docker for containerization</li>
+<li>Railway for backend CI/CD</li>
+<li>GPT APIs for creativity</li>
+</ul>
+<p>…I was not “cheating.”
+I was trusting a <strong>network of builders who came before me</strong> — and standing on their shoulders.</p>
+<hr />
+<h2 id="163-every-tool-has-a-philosophy">16.3 Every Tool Has a Philosophy<a class="headerlink" href="#163-every-tool-has-a-philosophy" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool / Framework</th>
+<th>Implied Philosophy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FastAPI</td>
+<td>“APIs should be fast to write, type-safe, and readable.”</td>
+</tr>
+<tr>
+<td>Gradio</td>
+<td>“ML should be demoable without JS or DevOps.”</td>
+</tr>
+<tr>
+<td>React</td>
+<td>“The UI is a function of state.”</td>
+</tr>
+<tr>
+<td>Docker</td>
+<td>“Code should run the same everywhere.”</td>
+</tr>
+<tr>
+<td>Supabase</td>
+<td>“Auth and DB shouldn’t be separate products.”</td>
+</tr>
+<tr>
+<td>OpenAI API</td>
+<td>“Use intelligence like infrastructure.”</td>
+</tr>
+</tbody>
+</table>
+<p>Choosing a tool means aligning with a <strong>philosophy</strong>.
+That alignment shapes how you build — and how you think.</p>
+<hr />
+<h2 id="164-the-danger-of-tool-fomo">16.4 The Danger of Tool FOMO<a class="headerlink" href="#164-the-danger-of-tool-fomo" title="Permanent link">&para;</a></h2>
+<p>You’ll see new tools daily:</p>
+<ul>
+<li>“Try Bun instead of Node”</li>
+<li>“Forget Docker, use Podman”</li>
+<li>“This one GitHub project replaces 9 SaaS tools”</li>
+</ul>
+<p>Tools matter. But <strong>your momentum matters more</strong>.</p>
+<p>When your tools:</p>
+<ul>
+<li>Feel intuitive</li>
+<li>Are maintained</li>
+<li>Serve your goal</li>
+</ul>
+<p><strong>Stick with them until you’ve built what matters.</strong></p>
+<hr />
+<h2 id="165-builders-perspective-tools-as-allies-not-crutches">16.5 Builder’s Perspective: Tools as Allies, Not Crutches<a class="headerlink" href="#165-builders-perspective-tools-as-allies-not-crutches" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“You don’t become a lesser builder by using great tools.
+You become a builder who actually ships.”</em></p>
+</blockquote>
+<p>In the end:</p>
+<ul>
+<li>Tools aren’t identity</li>
+<li>They’re <strong>pathways to impact</strong></li>
+</ul>
+<p>Use the tools that get you to the place where:</p>
+<ul>
+<li>You finish your project</li>
+<li>You move someone’s heart</li>
+<li>You build something that matters</li>
+</ul>
+<p>The world won’t care what stack you used.
+It will care <strong>what you gave it.</strong></p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tools = velocity engines</td>
+<td>Let you build faster, better, sooner</td>
+</tr>
+<tr>
+<td>Every tool has a philosophy</td>
+<td>Choose ones that align with your goals</td>
+</tr>
+<tr>
+<td>Don’t worship or fear tools</td>
+<td>Use what serves the story you’re building</td>
+</tr>
+<tr>
+<td>Speed creates confidence</td>
+<td>Finish &gt; perfect when learning or iterating</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“Some build tools. Some build with tools.
+Both are creators.
+But only one gets their vision into the world before it fades.”</em></p>
 </blockquote>
 <hr />
-<p>In this chapter, we explore two of the most crucial ingredients of any machine learning recipe:</p>
-<ul>
-<li>Loss functions: Measure how far off our model’s predictions are from the actual values.  </li>
-<li>Optimizers: Algorithms that adjust model parameters to minimize this loss.</li>
-</ul>
-<p>By the end, you'll understand:</p>
-<ul>
-<li>The difference between various loss functions and when to use them  </li>
-<li>How gradients are computed and used  </li>
-<li>Popular optimization algorithms and their trade-offs  </li>
-<li>How to implement custom loss functions and plug them into training</li>
-</ul>
-<hr />
-<h2 id="what-is-a-loss-function">What Is a Loss Function?<a class="headerlink" href="#what-is-a-loss-function" title="Permanent link">&para;</a></h2>
-<p>A loss function tells us how “bad” our predictions are. It is scalar-valued, allowing TensorFlow to compute gradients via backpropagation.</p>
-<p>🔹 Common Losses in TensorFlow</p>
-<table>
-<thead>
-<tr>
-<th>Task</th>
-<th>Loss Function</th>
-<th>TensorFlow API</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Binary classification</td>
-<td>Binary Crossentropy</td>
-<td>tf.keras.losses.BinaryCrossentropy()</td>
-</tr>
-<tr>
-<td>Multi-class classification</td>
-<td>Sparse Categorical Crossentropy</td>
-<td>tf.keras.losses.SparseCategoricalCrossentropy()</td>
-</tr>
-<tr>
-<td>Regression (real values)</td>
-<td>Mean Squared Error</td>
-<td>tf.keras.losses.MeanSquaredError()</td>
-</tr>
-</tbody>
-</table>
-<h4 id="example-sparse-categorical-crossentropy">Example: Sparse Categorical Crossentropy<a class="headerlink" href="#example-sparse-categorical-crossentropy" title="Permanent link">&para;</a></h4>
-<p><div class="highlight"><pre><span></span><code><span class="n">loss_fn</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">losses</span><span class="o">.</span><span class="n">SparseCategoricalCrossentropy</span><span class="p">(</span><span class="n">from_logits</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-</code></pre></div>
-- <code>from_logits=True</code> means the model outputs raw values (logits) without softmax.</p>
-<ul>
-<li>If your model outputs softmax-activated values, set f<code>rom_logits=False</code>.</li>
-</ul>
-<hr />
-<h2 id="what-are-optimizers">What Are Optimizers?<a class="headerlink" href="#what-are-optimizers" title="Permanent link">&para;</a></h2>
-<p>Optimizers update model parameters using gradients computed from the loss. They are essential for gradient descent-based training.</p>
-<p>🔹 Popular Optimizers</p>
-<table>
-<thead>
-<tr>
-<th>Optimizer</th>
-<th>Description</th>
-<th>Usage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SGD</td>
-<td>Stochastic Gradient Descent</td>
-<td>SGD(learning_rate=0.01)</td>
-</tr>
-<tr>
-<td>Momentum</td>
-<td>Adds inertia to SGD</td>
-<td>SGD(momentum=0.9)</td>
-</tr>
-<tr>
-<td>RMSProp</td>
-<td>Adjusts learning rate based on recent magnitudes</td>
-<td>RMSprop(learning_rate=0.001)</td>
-</tr>
-<tr>
-<td>Adam</td>
-<td>Combines Momentum + RMSProp</td>
-<td>Adam(learning_rate=0.001)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="example-compile-with-optimizer">Example: Compile with Optimizer<a class="headerlink" href="#example-compile-with-optimizer" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
-    <span class="n">optimizer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.001</span><span class="p">),</span>
-    <span class="n">loss</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">losses</span><span class="o">.</span><span class="n">SparseCategoricalCrossentropy</span><span class="p">(</span><span class="n">from_logits</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-    <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
-<span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="custom-loss-function">Custom Loss Function<a class="headerlink" href="#custom-loss-function" title="Permanent link">&para;</a></h2>
-<p>Sometimes, built-in loss functions aren’t enough. Here’s how you can define your own:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">custom_mse_loss</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">y_true</span> <span class="o">-</span> <span class="n">y_pred</span><span class="p">))</span>
-</code></pre></div>
-<p>Plug into model like this:</p>
-<div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
-    <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
-    <span class="n">loss</span><span class="o">=</span><span class="n">custom_mse_loss</span>
-<span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="custom-training-loop-optional-recap">Custom Training Loop (Optional Recap)<a class="headerlink" href="#custom-training-loop-optional-recap" title="Permanent link">&para;</a></h2>
-<p>When not using model.fit(), you need to compute loss and apply gradients manually:</p>
-<p><div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-    <span class="n">logits</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">x_batch</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">loss_value</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">y_batch</span><span class="p">,</span> <span class="n">logits</span><span class="p">)</span>
-
-<span class="n">grads</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">loss_value</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">trainable_variables</span><span class="p">)</span>
-<span class="n">optimizer</span><span class="o">.</span><span class="n">apply_gradients</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">grads</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">trainable_variables</span><span class="p">))</span>
-</code></pre></div>
-This gives you full control over training and is often used in research or advanced custom workflows.</p>
-<hr />
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>In this chapter, you learned:</p>
-<ul>
-<li>Loss functions quantify how wrong a model’s predictions are.  </li>
-<li>Optimizers use gradients to update model weights and minimize loss.  </li>
-<li>Adam is a great default optimizer, but others may work better depending on the problem.  </li>
-<li>You can define custom loss functions for flexibility.  </li>
-</ul>
-<p>Understanding the relationship between loss → gradient → optimizer → new weights is the key to mastering how neural networks learn.</p>
-<hr />
 
 
 
@@ -1741,8 +1820,13 @@ This gives you full control over training and is often used in research or advan
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

@@ -105,11 +105,11 @@ def cartoonize_image(image_path: str):
 
 |Concern	             |Solution                                                  |
 |------------------------|----------------------------------------------------------|
-|🛑 Timeouts	        |Add try/except, request timeouts (especially for APIs)     |
-|🧬 Reproducibility	    |Set random seeds, save versions of models                  |
-|🔐 API Key Safety	    |Use .env, never hardcode keys                              |
-|💸 Cost Management	    |Throttle usage (e.g., max 3 calls/min/user)                |
-|🚫 Bad Inputs	        |Sanitize user input to avoid prompt injection              |
+|Timeouts	        |Add try/except, request timeouts (especially for APIs)     |
+|Reproducibility	    |Set random seeds, save versions of models                  |
+|API Key Safety	    |Use .env, never hardcode keys                              |
+|Cost Management	    |Throttle usage (e.g., max 3 calls/min/user)                |
+|Bad Inputs	        |Sanitize user input to avoid prompt injection              |
 
 ---
 

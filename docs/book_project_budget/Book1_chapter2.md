@@ -111,15 +111,15 @@ Whether you're fine-tuning a small BERT model or training your own CartoonGAN fr
 
 ### Quick Comparison Table – ML Training Platforms
 
-|Platform	                     |GPU Access 🔥	              |Free Tier ✅	              |Max Session Time ⏱	       |Storage	       |Notes & Recommendations    |
+|Platform	                     |GPU Access	              |Free Tier ✅	              |Max Session Time ⏱	       |Storage	       |Notes & Recommendations    |
 |----------------------------------|----------------------------------|-----------------------------|---------------------------|-------------|-----------|
-|Google Colab Free	              |NVIDIA T4 (sometimes)	       |✅ Yes (limited usage)	 |~1–2 hrs (idle timeout)	|100MB–1GB	       |Great for small training/testing loops   |
-Google Colab Pro+	              |T4 / A100 / V100	              |❌ Paid ($10–$49/month)	|~24 hrs	              |100GB+	       |Recommended for medium-sized fine-tuning tasks  |
-Kaggle Notebooks	              |T4 / P100	                     |✅ Yes (30 hrs/week)	       |9 hrs (per session)	       |20GB	              |Very reliable free option with easy dataset uploads    |
-Paperspace (Gradient)	       |A100 / RTX4000	              |✅ 6 hrs free/month	       |Varies	              |Persistent	       |Good balance of UI + performance  |
-Hugging Face Spaces + AutoTrain	|No GPU (Free Tier)	              |✅ (limited)	              |N/A	                   |~2–6GB	              |Good for AutoML-style training & visual exploration    |
-AWS / Azure / GCP	              |A100, H100, etc.	              |🟡 $300–$500 credit (trial)	 |Full control	 |Large	       |Excellent, but must manage budget |
-RunPod / Lambda Labs	              |A100, RTX3090	              |❌ Pay-as-you-go	       |Long sessions	        |Large	       |Ideal for serious training, can be cheap if efficient  |
+|Google Colab Free	              |NVIDIA T4 (sometimes)	       |Yes (limited usage)	 |~1–2 hrs (idle timeout)	|100MB–1GB	       |Great for small training/testing loops   |
+Google Colab Pro+	              |T4 / A100 / V100	              |Paid ($10–$49/month)	|~24 hrs	              |100GB+	       |Recommended for medium-sized fine-tuning tasks  |
+Kaggle Notebooks	              |T4 / P100	                     |Yes (30 hrs/week)	       |9 hrs (per session)	       |20GB	              |Very reliable free option with easy dataset uploads    |
+Paperspace (Gradient)	       |A100 / RTX4000	              |6 hrs free/month	       |Varies	              |Persistent	       |Good balance of UI + performance  |
+Hugging Face Spaces + AutoTrain	|No GPU (Free Tier)	              |(limited)	              |N/A	                   |~2–6GB	              |Good for AutoML-style training & visual exploration    |
+AWS / Azure / GCP	              |A100, H100, etc.	              |$300–$500 credit (trial)	 |Full control	 |Large	       |Excellent, but must manage budget |
+RunPod / Lambda Labs	              |A100, RTX3090	              |Pay-as-you-go	       |Long sessions	        |Large	       |Ideal for serious training, can be cheap if efficient  |
 
 ---
 

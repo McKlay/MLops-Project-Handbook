@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-10-automatic-differentiation-tfgradienttape" class="md-skip">
+        <a href="#chapter-10-understanding-replicate-stability-apis" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1189,63 +1191,159 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#101-what-is-automatic-differentiation" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      10.1 What Is Automatic Differentiation?
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#102-recording-with-tfgradienttape" class="md-nav__link">
+  <a href="#opening-reflection-renting-a-brush-to-paint-the-future" class="md-nav__link">
     <span class="md-ellipsis">
-      10.2 Recording with tf.GradientTape
+      Opening Reflection: Renting a Brush to Paint the Future
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#103-watching-non-variable-tensors" class="md-nav__link">
+  <a href="#101-what-is-replicate" class="md-nav__link">
     <span class="md-ellipsis">
-      10.3 Watching Non-Variable Tensors
+      10.1 What Is Replicate?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.1 What Is Replicate?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popular-replicate-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Replicate Models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-how-does-it-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 How Does It Work?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2 How Does It Work?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-cartoonizer-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Cartoonizer (Python)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-what-is-stabilityai" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 What Is Stability.ai?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3 What Is Stability.ai?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-access-stability-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Access Stability Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-pricing-models-free-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.4 Pricing Models &amp; Free Tiers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#104-multivariate-gradients" class="md-nav__link">
+  <a href="#105-where-this-fits-into-your-stack" class="md-nav__link">
     <span class="md-ellipsis">
-      10.4 Multivariate Gradients
+      10.5 Where This Fits Into Your Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5 Where This Fits Into Your Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#perfect-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perfect for:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-builders-lens-tools-that-feel-like-instruments" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.6 Builder’s Lens: Tools That Feel Like Instruments
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#105-persistent-tapes-reuse-for-multiple-gradients" class="md-nav__link">
+  <a href="#summary-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      10.5 Persistent Tapes (Reuse for Multiple Gradients)
+      Summary Takeaways
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#106-using-gradients-for-optimization" class="md-nav__link">
+  <a href="#closing-reflection" class="md-nav__link">
     <span class="md-ellipsis">
-      10.6 Using Gradients for Optimization
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#107-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      10.7 Summary
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1482,7 +1580,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1501,63 +1601,159 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#101-what-is-automatic-differentiation" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      10.1 What Is Automatic Differentiation?
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#102-recording-with-tfgradienttape" class="md-nav__link">
+  <a href="#opening-reflection-renting-a-brush-to-paint-the-future" class="md-nav__link">
     <span class="md-ellipsis">
-      10.2 Recording with tf.GradientTape
+      Opening Reflection: Renting a Brush to Paint the Future
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#103-watching-non-variable-tensors" class="md-nav__link">
+  <a href="#101-what-is-replicate" class="md-nav__link">
     <span class="md-ellipsis">
-      10.3 Watching Non-Variable Tensors
+      10.1 What Is Replicate?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.1 What Is Replicate?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popular-replicate-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Replicate Models
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-how-does-it-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.2 How Does It Work?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.2 How Does It Work?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-cartoonizer-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Cartoonizer (Python)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-what-is-stabilityai" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3 What Is Stability.ai?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3 What Is Stability.ai?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-access-stability-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Access Stability Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-pricing-models-free-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.4 Pricing Models &amp; Free Tiers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#104-multivariate-gradients" class="md-nav__link">
+  <a href="#105-where-this-fits-into-your-stack" class="md-nav__link">
     <span class="md-ellipsis">
-      10.4 Multivariate Gradients
+      10.5 Where This Fits Into Your Stack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5 Where This Fits Into Your Stack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#perfect-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perfect for:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-builders-lens-tools-that-feel-like-instruments" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.6 Builder’s Lens: Tools That Feel Like Instruments
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#105-persistent-tapes-reuse-for-multiple-gradients" class="md-nav__link">
+  <a href="#summary-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      10.5 Persistent Tapes (Reuse for Multiple Gradients)
+      Summary Takeaways
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#106-using-gradients-for-optimization" class="md-nav__link">
+  <a href="#closing-reflection" class="md-nav__link">
     <span class="md-ellipsis">
-      10.6 Using Gradients for Optimization
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#107-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      10.7 Summary
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1576,104 +1772,229 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-10-automatic-differentiation-tfgradienttape">Chapter 10: Automatic Differentiation <code>(tf.GradientTape)</code><a class="headerlink" href="#chapter-10-automatic-differentiation-tfgradienttape" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>“<em>The power to learn lies not in the function—but in how it changes</em>.”</p>
-</blockquote>
+
+<h1 id="chapter-10-understanding-replicate-stability-apis">Chapter 10: Understanding Replicate &amp; Stability APIs<a class="headerlink" href="#chapter-10-understanding-replicate-stability-apis" title="Permanent link">&para;</a></h1>
+<p><em>“Your creativity, deployed through someone else’s horsepower.”</em></p>
+<p>This chapter takes us into the world of <strong>AI as a service</strong>, through platforms like <strong>Replicate</strong> and <strong>Stability.ai</strong>. If Transformers gave you a mind, these APIs give you <strong>creative power at scale</strong>, without owning a single GPU.</p>
 <hr />
-<h2 id="101-what-is-automatic-differentiation">10.1 What Is Automatic Differentiation?<a class="headerlink" href="#101-what-is-automatic-differentiation" title="Permanent link">&para;</a></h2>
-<p>Automatic differentiation (autodiff) is the core engine of backpropagation. It allows TensorFlow to:</p>
+<h2 id="this-chapter-covers">This Chapter Covers<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Record operations as a computation graph  </li>
-<li>Compute gradients w.r.t. any variable  </li>
-<li>Use those gradients to optimize parameters  </li>
-</ul>
-<p>In TensorFlow, this is done using <code>tf.GradientTape</code>.</p>
-<hr />
-<h2 id="102-recording-with-tfgradienttape">10.2 Recording with <code>tf.GradientTape</code><a class="headerlink" href="#102-recording-with-tfgradienttape" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">3.0</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># y = (x + 1)^2</span>
-
-<span class="n">dy_dx</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dy/dx:&quot;</span><span class="p">,</span> <span class="n">dy_dx</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>  <span class="c1"># Should be 2x + 2 → 8.0</span>
-</code></pre></div>
-<blockquote>
-<p>By default, tape only watches <code>tf.Variables</code>.</p>
-</blockquote>
-<hr />
-<h2 id="103-watching-non-variable-tensors">10.3 Watching Non-Variable Tensors<a class="headerlink" href="#103-watching-non-variable-tensors" title="Permanent link">&para;</a></h2>
-<p>If you want to differentiate w.r.t. a tensor (not a variable):
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="mf">3.0</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-    <span class="n">tape</span><span class="o">.</span><span class="n">watch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-
-<span class="n">dy_dx</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dy/dx:&quot;</span><span class="p">,</span> <span class="n">dy_dx</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>  <span class="c1"># 6.0</span>
-</code></pre></div></p>
-<hr />
-<h2 id="104-multivariate-gradients">10.4 Multivariate Gradients<a class="headerlink" href="#104-multivariate-gradients" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">3</span>
-
-<span class="n">grads</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;df/dx:&quot;</span><span class="p">,</span> <span class="n">grads</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>  <span class="c1"># 2x → 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;df/dy:&quot;</span><span class="p">,</span> <span class="n">grads</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>  <span class="c1"># 3y^2 → 12</span>
-</code></pre></div>
-You can compute gradients for multiple variables at once—essential in model training.</p>
-<hr />
-<h2 id="105-persistent-tapes-reuse-for-multiple-gradients">10.5 Persistent Tapes (Reuse for Multiple Gradients)<a class="headerlink" href="#105-persistent-tapes-reuse-for-multiple-gradients" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">(</span><span class="n">persistent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
-
-<span class="n">dy_dx</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>  <span class="c1"># 2x</span>
-<span class="n">dz_dx</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>  <span class="c1"># 3x^2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dy_dx</span><span class="o">.</span><span class="n">numpy</span><span class="p">(),</span> <span class="n">dz_dx</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>  <span class="c1"># 2.0, 3.0</span>
-
-<span class="k">del</span> <span class="n">tape</span>  <span class="c1"># Cleanup</span>
-</code></pre></div>
-Use <code>persistent=True</code> if you need to compute multiple gradients from the same tape.</p>
-<hr />
-<h2 id="106-using-gradients-for-optimization">10.6 Using Gradients for Optimization<a class="headerlink" href="#106-using-gradients-for-optimization" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
-
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-        <span class="n">loss</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">5</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
-
-    <span class="n">grad</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">loss</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-    <span class="n">x</span><span class="o">.</span><span class="n">assign_sub</span><span class="p">(</span><span class="n">learning_rate</span> <span class="o">*</span> <span class="n">grad</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Step </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">, x: </span><span class="si">{</span><span class="n">x</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, loss: </span><span class="si">{</span><span class="n">loss</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-This mimics gradient descent—updating x to minimize the loss.</p>
-<hr />
-<h2 id="107-summary">10.7 Summary<a class="headerlink" href="#107-summary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>tf.GradientTape is TensorFlow’s way of recording operations and computing gradients automatically.</li>
-<li>It’s the core of learning—used in every optimizer.</li>
-<li>Gradients are computed via tape.gradient(loss, variables)</li>
-<li>You can track multiple variables, persist the tape, or manually apply updates.</li>
+<li>What Replicate and Stability APIs offer</li>
+<li>How to run image/video/audio models via API</li>
+<li>Model types: Diffusion, Style Transfer, Depth Estimation, etc.</li>
+<li>Pricing, rate limits, best use cases</li>
+<li>Builder’s lens: “tool-based creativity”</li>
 </ul>
 <hr />
+<h2 id="opening-reflection-renting-a-brush-to-paint-the-future">Opening Reflection: Renting a Brush to Paint the Future<a class="headerlink" href="#opening-reflection-renting-a-brush-to-paint-the-future" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>“<em>The power to learn lies not in the function—but in how it changes.</em>”</p>
+<p><em>“You don’t need to own the factory. You just need the key to the right machine.”</em></p>
 </blockquote>
+<p>Once, building a model meant:</p>
+<ul>
+<li>Downloading huge datasets</li>
+<li>Managing CUDA drivers</li>
+<li>Crashing your machine... and waiting</li>
+</ul>
+<p>Today? You send a JSON payload.
+And in seconds, you get:</p>
+<ul>
+<li>A stylized portrait</li>
+<li>A text-to-image dream</li>
+<li>A 3D depth map of a selfie</li>
+<li>A real-time video segmentation</li>
+</ul>
+<p>Replicate and Stability have given builders a gift:
+<strong>Access to creative, GPU-heavy AI models — without needing to train or host them.</strong>
+Just describe what you want. They’ll compute it.</p>
+<hr />
+<h2 id="101-what-is-replicate">10.1 What Is Replicate?<a class="headerlink" href="#101-what-is-replicate" title="Permanent link">&para;</a></h2>
+<p><strong><a href="https://replicate.com">Replicate.com</a></strong> is a platform that hosts pretrained ML models (mostly image/video/audio) and exposes them via a <strong>REST API</strong>.</p>
+<p>You can:</p>
+<ul>
+<li>Browse community-hosted models</li>
+<li>Call them via Python or HTTP</li>
+<li>Get results in seconds — powered by cloud GPUs</li>
+</ul>
+<h3 id="popular-replicate-models">Popular Replicate Models<a class="headerlink" href="#popular-replicate-models" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>stability-ai/stable-diffusion</code> – image generation</li>
+<li><code>tstramer/cartoonify</code> – cartoonizer</li>
+<li><code>isl-org/DPT</code> – depth estimation</li>
+<li><code>danielgatis/rembg</code> – background remover</li>
+<li><code>riffusion/riffusion</code> – music generation</li>
+<li>…and hundreds more</li>
+</ul>
+<hr />
+<h2 id="102-how-does-it-work">10.2 How Does It Work?<a class="headerlink" href="#102-how-does-it-work" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Choose a model from <a href="https://replicate.com">replicate.com</a></li>
+<li>View its inputs + outputs</li>
+<li>Use the Python SDK or cURL to run inference</li>
+</ol>
+<h3 id="example-cartoonizer-python">Example: Cartoonizer (Python)<a class="headerlink" href="#example-cartoonizer-python" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">replicate</span>
+
+<span class="n">output_url</span> <span class="o">=</span> <span class="n">replicate</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+  <span class="s2">&quot;tstramer/cartoonify:latest&quot;</span><span class="p">,</span>
+  <span class="nb">input</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;input.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)}</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>This will:</p>
+<ul>
+<li>Upload your image</li>
+<li>Run inference on GPU</li>
+<li>Return a link to the cartoonized output</li>
+</ul>
+<p>You can also inspect logs, latency, and cost per run.</p>
+<hr />
+<h2 id="103-what-is-stabilityai">10.3 What Is Stability.ai?<a class="headerlink" href="#103-what-is-stabilityai" title="Permanent link">&para;</a></h2>
+<p><strong>Stability.ai</strong> is the company behind:</p>
+<ul>
+<li>Stable Diffusion (text-to-image)</li>
+<li>Stable Video (text-to-video)</li>
+<li>ClipDrop (background removal, upscaling, relighting)</li>
+</ul>
+<h3 id="how-to-access-stability-tools">How to Access Stability Tools<a class="headerlink" href="#how-to-access-stability-tools" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Through their SDK or <a href="https://clipdrop.co/">ClipDrop</a></li>
+<li>Through Hugging Face or Replicate</li>
+<li>Through hosted APIs like <a href="https://dreamstudio.ai">DreamStudio</a></li>
+</ul>
+<h3 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h3>
+<ul>
+<li>AI art generation</li>
+<li>Text → video loops</li>
+<li>Depth-aware 3D effects</li>
+<li>Visual cleanup and enhancement tools</li>
+</ul>
+<hr />
+<h2 id="104-pricing-models-free-tiers">10.4 Pricing Models &amp; Free Tiers<a class="headerlink" href="#104-pricing-models-free-tiers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Free Tier</th>
+<th>Paid?</th>
+<th>Cost / 1K runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Replicate</td>
+<td>\$10 free credit</td>
+<td>Pay-as-you-go</td>
+<td>Varies (\$0.01–\$0.15)</td>
+</tr>
+<tr>
+<td>Stability.ai</td>
+<td>100 free images</td>
+<td>\$10–\$30/mo</td>
+<td>Monthly subscription</td>
+</tr>
+</tbody>
+</table>
+<p>✅ Add credit caps
+✅ Per-request billing
+✅ No idle GPU costs — <strong>you only pay for what you use</strong></p>
+<hr />
+<h2 id="105-where-this-fits-into-your-stack">10.5 Where This Fits Into Your Stack<a class="headerlink" href="#105-where-this-fits-into-your-stack" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Frontend</th>
+<th>Backend</th>
+<th>API Layer</th>
+<th>Output Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>React / Gradio</td>
+<td>FastAPI (<code>/cartoon</code>)</td>
+<td><code>Replicate.run()</code></td>
+<td>JSON w/ image URL</td>
+</tr>
+<tr>
+<td>Web upload form</td>
+<td>Flask</td>
+<td>Stability SDK</td>
+<td>Base64 images</td>
+</tr>
+<tr>
+<td>HF Spaces</td>
+<td>HF + Replicate API</td>
+<td>Python <code>requests</code></td>
+<td>Direct preview</td>
+</tr>
+</tbody>
+</table>
+<h3 id="perfect-for">Perfect for:<a class="headerlink" href="#perfect-for" title="Permanent link">&para;</a></h3>
+<ul>
+<li>AI demo apps</li>
+<li>Meme or cartoon generators</li>
+<li>Audio visualizers</li>
+<li>Any GPU-heavy inference task</li>
+</ul>
+<hr />
+<h2 id="106-builders-lens-tools-that-feel-like-instruments">10.6 Builder’s Lens: Tools That Feel Like Instruments<a class="headerlink" href="#106-builders-lens-tools-that-feel-like-instruments" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“These APIs aren’t just services. They’re instruments.
+They let you </em><em>play</em><em> with intelligence, in real time.”</em></p>
+</blockquote>
+<p>In the past:</p>
+<ul>
+<li>You trained for days</li>
+<li>Managed GPU memory manually</li>
+<li>Hosted models yourself</li>
+</ul>
+<p>Now?</p>
+<ul>
+<li>Pick a model</li>
+<li>Call the endpoint</li>
+<li>Style your interface</li>
+</ul>
+<p>Welcome to the <strong>golden age of tool-based creativity</strong>.
+You bring the flow. The cloud brings the force.</p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Replicate = ML API</td>
+<td>Use powerful models without setup</td>
+</tr>
+<tr>
+<td>Stability = image/video SDKs</td>
+<td>AI creativity tools in your browser</td>
+</tr>
+<tr>
+<td>Cost-effective inference</td>
+<td>Great for prototypes, MVPs, and fast launches</td>
+</tr>
+<tr>
+<td>UX &gt; compute</td>
+<td>Focus on product design, not infrastructure</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“The future doesn’t belong to those who build the tools.
+It belongs to those who </em><em>use</em><em> the tools to build the future.”</em></p>
+</blockquote>
+<hr />
 
 
 
@@ -1681,8 +2002,13 @@ This mimics gradient descent—updating x to minimize the loss.</p>
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

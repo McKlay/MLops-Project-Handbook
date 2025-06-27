@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-4-installation-setup" class="md-skip">
+        <a href="#chapter-4-docker-for-ai-apps" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1028,36 +1030,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#41-preparing-your-workspace" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1 Preparing Your Workspace
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-verifying-installation-gpu-access" class="md-nav__link">
+  <a href="#opening-reflection-the-illusion-of-it-works-on-my-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Verifying Installation &amp; GPU Access
+      Opening Reflection: The Illusion of “It Works on My Machine”
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-bonus-enable-dynamic-gpu-memory-growth" class="md-nav__link">
+  <a href="#41-what-is-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      4.3 Bonus: Enable Dynamic GPU Memory Growth
+      4.1 What Is Docker?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#44-optional-freeze-your-environment" class="md-nav__link">
+  <a href="#42-why-docker-is-a-superpower-for-ai-devs" class="md-nav__link">
     <span class="md-ellipsis">
-      4.4 Optional: Freeze Your Environment
+      4.2 Why Docker Is a Superpower for AI Devs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-anatomy-of-a-dockerfile-fastapi-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Anatomy of a Dockerfile (FastAPI Example)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-how-to-build-and-run-your-docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 How to Build and Run Your Docker Container
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-containerizing-a-gradio-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Containerizing a Gradio Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-a-mental-shift-docker-is-not-just-for-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 A Mental Shift: Docker Is Not Just for Teams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-builders-reality-how-docker-changed-my-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Builder’s Reality: How Docker Changed My Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1455,7 +1520,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1474,36 +1541,99 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#41-preparing-your-workspace" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1 Preparing Your Workspace
+      This Chapter Covers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-verifying-installation-gpu-access" class="md-nav__link">
+  <a href="#opening-reflection-the-illusion-of-it-works-on-my-machine" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Verifying Installation &amp; GPU Access
+      Opening Reflection: The Illusion of “It Works on My Machine”
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-bonus-enable-dynamic-gpu-memory-growth" class="md-nav__link">
+  <a href="#41-what-is-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      4.3 Bonus: Enable Dynamic GPU Memory Growth
+      4.1 What Is Docker?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#44-optional-freeze-your-environment" class="md-nav__link">
+  <a href="#42-why-docker-is-a-superpower-for-ai-devs" class="md-nav__link">
     <span class="md-ellipsis">
-      4.4 Optional: Freeze Your Environment
+      4.2 Why Docker Is a Superpower for AI Devs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-anatomy-of-a-dockerfile-fastapi-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Anatomy of a Dockerfile (FastAPI Example)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-how-to-build-and-run-your-docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 How to Build and Run Your Docker Container
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-containerizing-a-gradio-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Containerizing a Gradio Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#46-a-mental-shift-docker-is-not-just-for-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 A Mental Shift: Docker Is Not Just for Teams
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47-builders-reality-how-docker-changed-my-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Builder’s Reality: How Docker Changed My Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1522,84 +1652,196 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-4-installation-setup">Chapter 4: Installation &amp; Setup<a class="headerlink" href="#chapter-4-installation-setup" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>“A neural net’s journey begins with a single tensor.”</p>
-</blockquote>
+
+<h1 id="chapter-4-docker-for-ai-apps">Chapter 4: Docker for AI Apps<a class="headerlink" href="#chapter-4-docker-for-ai-apps" title="Permanent link">&para;</a></h1>
+<p><em>“Build once. Run anywhere. Fail nowhere.”</em></p>
+<p>Chapter 4 is about <strong>Docker</strong> — not just as a tool, but as a <strong>philosophy of portability, consistency, and freedom</strong>. This chapter explains why Docker has become essential for AI/ML workflows in a world full of brittle installs and shifting environments.</p>
 <hr />
-<h2 id="41-preparing-your-workspace">4.1 Preparing Your Workspace<a class="headerlink" href="#41-preparing-your-workspace" title="Permanent link">&para;</a></h2>
-<p>Let’s keep things clean and self-contained. You’ll be using a virtual environment inside your TensorFlow folder for local experimentation.</p>
-<p>✅ Step-by-step:</p>
-<p>step 1. Navigate to your project folder<br />
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nb">cd</span><span class="w"> </span>C:<span class="se">\U</span>sers<span class="se">\C</span>lay<span class="se">\D</span>esktop<span class="se">\T</span>utorials<span class="se">\T</span>ensorFlow
-</code></pre></div>
-step 2. Create a virtual environment<br />
-<div class="highlight"><pre><span></span><code><span class="w">    </span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>tf_env
-</code></pre></div>
-step 3. Activate the environment  </p>
+<h2 id="this-chapter-covers">This Chapter Covers<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
 <ul>
-<li>On CMD:
-<div class="highlight"><pre><span></span><code><span class="w">    </span>.<span class="se">\t</span>f_env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</code></pre></div></li>
-<li>On PowerShell:
-<div class="highlight"><pre><span></span><code><span class="w">    </span>.<span class="se">\t</span>f_env<span class="se">\S</span>cripts<span class="se">\A</span>ctivate.ps1
-</code></pre></div>
-step 4. Upgrade pip &amp; install TensorFlow (with GPU support)
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
-pip<span class="w"> </span>install<span class="w"> </span>tensorflow<span class="o">[</span>and-cuda<span class="o">]</span>
-</code></pre></div><blockquote>
-<p>⚠️ This will install ~2.5 GB of GPU-enabled TensorFlow with pre-bundled CUDA &amp; cuDNN (no manual install needed in TF 2.15+).</p>
-</blockquote>
-</li>
+<li>What Docker is and why it exists</li>
+<li>Why it’s a game-changer for ML deployments</li>
+<li>Anatomy of a Dockerfile</li>
+<li>How to containerize your FastAPI/Gradio project</li>
+<li>Builder’s lens: reproducibility, simplicity, power</li>
 </ul>
 <hr />
-<h2 id="42-verifying-installation-gpu-access">4.2 Verifying Installation &amp; GPU Access<a class="headerlink" href="#42-verifying-installation-gpu-access" title="Permanent link">&para;</a></h2>
-<p>Create a file called <code>check_tf_gpu.py</code>:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">print_gpu_info</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TensorFlow version:&quot;</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
-    <span class="n">gpus</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="s1">&#39;GPU&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Num GPUs Available:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gpus</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">gpu</span> <span class="ow">in</span> <span class="n">gpus</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GPU Detected:&quot;</span><span class="p">,</span> <span class="n">gpu</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">print_gpu_info</span><span class="p">()</span>
-</code></pre></div>
-Run it:
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>check_tf_gpu.py
-</code></pre></div></p>
-<p>✅ Expected Output:
-<div class="highlight"><pre><span></span><code><span class="nt">TensorFlow version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.x.x</span>
-<span class="nt">Num GPUs Available</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-<span class="nt">GPU Detected</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NVIDIA GeForce RTX 4050 Laptop GPU</span>
-</code></pre></div>
-If it shows Num GPUs Available: 0, let’s talk. We riot. (But also debug your drivers or reinstall with CPU-only fallback.)</p>
+<h2 id="opening-reflection-the-illusion-of-it-works-on-my-machine">Opening Reflection: The Illusion of “It Works on My Machine”<a class="headerlink" href="#opening-reflection-the-illusion-of-it-works-on-my-machine" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“You finally get your model working, then… it crashes on someone else’s laptop.”</p>
+</blockquote>
+<p>There’s a moment every AI builder experiences:</p>
+<ul>
+<li>Your app works beautifully on your machine</li>
+<li>You send it to someone else</li>
+<li>And... 💥 nothing works</li>
+</ul>
+<p>Dependencies break. Versions mismatch. Paths are wrong.</p>
+<p>What if you could <strong>capture the exact state of your working environment</strong> and ship it as-is — like a sealed time capsule?</p>
+<p>That’s what Docker does.
+It says: <strong>Let’s stop trusting the world to match our setup. Let’s just ship the world with our app.</strong></p>
 <hr />
-<h2 id="43-bonus-enable-dynamic-gpu-memory-growth">4.3 Bonus: Enable Dynamic GPU Memory Growth<a class="headerlink" href="#43-bonus-enable-dynamic-gpu-memory-growth" title="Permanent link">&para;</a></h2>
-<p>Prevent TensorFlow from hoarding all your GPU VRAM upfront:
-<div class="highlight"><pre><span></span><code><span class="n">gpus</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">list_physical_devices</span><span class="p">(</span><span class="s1">&#39;GPU&#39;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">gpus</span><span class="p">:</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">gpu</span> <span class="ow">in</span> <span class="n">gpus</span><span class="p">:</span>
-            <span class="n">tf</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">set_memory_growth</span><span class="p">(</span><span class="n">gpu</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memory growth enabled on GPU.&quot;</span><span class="p">)</span>
-    <span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-</code></pre></div>
-Use this in training scripts to allocate GPU memory only as needed.</p>
+<h2 id="41-what-is-docker">4.1 What Is Docker?<a class="headerlink" href="#41-what-is-docker" title="Permanent link">&para;</a></h2>
+<p>Docker is a tool that lets you <strong>package code and dependencies</strong> into a single unit called a <strong>container</strong>.</p>
+<p>Think of it like:</p>
+<ul>
+<li>🧳 A suitcase with your project + every tool it needs</li>
+<li>🧱 A lightweight virtual machine (but faster and smaller)</li>
+</ul>
+<p>You build once. Then anyone can run that same setup:</p>
+<ul>
+<li>On your laptop</li>
+<li>On a cloud GPU</li>
+<li>On a CI/CD pipeline</li>
+<li>On someone else’s machine — without "it broke again" fears</li>
+</ul>
 <hr />
-<h2 id="44-optional-freeze-your-environment">4.4 Optional: Freeze Your Environment<a class="headerlink" href="#44-optional-freeze-your-environment" title="Permanent link">&para;</a></h2>
-<p>To create a portable list of all packages:
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
-</code></pre></div>
-Useful when sharing your book repo or collaborating with others.</p>
+<h2 id="42-why-docker-is-a-superpower-for-ai-devs">4.2 Why Docker Is a Superpower for AI Devs<a class="headerlink" href="#42-why-docker-is-a-superpower-for-ai-devs" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>How It Helps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dependency Control</td>
+<td>Pin exact versions of Python, PyTorch, etc.</td>
+</tr>
+<tr>
+<td>Works Anywhere</td>
+<td>Run on Linux, Mac, Windows, cloud</td>
+</tr>
+<tr>
+<td>Ideal for CI/CD</td>
+<td>Easy to deploy in pipelines</td>
+</tr>
+<tr>
+<td>Reproducibility</td>
+<td>Every container behaves the same everywhere</td>
+</tr>
+<tr>
+<td>Prepares for Cloud</td>
+<td>Cloud servers run containers, not bare scripts</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Imagine never worrying about:
+“Do I have the right CUDA version?”
+“Why is Hugging Face crashing on server but not locally?”</p>
+</blockquote>
 <hr />
-<p>“A neural net’s journey begins with a single tensor.”</p>
+<h2 id="43-anatomy-of-a-dockerfile-fastapi-example">4.3 Anatomy of a Dockerfile (FastAPI Example)<a class="headerlink" href="#43-anatomy-of-a-dockerfile-fastapi-example" title="Permanent link">&para;</a></h2>
+<p>📄 <strong>Dockerfile</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c"># Use official Python base</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">python:3.10</span>
+
+<span class="c"># Set working directory</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+
+<span class="c"># Copy all files into container</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+
+<span class="c"># Install dependencies</span>
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+
+<span class="c"># Run app</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvicorn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.main:app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--host&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--port&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;7860&quot;</span><span class="p">]</span>
+</code></pre></div>
+<blockquote>
+<p>This single file defines your project environment.
+Anyone who runs this will recreate <strong>your exact setup</strong> — same version, same ports, same everything.</p>
+</blockquote>
+<hr />
+<h2 id="44-how-to-build-and-run-your-docker-container">4.4 How to Build and Run Your Docker Container<a class="headerlink" href="#44-how-to-build-and-run-your-docker-container" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Build the image</span>
+docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>my-ai-api<span class="w"> </span>.
+
+<span class="c1"># Run the container</span>
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">7860</span>:7860<span class="w"> </span>my-ai-api
+</code></pre></div>
+<blockquote>
+<p>Your app is now running inside an <strong>isolated, reproducible environment</strong>.
+🔥 No more “works on my laptop” curse.</p>
+</blockquote>
+<hr />
+<h2 id="45-containerizing-a-gradio-project">4.5 Containerizing a Gradio Project<a class="headerlink" href="#45-containerizing-a-gradio-project" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">python:3.10</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;app.py&quot;</span><span class="p">]</span>
+</code></pre></div>
+<p>Then run:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cartoonizer-ui<span class="w"> </span>.
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">7860</span>:7860<span class="w"> </span>cartoonizer-ui
+</code></pre></div>
+<blockquote>
+<p>💡 Hugging Face Spaces use this exact principle behind the scenes.</p>
+</blockquote>
+<hr />
+<h2 id="46-a-mental-shift-docker-is-not-just-for-teams">4.6 A Mental Shift: Docker Is Not Just for Teams<a class="headerlink" href="#46-a-mental-shift-docker-is-not-just-for-teams" title="Permanent link">&para;</a></h2>
+<p>Even solo developers benefit:</p>
+<ul>
+<li>Want to train models overnight on a cloud GPU? → Docker</li>
+<li>Want to run your app on different school/work machines? → Docker</li>
+<li>Want to submit a working ML pipeline as a portfolio? → Docker</li>
+</ul>
+<p>Think of Docker as your <strong>project-in-a-bottle</strong> — ship it anywhere, and it still works.</p>
+<hr />
+<h2 id="47-builders-reality-how-docker-changed-my-workflow">4.7 Builder’s Reality: How Docker Changed My Workflow<a class="headerlink" href="#47-builders-reality-how-docker-changed-my-workflow" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“Before Docker: constant setup pain.
+After Docker: copy, paste, build, done.”</p>
+</blockquote>
+<p>Docker will <strong>future-proof all your tools</strong>:</p>
+<ul>
+<li>Hugging Face demos</li>
+<li>Internal company tools</li>
+<li>Eventual products</li>
+</ul>
+<p>You're no longer coding in an environment —
+You're <strong>coding the environment itself</strong>.</p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Key Concept</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Docker = environment capture</td>
+<td>Freeze your setup for reuse/sharing</td>
+</tr>
+<tr>
+<td>Great for AI deployment</td>
+<td>FastAPI, Gradio, Hugging Face, CI/CD</td>
+</tr>
+<tr>
+<td>Easy to build &amp; run</td>
+<td><code>docker build</code>, <code>docker run</code></td>
+</tr>
+<tr>
+<td>Prepares for scaling</td>
+<td>Works in teams, clouds, platforms</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>“Your code is only as powerful as your ability to share it — and Docker lets you share <strong>exactly what works</strong>.”</p>
+</blockquote>
+<hr />
 
 
 
@@ -1607,8 +1849,13 @@ Useful when sharing your book repo or collaborating with others.</p>
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

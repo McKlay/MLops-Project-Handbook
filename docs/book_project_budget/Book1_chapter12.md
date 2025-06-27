@@ -70,7 +70,7 @@ Here are common signs it’s time to grow:
 
 ## 12.4 How to Scale Without Surprises
 
-### ✅ Tips for Safe Scaling
+### Tips for Safe Scaling
 
 | Action                     | Benefit                                |
 | -------------------------- | -------------------------------------- |

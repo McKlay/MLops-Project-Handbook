@@ -30,7 +30,7 @@ Even small AI/ML apps can rack up unexpected costs due to:
 |Railway	    |500 hrs/month, 1GB deploy	        |Cold starts, no GPU                    |
 |Vercel	        |100GB bandwidth, unlimited deploys	|Bandwidth limit for image-heavy apps   |
 
-> 💡 You can deploy multiple apps under one free plan — just rotate projects if needed!
+> You can deploy multiple apps under one free plan — just rotate projects if needed!
 
 ---
 

@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-14-building-a-neural-network-from-scratch" class="md-skip">
+        <a href="#chapter-14-authentication-databases-user-management" class="md-skip">
           Skip to content
         </a>
       
@@ -210,6 +210,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -1304,54 +1306,162 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-dataset-preparation" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Dataset Preparation
+      This chapter covers:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-model-initialization" class="md-nav__link">
+  <a href="#opening-reflection-the-shift-from-tools-to-ecosystems" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Model Initialization
+      Opening Reflection: The Shift from Tools to Ecosystems
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-forward-pass-function" class="md-nav__link">
+  <a href="#141-why-you-need-auth-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Forward Pass Function
+      14.1 Why You Need Auth &amp; Data
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-loss-accuracy" class="md-nav__link">
+  <a href="#142-choosing-your-stack-supabase-vs-firebase" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Loss &amp; Accuracy
+      14.2 Choosing Your Stack: Supabase vs Firebase
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-training-loop" class="md-nav__link">
+  <a href="#143-adding-authentication-supabase-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 5: Training Loop
+      14.3 Adding Authentication (Supabase Example)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 Adding Authentication (Supabase Example)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-design-your-schema-prediction-based-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Design Your Schema (Prediction-Based App)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.4 Design Your Schema (Prediction-Based App)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: predictions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-frontend-integration-react-or-gradio" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.5 Frontend Integration (React or Gradio)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.5 Frontend Integration (React or Gradio)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradio-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradio Example:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-supabasefirebase" class="md-nav__link">
+    <span class="md-ellipsis">
+      React + Supabase/Firebase:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-builders-lens-identity-unlocks-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.6 Builder’s Lens: Identity Unlocks Continuity
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#summary-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1473,7 +1583,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1492,54 +1604,162 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-dataset-preparation" class="md-nav__link">
+  <a href="#this-chapter-covers" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Dataset Preparation
+      This chapter covers:
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-model-initialization" class="md-nav__link">
+  <a href="#opening-reflection-the-shift-from-tools-to-ecosystems" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Model Initialization
+      Opening Reflection: The Shift from Tools to Ecosystems
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-forward-pass-function" class="md-nav__link">
+  <a href="#141-why-you-need-auth-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Forward Pass Function
+      14.1 Why You Need Auth &amp; Data
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-loss-accuracy" class="md-nav__link">
+  <a href="#142-choosing-your-stack-supabase-vs-firebase" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Loss &amp; Accuracy
+      14.2 Choosing Your Stack: Supabase vs Firebase
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-training-loop" class="md-nav__link">
+  <a href="#143-adding-authentication-supabase-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 5: Training Loop
+      14.3 Adding Authentication (Supabase Example)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 Adding Authentication (Supabase Example)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#144-design-your-schema-prediction-based-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.4 Design Your Schema (Prediction-Based App)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.4 Design Your Schema (Prediction-Based App)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table: predictions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#145-frontend-integration-react-or-gradio" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.5 Frontend Integration (React or Gradio)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.5 Frontend Integration (React or Gradio)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradio-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gradio Example:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-supabasefirebase" class="md-nav__link">
+    <span class="md-ellipsis">
+      React + Supabase/Firebase:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#146-builders-lens-identity-unlocks-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.6 Builder’s Lens: Identity Unlocks Continuity
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#summary-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      Summary Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Closing Reflection
     </span>
   </a>
   
@@ -1558,131 +1778,267 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
 
 
 
-<h1 id="chapter-14-building-a-neural-network-from-scratch">Chapter 14: Building a Neural Network from Scratch<a class="headerlink" href="#chapter-14-building-a-neural-network-from-scratch" title="Permanent link">&para;</a></h1>
+
+<h1 id="chapter-14-authentication-databases-user-management">Chapter 14: Authentication, Databases &amp; User Management<a class="headerlink" href="#chapter-14-authentication-databases-user-management" title="Permanent link">&para;</a></h1>
+<p><em>“Projects grow when users trust them.”</em></p>
+<p>This chapter takes us from solo demos to <strong>real users</strong>, <strong>real data</strong>, and <strong>real structure</strong>.
+If your AI project is going to grow, it will need:</p>
 <blockquote>
-<p>“<em>Before you rely on magic, understand the machinery beneath it.</em>”</p>
+<p>✅ Authentication
+✅ A database
+✅ User management</p>
+</blockquote>
+<p>This is how you go from <strong>fun app</strong> to <strong>platform</strong>.</p>
+<hr />
+<h2 id="this-chapter-covers">This chapter covers:<a class="headerlink" href="#this-chapter-covers" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Why auth &amp; user data matter in AI apps</li>
+<li>Supabase vs Firebase (and how to choose)</li>
+<li>Adding login, storing usage history</li>
+<li>Schema design for prediction-based apps</li>
+<li>Builder’s lens: building with identity in mind</li>
+</ul>
+<hr />
+<h2 id="opening-reflection-the-shift-from-tools-to-ecosystems">Opening Reflection: The Shift from Tools to Ecosystems<a class="headerlink" href="#opening-reflection-the-shift-from-tools-to-ecosystems" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“When one user logs in… you’ve moved from app to experience.”</em></p>
+</blockquote>
+<p>An AI model can:</p>
+<ul>
+<li>Classify text</li>
+<li>Draw an image</li>
+<li>Predict stock prices</li>
+</ul>
+<p>But without:</p>
+<ul>
+<li>A login button</li>
+<li>A way to store results</li>
+<li>A user dashboard</li>
+</ul>
+<p>…it’s just a moment of interaction.</p>
+<p>Once you add identity, you gain:</p>
+<ul>
+<li>✅ Memory</li>
+<li>✅ Personalization</li>
+<li>✅ Security</li>
+<li>✅ Community</li>
+</ul>
+<p>This is how apps grow into <strong>ecosystems</strong>.</p>
+<hr />
+<h2 id="141-why-you-need-auth-data">14.1 Why You Need Auth &amp; Data<a class="headerlink" href="#141-why-you-need-auth-data" title="Permanent link">&para;</a></h2>
+<p>Even the simplest AI app benefits from:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Login</td>
+<td>Track who used what, when</td>
+</tr>
+<tr>
+<td>History</td>
+<td>Store past predictions (e.g., memes, text)</td>
+</tr>
+<tr>
+<td>Usage Tracking</td>
+<td>Show stats (generations, liked results)</td>
+</tr>
+<tr>
+<td>Billing Tiers</td>
+<td>Limit features per user plan</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="142-choosing-your-stack-supabase-vs-firebase">14.2 Choosing Your Stack: Supabase vs Firebase<a class="headerlink" href="#142-choosing-your-stack-supabase-vs-firebase" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Supabase</th>
+<th>Firebase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Language</td>
+<td>SQL/Postgres, JS/Python clients</td>
+<td>NoSQL/Firestore, JS-heavy</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Email, OAuth, Magic Link</td>
+<td>Email, OAuth, Phone, Anonymous</td>
+</tr>
+<tr>
+<td>Realtime DB</td>
+<td>✅ Yes (Postgres pub/sub)</td>
+<td>✅ Yes (Firestore)</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>File storage (avatars, images)</td>
+<td>Cloud Storage</td>
+</tr>
+<tr>
+<td>Open Source</td>
+<td>✅ Yes</td>
+<td>❌ Proprietary</td>
+</tr>
+<tr>
+<td>Great For</td>
+<td>SQL lovers, devs who want control</td>
+<td>Fast prototyping, Google integration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>🔧 Recommendation for AI Builders:</strong>
+Use <strong>Supabase</strong> if you want SQL + auth + file storage all in one stack.</p>
+<hr />
+<h2 id="143-adding-authentication-supabase-example">14.3 Adding Authentication (Supabase Example)<a class="headerlink" href="#143-adding-authentication-supabase-example" title="Permanent link">&para;</a></h2>
+<p>Install the Python client:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>supabase
+</code></pre></div>
+<p>Create a project → Get your <code>URL</code> and <code>anon/public API key</code>
+<a href="https://supabase.com">Sign up at https://supabase.com</a></p>
+<h3 id="python-code">Python Code<a class="headerlink" href="#python-code" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">supabase</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_client</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://xyzcompany.supabase.co&quot;</span>
+<span class="n">key</span> <span class="o">=</span> <span class="s2">&quot;your-public-anon-key&quot;</span>
+<span class="n">supabase</span> <span class="o">=</span> <span class="n">create_client</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+
+<span class="c1"># Sign up a new user</span>
+<span class="n">auth_response</span> <span class="o">=</span> <span class="n">supabase</span><span class="o">.</span><span class="n">auth</span><span class="o">.</span><span class="n">sign_up</span><span class="p">({</span>
+    <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;strongpassword&quot;</span>
+<span class="p">})</span>
+</code></pre></div>
+<p>✅ Use frontend (React or Gradio) to call this via Supabase API or JS SDK.</p>
+<hr />
+<h2 id="144-design-your-schema-prediction-based-app">14.4 Design Your Schema (Prediction-Based App)<a class="headerlink" href="#144-design-your-schema-prediction-based-app" title="Permanent link">&para;</a></h2>
+<h3 id="table-users">Table: <code>users</code><a class="headerlink" href="#table-users" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>email</th>
+<th>created_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="mailto:user@a.com">user@a.com</a></td>
+<td>2025-04-23</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-predictions">Table: <code>predictions</code><a class="headerlink" href="#table-predictions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>user_id</th>
+<th>input_text</th>
+<th>result_text</th>
+<th>model_used</th>
+<th>timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>"Is this positive?"</td>
+<td>"POSITIVE"</td>
+<td>bert-base-uncased</td>
+<td>2025-04-23 14:12</td>
+</tr>
+</tbody>
+</table>
+<h3 id="benefits">Benefits:<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Track usage per user</li>
+<li>View prediction history</li>
+<li>Filter by model/task</li>
+<li>Export data for analytics</li>
+</ul>
+<hr />
+<h2 id="145-frontend-integration-react-or-gradio">14.5 Frontend Integration (React or Gradio)<a class="headerlink" href="#145-frontend-integration-react-or-gradio" title="Permanent link">&para;</a></h2>
+<h3 id="gradio-example">Gradio Example:<a class="headerlink" href="#gradio-example" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Username&quot;</span><span class="p">)</span>
+<span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Password&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="react-supabasefirebase">React + Supabase/Firebase:<a class="headerlink" href="#react-supabasefirebase" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Supabase JS SDK</li>
+<li>Firebase Auth</li>
+<li>Custom backend endpoints (<code>/login</code>, <code>/signup</code>)</li>
+</ul>
+<p>Add these for production readiness:</p>
+<ul>
+<li>JWT tokens for session management</li>
+<li>LocalStorage for persistent login</li>
+<li>Role-based routing (e.g., <code>user</code>, <code>admin</code>)</li>
+</ul>
+<hr />
+<h2 id="146-builders-lens-identity-unlocks-continuity">14.6 Builder’s Lens: Identity Unlocks Continuity<a class="headerlink" href="#146-builders-lens-identity-unlocks-continuity" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“Without users, you have usage.
+With users, you have relationships.”</em></p>
+</blockquote>
+<p>When users log in:</p>
+<ul>
+<li>They expect quality</li>
+<li>They invest in results</li>
+<li>They complete the loop:
+  <code>input → feedback → return</code></li>
+</ul>
+<p>This is how you build real AI products — not just demos.</p>
+<hr />
+<h2 id="summary-takeaways">Summary Takeaways<a class="headerlink" href="#summary-takeaways" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auth = ownership</td>
+<td>Ties data and actions to a real person</td>
+</tr>
+<tr>
+<td>DB = memory</td>
+<td>Enables history, analytics, billing</td>
+</tr>
+<tr>
+<td>Supabase = full stack</td>
+<td>SQL + auth + file store + REST API</td>
+</tr>
+<tr>
+<td>Identity = UX layer</td>
+<td>From toy → tool → trusted experience</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="closing-reflection">🌟 Closing Reflection<a class="headerlink" href="#closing-reflection" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>“Every user login is a vote of trust.
+The database is where you honor it.”</em></p>
 </blockquote>
 <hr />
-<p>In this chapter, we'll strip away the abstraction of high-level APIs and dive into the inner mechanics of building a neural network step-by-step using only low-level TensorFlow operations (tf.Variable, tf.matmul, tf.nn, etc.). This exercise gives you a deeper appreciation of what libraries like tf.keras automate for us—and how neural networks actually operate under the hood.</p>
-<p>By the end of this chapter, you’ll be able to:</p>
-<ul>
-<li>Initialize weights and biases manually  </li>
-<li>Write your own forward pass function  </li>
-<li>Calculate loss and accuracy  </li>
-<li>Implement backpropagation using tf.GradientTape  </li>
-<li>Train a minimal network on a real dataset (e.g., MNIST)  </li>
-</ul>
-<hr />
-<h2 id="step-1-dataset-preparation">Step 1: Dataset Preparation<a class="headerlink" href="#step-1-dataset-preparation" title="Permanent link">&para;</a></h2>
-<p>We’ll use the MNIST dataset (handwritten digits) for simplicity. It's preloaded in TensorFlow:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
-
-<span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
-
-<span class="c1"># Normalize and flatten</span>
-<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span> <span class="o">=</span> <span class="n">x_train</span> <span class="o">/</span> <span class="mf">255.0</span><span class="p">,</span> <span class="n">x_test</span> <span class="o">/</span> <span class="mf">255.0</span>
-<span class="n">x_train</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span>
-<span class="n">x_test</span> <span class="o">=</span> <span class="n">x_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">784</span><span class="p">)</span>
-
-<span class="c1"># Convert to tf.Tensor</span>
-<span class="n">x_train</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">convert_to_tensor</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">convert_to_tensor</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span>
-<span class="n">x_test</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">convert_to_tensor</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<span class="n">y_test</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">convert_to_tensor</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span>
-</code></pre></div></p>
-<hr />
-<h2 id="step-2-model-initialization">Step 2: Model Initialization<a class="headerlink" href="#step-2-model-initialization" title="Permanent link">&para;</a></h2>
-<p>We'll define a simple feedforward neural network with:</p>
-<ul>
-<li>Input layer: 784 units (28x28 pixels)  </li>
-<li>Hidden layer: 128 units + ReLU  </li>
-<li>Output layer: 10 units (one per digit)</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Parameters</span>
-<span class="n">input_size</span> <span class="o">=</span> <span class="mi">784</span>
-<span class="n">hidden_size</span> <span class="o">=</span> <span class="mi">128</span>
-<span class="n">output_size</span> <span class="o">=</span> <span class="mi">10</span>
-
-<span class="c1"># Weights and biases</span>
-<span class="n">W1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">([</span><span class="n">input_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">],</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
-<span class="n">b1</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">hidden_size</span><span class="p">]))</span>
-<span class="n">W2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">([</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">],</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
-<span class="n">b2</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">output_size</span><span class="p">]))</span>
-</code></pre></div>
-<hr />
-<h2 id="step-3-forward-pass-function">Step 3: Forward Pass Function<a class="headerlink" href="#step-3-forward-pass-function" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">forward_pass</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">hidden</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">W1</span><span class="p">)</span> <span class="o">+</span> <span class="n">b1</span><span class="p">)</span>
-    <span class="n">logits</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">hidden</span><span class="p">,</span> <span class="n">W2</span><span class="p">)</span> <span class="o">+</span> <span class="n">b2</span>
-    <span class="k">return</span> <span class="n">logits</span>
-</code></pre></div>
-<hr />
-<h2 id="step-4-loss-accuracy">Step 4: Loss &amp; Accuracy<a class="headerlink" href="#step-4-loss-accuracy" title="Permanent link">&para;</a></h2>
-<p>Use sparse categorical cross-entropy since labels are integer-encoded:
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">compute_loss</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">sparse_softmax_cross_entropy_with_logits</span><span class="p">(</span><span class="n">logits</span><span class="o">=</span><span class="n">logits</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">labels</span><span class="p">))</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">compute_accuracy</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
-    <span class="n">preds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">equal</span><span class="p">(</span><span class="n">preds</span><span class="p">,</span> <span class="n">labels</span><span class="p">),</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span>
-</code></pre></div></p>
-<hr />
-<h2 id="step-5-training-loop">Step 5: Training Loop<a class="headerlink" href="#step-5-training-loop" title="Permanent link">&para;</a></h2>
-<p>Now we manually implement the training loop using <code>tf.GradientTape</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="n">optimizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-<span class="n">epochs</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
-
-<span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x_train</span><span class="p">),</span> <span class="n">batch_size</span><span class="p">):</span>
-        <span class="n">x_batch</span> <span class="o">=</span> <span class="n">x_train</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">batch_size</span><span class="p">]</span>
-        <span class="n">y_batch</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">batch_size</span><span class="p">]</span>
-
-        <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
-            <span class="n">logits</span> <span class="o">=</span> <span class="n">forward_pass</span><span class="p">(</span><span class="n">x_batch</span><span class="p">)</span>
-            <span class="n">loss</span> <span class="o">=</span> <span class="n">compute_loss</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">y_batch</span><span class="p">)</span>
-
-        <span class="n">gradients</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">loss</span><span class="p">,</span> <span class="p">[</span><span class="n">W1</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">b2</span><span class="p">])</span>
-        <span class="n">optimizer</span><span class="o">.</span><span class="n">apply_gradients</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">gradients</span><span class="p">,</span> <span class="p">[</span><span class="n">W1</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="n">W2</span><span class="p">,</span> <span class="n">b2</span><span class="p">]))</span>
-
-    <span class="c1"># Epoch-end evaluation</span>
-    <span class="n">test_logits</span> <span class="o">=</span> <span class="n">forward_pass</span><span class="p">(</span><span class="n">x_test</span><span class="p">)</span>
-    <span class="n">test_acc</span> <span class="o">=</span> <span class="n">compute_accuracy</span><span class="p">(</span><span class="n">test_logits</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Epoch </span><span class="si">{</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, Test Accuracy: </span><span class="si">{</span><span class="n">test_acc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
-<p>In this chapter, we:  </p>
-<ul>
-<li>
-<p>Built a fully functioning neural network without tf.keras  </p>
-</li>
-<li>
-<p>Initialized all parameters manually  </p>
-</li>
-<li>
-<p>Defined forward propagation, loss, and backpropagation  </p>
-</li>
-<li>
-<p>Trained it on MNIST using gradient descent  </p>
-</li>
-</ul>
-<p>Understanding how to manually construct and train a neural network builds foundational intuition that will help you:</p>
-<ul>
-<li>
-<p>Debug custom layers and losses  </p>
-</li>
-<li>
-<p>Understand performance bottlenecks  </p>
-</li>
-<li>
-<p>Transition into low-level model tweaking when needed</p>
-</li>
-</ul>
-<hr />
 
 
 
@@ -1690,8 +2046,13 @@
 
 
 
+  
+  
 
 
+
+
+  
 
 
 

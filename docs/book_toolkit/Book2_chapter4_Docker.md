@@ -29,7 +29,7 @@ There’s a moment every AI builder experiences:
 
 * Your app works beautifully on your machine
 * You send it to someone else
-* And... 💥 nothing works
+* And... nothing works
 
 Dependencies break. Versions mismatch. Paths are wrong.
 
@@ -46,8 +46,8 @@ Docker is a tool that lets you **package code and dependencies** into a single u
 
 Think of it like:
 
-* 🧳 A suitcase with your project + every tool it needs
-* 🧱 A lightweight virtual machine (but faster and smaller)
+* A suitcase with your project + every tool it needs
+* A lightweight virtual machine (but faster and smaller)
 
 You build once. Then anyone can run that same setup:
 
@@ -76,7 +76,7 @@ You build once. Then anyone can run that same setup:
 
 ## 4.3 Anatomy of a Dockerfile (FastAPI Example)
 
-📄 **Dockerfile**
+**Dockerfile**
 
 ```dockerfile
 # Use official Python base
@@ -111,7 +111,7 @@ docker run -p 7860:7860 my-ai-api
 ```
 
 > Your app is now running inside an **isolated, reproducible environment**.
-> 🔥 No more “works on my laptop” curse.
+> No more “works on my laptop” curse.
 
 ---
 
@@ -132,7 +132,7 @@ docker build -t cartoonizer-ui .
 docker run -p 7860:7860 cartoonizer-ui
 ```
 
-> 💡 Hugging Face Spaces use this exact principle behind the scenes.
+> Hugging Face Spaces use this exact principle behind the scenes.
 
 ---
 

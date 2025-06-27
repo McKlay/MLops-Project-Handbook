@@ -76,13 +76,13 @@ You:
 
 ## 9.3 Real-World Examples
 
-| Task                      | Training?                  | Inference?         |
-| ------------------------- | -------------------------- | ------------------ |
-| ChatGPT use               | ❌                          | ✅ You call it      |
-| Custom product classifier | 🧠 Fine-tune               | ✅ Use locally/API  |
-| Image captioning tool     | ❌ Use BLIP or similar      | ✅ Run via pipeline |
-| Your own chatbot voice    | 🏗️ From-scratch (NLP+TTS) | ✅ After training   |
-| Sentiment Analyzer        | ✅ If custom domain         | ✅ Mostly inference |
+| Task                      | Training?                  | Inference?          |
+| ------------------------- | -------------------------- | --------------------|
+| ChatGPT use               | ❌                         | ✅ You call it     |
+| Custom product classifier | Fine-tune                  | ✅ Use locally/API  |
+| Image captioning tool     | Use BLIP or similar        | ✅ Run via pipeline |
+| Your own chatbot voice    | From-scratch (NLP+TTS)     | ✅ After training   |
+| Sentiment Analyzer        | If custom domain           | ✅ Mostly inference |
 
 ---
 
@@ -97,7 +97,7 @@ Before training, ask:
 If **yes to any**, use it for inference.
 If **no**, then consider fine-tuning.
 
-💡 90% of real-world apps can reuse:
+90% of real-world apps can reuse:
 
 * BERT for classification
 * GPT for text generation
@@ -149,7 +149,7 @@ Sometimes, **recombining what already exists** is the smartest path forward.
 
 ---
 
-## ✅ Summary Takeaways
+## Summary Takeaways
 
 | Concept               | Why It Matters                           |
 | --------------------- | ---------------------------------------- |

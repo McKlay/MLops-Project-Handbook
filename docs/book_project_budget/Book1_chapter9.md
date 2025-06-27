@@ -81,11 +81,11 @@ It means:
 
 |Tool	                        |Use Case                               |
 |-------------------------------|---------------------------------------|
-|🐞 Dev Console (Chrome)	   |Check fetch, CORS, API errors           |
-|📝 Railway Logs	           |See API requests & errors               |
-|🧪 Postman / Thunder Client    |Test endpoints manually                |
-|📦 Network Tab	                |View full request/response payloads    |
-|🔁 React Dev Tools	            |Inspect component behavior             |
+|Dev Console (Chrome)	   |Check fetch, CORS, API errors           |
+|Railway Logs	           |See API requests & errors               |
+|Postman / Thunder Client    |Test endpoints manually                |
+|Network Tab	                |View full request/response payloads    |
+|React Dev Tools	            |Inspect component behavior             |
 
 ---
 

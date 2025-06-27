@@ -71,7 +71,7 @@ Compare this:
 ---
 
 ## 2.4 Anatomy of a Minimal FastAPI App
-📄 main.py
+main.py
 ```python       
        from fastapi import FastAPI
        from pydantic import BaseModel
@@ -82,7 +82,7 @@ Compare this:
        def generate_text(prompt: Prompt):
            return {"response": f"Received: {prompt.text}"}
 ```       
-🔁 Test locally:
+Test locally:
 ```bash       
        uvicorn main:app --reload
 ```
@@ -125,19 +125,19 @@ To connect FastAPI to Vercel frontend or React apps:
            allow_headers=["*"],
        )
 ```       
->💡 Without this, your frontend will hit CORS errors when making requests to your backend.
+>Without this, your frontend will hit CORS errors when making requests to your backend.
 
 ---
 
 ## 2.7 FastAPI vs Flask vs Django: Which to Choose?
 
-|Feature	       |Flask	              |Django	         |FastAPI ✅        |
-|--------------------|--------------------|----------------------|-------------------|
-|Speed	              |⚡ Fast	      |🐢 Slower	       |⚡⚡ Very fast      |
-|Async Support	|❌ Limited	      |✅ Good	             |✅ First-class       |
-|Type Hinting	       |❌ No	             |⚠️ Partial	       |✅ Full             |
-|Swagger UI	       |❌ Add-ons	      |❌ Add-ons	      |✅ Built-in          |
-|Dev Ergonomics	|🧪 Manual	       |🏗️ Heavy	         |🧘 Smooth           |
+|Feature	        |Flask	              |Django	         |FastAPI ✅         |
+|-------------------|---------------------|------------------|-------------------|
+|Speed	            |⚡ Fast	            |🐢 Slower	       |⚡⚡ Very fast    |
+|Async Support	    |❌ Limited	        |✅ Good	          |✅ First-class     |
+|Type Hinting	    |❌ No	            |⚠️ Partial	       |✅ Full            |
+|Swagger UI	        |❌ Add-ons	        |❌ Add-ons	      |✅ Built-in        |
+|Dev Ergonomics	    |Manual	              |Heavy	         |Smooth             |
 
 > FastAPI gives you the “just right” balance of control, speed, and developer experience.
 
