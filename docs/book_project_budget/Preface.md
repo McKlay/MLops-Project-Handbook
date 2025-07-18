@@ -25,10 +25,10 @@ If you're comfortable with Python and curious about combining AI models with web
 
 ### From Idea to Infrastructure: How This Book Was Born
 
-While working on personal AI tools and client-facing projects, I kept hitting the same pain points:
-*How do I structure the codebase?*
-*How do I secure API keys?*
-*Which platform should I deploy to—and how do I stay within the free tier?*
+While working on personal AI tools and client-facing projects, I kept hitting the same pain points:  
+*How do I structure the codebase?*  
+*How do I secure API keys?*  
+*Which platform should I deploy to—and how do I stay within the free tier?*  
 
 I took notes. I documented patterns. I created a checklist that eventually turned into this book. It combines technical clarity with real deployment wisdom—the kind you don’t usually get from notebooks alone.
 
