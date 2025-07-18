@@ -174,9 +174,9 @@ RunPod / Lambda Labs	              |A100, RTX3090	              |Pay-as-you-go	 
 
 
 ## 2.9 Key Takeaways from Chapter 2
-- Use Python + React as your core stack.
+- Use Python + FastAPI as your core stack.
 
-- Choose between Gradio vs FastAPI depending on how flexible and beautiful your UI needs to be.
+- Choose between Gradio vs React depending on how flexible and beautiful your UI needs to be.
 
 - Hugging Face + Vercel gives the cleanest free-tier stack for portfolio-level apps.
 
